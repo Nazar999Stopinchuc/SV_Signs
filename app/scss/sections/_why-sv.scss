@@ -1,0 +1,49 @@
+.why-sv {
+  background-color: $why-sv-bg;
+  padding: 35px 0 50px;
+
+  &__title {
+    font-size: 40px;
+    color: $text-color-about;
+    @extend %montserrat-500;
+    margin-bottom: 35px;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 400px;
+  }
+
+  &__subitem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    @extend %montserrat-500;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__img {
+    min-height: 90px;
+    min-width: 90px;
+    border-radius: 50%;
+    @extend %bg;
+  }
+
+  &__subtitle {
+    white-space: nowrap;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+
+  &__text {
+    font-size: 14px;
+  }
+}

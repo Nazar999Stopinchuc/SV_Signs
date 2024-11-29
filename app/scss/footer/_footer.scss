@@ -1,0 +1,111 @@
+.footer {
+  border-top: 2px solid $footer-border;
+  &__svg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 65px;
+    width: 65px;
+    fill: $footer-icon;
+    transform: translate(0, -50%);
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 0;
+  }
+
+  &__location {
+    margin-right: 20px;
+    padding-bottom: 60px;
+  }
+
+  &__location-link {
+    display: block;
+    position: relative;
+    padding-left: 65px;
+    text-align: center;
+    @extend %montserrat-500;
+    font-size: 23px;
+    white-space: nowrap;
+  }
+
+  &__contacts {
+    margin-right: 20px;
+  }
+
+  &__contacts-item {
+    position: relative;
+    font-size: 25px;
+    @extend %montserrat-500;
+    padding: 15px 13px 15px 75px;
+    white-space: nowrap;
+
+    &:not(:last-child) {
+      margin-bottom: 23px;
+    }
+  }
+
+  &__clock {
+    @extend %montserrat-700;
+    font-size: 32px;
+    color: $accent-color;
+    white-space: nowrap;
+  }
+
+  &__menu-item {
+    position: relative;
+    padding-left: 30px;
+    @extend %montserrat-500;
+    font-size: 22px;
+
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      height: 15px;
+      width: 15px;
+      background-color: $accent-color;
+      transform: translate(0, -50%);
+    }
+  }
+
+  &__bottom {
+    background-color: $footer-bottom;
+    padding: 45px 0;
+  }
+
+  &__bottom-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__payment,
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+    &__social {
+      gap: 15px;
+    }
+
+  &__payment-img {
+    border-radius: 6px;
+  }
+
+  &__svg-social {
+    height: 35px;
+    width: 36px;
+    fill: $body-background-color;
+  }
+}

@@ -1,0 +1,273 @@
+.header {
+  margin-bottom: 8px;
+}
+
+.header-top {
+  padding: 30px 0;
+
+  &__nav {
+    justify-content: flex-end;
+  }
+
+  &__menu,
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__link {
+    display: block;
+    font-size: 22px;
+    color: $text-color-link;
+    @extend %montserrat-500;
+  }
+
+  &__cart {
+    position: relative;
+    border: 1px solid transparent;
+    padding: 5px 5px 0;
+    border-radius: 6px;
+
+    &:hover .header-top__cart-svg {
+      stroke: $accent-color;
+      fill: none;
+    }
+
+    &:hover .header-top__cart-quantity {
+      background-color: $accent-color;
+    }
+  }
+
+  &__cart-svg {
+    height: 35px;
+    width: 35px;
+    fill: none;
+    stroke: $text-color;
+    stroke-width: 2px;
+    transition: stroke .3s;
+  }
+
+  &__cart-quantity {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 22px;
+    width: 22px;
+    top: -5px;
+    right: -5px;
+    border-radius: 50%;
+    font-size: 16px;
+    background-color: $footer-bottom;
+    color: $body-background-color;
+    transition: background-color .3s;
+  }
+
+}
+
+.header-middle {
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__item {
+    white-space: nowrap;
+  }
+
+  &__link {
+    &--tel {
+      font-size: 36px;
+      color: $footer-bottom;
+      @extend %montserrat-700;
+    }
+
+    &--quote {
+      display: block;
+      padding: 10px 20px;
+      font-size: 27px;
+      @extend %montserrat-700;
+      color: $body-background-color;
+      background-color: $accent-color;
+      border-radius: 12px;
+      transition: background-color .3s, transform .2s;
+
+      &:focus-visible {
+        background-color: $footer-bottom;
+      }
+
+
+      &:hover {
+        background-color: $footer-bottom;
+      }
+
+    }
+  }
+}
+
+.header-bottom {
+  &__menu {
+    display: flex;
+  }
+
+  &__home,
+  &__search {
+    min-height: 60px;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bg-menu-btn;
+    transition: background-color .3s;
+
+    &:focus-visible {
+      background-color: $footer-bottom;
+    }
+
+    &:hover {
+      background-color: $footer-bottom;
+    }
+  }
+
+  &__search {
+    &:focus-visible svg {
+      stroke: $accent-color;
+    }
+
+    &:hover svg {
+      stroke: $accent-color;
+    }
+
+    &:active {
+      opacity: .6;
+    }
+  }
+
+  &__home {
+    &:focus-visible svg {
+      fill: $accent-color;
+    }
+
+    &:hover svg {
+      fill: $accent-color;
+    }
+
+    &:active {
+      opacity: .6;
+    }
+  }
+
+  &__svg {
+    height: 22px;
+    width: 22px;
+    transition: stroke .3s, fill .3s;
+
+    &--search {
+      fill: none;
+      stroke: $text-color-btn;
+      stroke-width: 3px;
+    }
+
+    &--home {
+      fill: $text-color-btn;
+    }
+  }
+
+  &__navigation {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    cursor: pointer;
+    min-height: 60px;
+    background-color: $bg-menu-btn;
+    padding: 0 25px;
+    color: $text-color-btn;
+    @extend %montserrat-500;
+    transition: background .1s, color .1s, ;
+
+
+    &:hover {
+      background-color: $footer-bottom;
+      color: $bg-menu-btn;
+    }
+
+    &:hover>.header-bottom__submenu {
+      opacity: 1;
+      visibility: visible;
+      transform: rotateX(0deg);
+    }
+  }
+
+  &__submenu {
+    position: absolute;
+    z-index: 100;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    min-width: 220px;
+    background-color: $footer-bottom;
+    color: $bg-menu-btn;
+    padding: 10px;
+    transform-origin: 0 0;
+    transform: rotateX(-90deg);
+    transition: .3s linear;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &__submenu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+
+    &:hover svg {
+      stroke: $accent-color;
+      fill: none;
+    }
+  }
+
+  &__svg-arrow {
+    height: 22px;
+    width: 22px;
+    fill: none;
+    stroke: $body-background-color;
+    stroke-width: 2px;
+    transition: stroke .3s;
+  }
+}
+
+.logo {
+  padding: 3px 5px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+
+  &__img {
+    max-width: 500px;
+  }
+
+  &--footer .logo__img {
+    max-width: 360px;
+    margin-bottom: 85px;
+  }
+
+  &:focus-visible {
+    border: 1px solid $accent-color;
+  }
+}

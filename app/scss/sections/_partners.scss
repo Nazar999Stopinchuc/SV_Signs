@@ -1,0 +1,17 @@
+.partners {
+  padding: 55px 0;
+
+  &__title {
+    font-size: 40px;
+    color: $partners-title;
+    margin-bottom: 70px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 70px;
+  }
+}

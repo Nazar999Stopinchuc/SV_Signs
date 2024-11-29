@@ -1,0 +1,48 @@
+$accent-btn-color: #6B80BF;
+$accent-color: #FF7E14;
+$body-background-color: #FFFFFF;
+$text-color: #000000;
+$text-color-link: #272727;
+$text-color-about: #39393A;
+$text-color-btn: #535353;
+$bg-menu-btn: #F5F5F5;
+$footer-icon: #787878;
+$footer-bottom: #324373;
+$why-sv-bg: #F2F2F2;
+$partners-title: #59595A;
+$footer-border: #B8B8B8;
+
+$breakpoints: (
+  "phone": 560px,
+  "tablet": 768px,
+  "tablet-2": 992px,
+  "desktop": 1230px
+);
+
+$maxWidth: 1920;
+$maxWidthContainer: 1210;
+
+%montserrat-400 {
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
+%montserrat-500 {
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+
+%montserrat-700 {
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+
+%bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+
+
