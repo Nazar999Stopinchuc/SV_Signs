@@ -14,26 +14,39 @@
 
       <div class="header-top">
         <nav class="header-top__nav">
-          <a class="logo" href="#">
-            <img class="logo__img" src="images/logo/logo.png" alt="company logo">
-          </a>
-
           <ul class="header-top__menu">
             <li class="header-top__item">
-              <a class="header-top__link header-top__link--tel link-anim" href="tel:4167204625">416-720-4625</a>
+              <a class="header-top__link link-anim" href="#">About Us</a>
             </li>
             <li class="header-top__item">
-              <a class="header-top__link header-top__link--quote" href="contact_us.html">GET A QUOTE</a>
+              <a class="header-top__link link-anim" href="#">Services</a>
             </li>
+            <li class="header-top__item">
+              <a class="header-top__link link-anim" href="#">Contact</a>
+            </li>
+          </ul>
 
-              <li class="header-top__item">
-              <a class="header-top__cart link-anim" href="#">
-                <svg class="header-top__cart-svg">
-                  <use xlink:href="images/sprite.svg#shopping_cart-icon"></use>
-                </svg>
-                <span class="header-top__cart-quantity">0</span>
-              </a>
-              </li>
+          <a class="header-top__cart link-anim" href="#">
+            <svg class="header-top__cart-svg">
+              <use xlink:href="images/sprite.svg#shopping_cart-icon"></use>
+            </svg>
+            <span class="header-top__cart-quantity">0</span>
+          </a>
+        </nav>
+      </div>
+
+      <div class="header-middle">
+        <nav class="header-middle__nav">
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="images/logo/logo.png" alt="company logo">
+          </a>
+          <ul class="header-middle__menu">
+            <li class="header-middle__item">
+              <a class="header-middle__link header-middle__link--tel link-anim" href="tel:4167204625">416-720-4625</a>
+            </li>
+            <li class="header-middle__item">
+              <a class="header-middle__link header-middle__link--quote btn-anim" href="#">GET A QUOTE</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -493,181 +506,130 @@
   </header>
 
   <main class="main">
-    <section class="first-screen section">
-      <div class="first-screen__wrap" style="background-image: url(images/first-screen/baner-bg.jpg);">
-        <div class="container">
-          <div class="first-screen__inner">
+    <div class="bread-crumbs">
+      <div class="container">
+        <ul class="bread-crumbs__list">
+          <li class="bread-crumbs__item">
+            <a class="bread-crumbs__link link-anim" href="index.html">Home</a>
+          </li>
+          <li class="bread-crumbs__item">
+            <a class="bread-crumbs__link link-anim" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-            <div class="first-screen__content">
-              <h1 class="first-screen__title">FREE DESIGN SERVICES </h1>
-              <p class="first-screen__subtitle">FAST PRODUCTION</p>
-              <p class="first-screen__text">Durable signs made to fit your needs</p>
+    <section class="contact-form section">
+      <div class="container">
+        <h1 class="contact-form__title">Contact Us</h1>
+        <div class="contact-form__wrap">
+
+          <form class="form contact-form__form" id="contact-form" action = "https://api.web3forms.com/submit" method = "POST">
+            <input type="hidden" name="access_key" value="709a41f0-23b5-4bc4-9e0c-495b6f556aa9">
+
+            <div class="form__names">
+              <div class="form__wrap">
+                <label class="form__label" for="name">Fist Name *</label>
+                <input class="form__input" type="text" id="name" name="name" placeholder="First Name" required>
+              </div>
+
+              <div class="form__wrap">
+                <label class="form__label" for="last_name">Last Name *</label>
+                <input class="form__input" type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+              </div>
             </div>
 
-            <div class="first-screen__imgs">
-              <img class="first-screen__img" src="images/first-screen/aframe.png" alt="photo of the sign">
-              <img class="first-screen__img first-screen__img--yard" src="images/first-screen/sale-sign.png"
-                alt="photo of the sign">
-              <img class="first-screen__img" src="images/first-screen/yard-sign.png" alt="photo of the sign">
+            <label class="form__label" for="Email">Email *</label>
+            <input class="form__input" type="email" id="email" name="email" placeholder="Email" required>
+
+            <label class="form__label" for="confirm_email">Confirm Email *</label>
+            <input class="form__input" type="email" id="confirm_email" name="email" placeholder="Confirm Email"
+              required>
+
+            <label class="form__label" for="phone">Phone</label>
+            <input class="form__input" type="phone" id="phone" name="phone" placeholder="Phone">
+
+
+            <p class="form__label">File Upload <span>(Optional)</span></p>
+            <label class="form__label--file" for="file-input">
+              <span class="form__custom-button">Upload File</span>
+              <span class="form__file-name">or Drag Files here</span>
+              <input class="form__input form__input--file" type="file" id="file-input" name="file" accept="image/*,application/pdf">
+            </label>
+
+
+            <label class="form__label" for="text">Other Details <span>(Optional)</span></label>
+            <textarea class="form__input form__input--text" id="text" name="text"></textarea>
+
+            <div class="form__checkbox-wrap">
+              <input class="form__input form__input--checkbox" type="checkbox" id="checkbox" name="checkbox">
+              <label class="form__label form__label--checkbox" for="checkbox">Send me exclusive offers and
+                discounts</label>
             </div>
-          </div>
+
+            <button class="form__btn btn-anim" type="submit">Submit Request</button>
+
+            <div class="form__out"></div>
+          </form>
+
+          <ul class="contact-form__contacts">
+            <li class="contact-form__item">
+              <h2 class="contact-form__subtitle">Connect with Us</h2>
+              <p class="contact-form__text">We offer a lot of different ways to stay connected with all the things at SV
+                Signs.com</p>
+              <ul class="contact-form__social">
+                <li class="contact-form__social-item">
+                  <a class="contact-form__social-link link-anim" href="#">
+                    <svg class="contact-form__svg-social">
+                      <use xlink:href="images/sprite.svg#instagram-icon"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contact-form__social-item link-anim">
+                  <a class="contact-form__social-link" href="#">
+                    <svg class="contact-form__svg-social">
+                      <use xlink:href="images/sprite.svg#twitter-icon"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contact-form__social-item link-anim">
+                  <a class="contact-form__social-link" href="#">
+                    <svg class="contact-form__svg-social">
+                      <use xlink:href="images/sprite.svg#linkedin-icon"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contact-form__social-item link-anim">
+                  <a class="contact-form__social-link" href="#">
+                    <svg class="contact-form__svg-social">
+                      <use xlink:href="images/sprite.svg#pinterest-icon"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="contact-form__item">
+              <h3 class="contact-form__subtitle">Phone</h3>
+              <a class="contact-form__link link-anim" href="tel:4167204625">Phone: 416-720-4625</a>
+            </li>
+
+            <li class="contact-form__item">
+              <h3 class="contact-form__subtitle">Address</h3>
+              <a class="contact-form__link link-anim" href="#" target="_blank">
+                <p>2875 St Clair Avenue East</p>
+                <p>Toronto, ON, M4B 1N4</p>
+              </a>
+            </li>
+
+            <li class="contact-form__item">
+              <h3 class="contact-form__subtitle">E-mail</h3>
+              <a class="contact-form__link link-anim" href="mail:svsigns@sympatico.ca">svsigns@sympatico.ca</a>
+            </li>
+          </ul>
         </div>
       </div>
-
-      <div class="container">
-        <ul class="first-screen__contacts">
-          <li class="first-screen__item">
-            <a class="first-screen__link" href="tel:4167204625">CALL US
-              <svg class="first-screen__svg">
-                <use xlink:href="images/sprite.svg#phone-icon"></use>
-              </svg>
-            </a>
-
-          </li>
-          <li class="first-screen__item">
-            <a class="first-screen__link" href="mail:svsigns@sympatico.ca">GET QUOTE
-              <svg class="first-screen__svg">
-                <use xlink:href="images/sprite.svg#email-icon"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="first-screen__item">
-            <a class="first-screen__link" href="#" target="_blank">FIND US
-              <svg class="first-screen__svg">
-                <use xlink:href="images/sprite.svg#location-icon"></use>
-              </svg>
-            </a>
-
-          </li>
-        </ul>
-      </div>
     </section>
-
-    <section class="about section">
-      <div class="container">
-        <h2 class="about__title">Welcome to SV Signs</h2>
-        <p class="about__text">We’re your go-to shop for high-quality signage that stands out. From bold outdoor signs
-          to elevate your visibility to
-          sleek indoor signs that showcase your brand, we create solutions tailored just for you. Whether it’s custom
-          signs or
-          real estate signs, we’re here to help your message shine.</p>
-      </div>
-    </section>
-
-    <section class="produkts sektion">
-      <div class="container">
-        <ul class="produkts__list"></ul>
-
-        <div class="produkts__wrap-btn none">
-          <button class="produkts__more link-anim">Load More Products</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="why-sv">
-      <div class="container">
-        <h2 class="why-sv__title">Why SV Signs?</h2>
-        <ul class="why-sv__wrap">
-          <li class="why-sv__item">
-
-            <ul class="why-sv__list">
-              <li class="why-sv__subitem">
-                <div class="why-sv__img" style="background-image: url(images/why-sv/next-day-production.png);"></div>
-                <div class="why-sv__content">
-                  <h3 class="why-sv__subtitle">Next Day Production</h3>
-                  <p class="why-sv__text">Our world-class production also comes with the world class speed</p>
-                </div>
-              </li>
-              <li class="why-sv__subitem">
-                <div class="why-sv__img" style="background-image: url(images/why-sv/free-shipping.png);"></div>
-                <div class="why-sv__content">
-                  <h3 class="why-sv__subtitle">Free Shipping Over $99*</h3>
-                  <p class="why-sv__text">WE love to ease your burden. And who does not love free?</p>
-                </div>
-              </li>
-            </ul>
-
-          </li>
-
-          <li class="why-sv__item">
-
-            <ul class="why-sv__list">
-              <li class="why-sv__subitem">
-                <div class="why-sv__img" style="background-image: url(images/why-sv/rating.png);"></div>
-                <div class="why-sv__content">
-                  <h3 class="why-sv__subtitle">175+ Customer Reviews</h3>
-                  <p class="why-sv__text">Our customers love us because they know we love them</p>
-                </div>
-              </li>
-              <li class="why-sv__subitem ">
-                <div class="why-sv__img " style="background-image: url(images/why-sv/price-match.png);"></div>
-                <div class="why-sv__content">
-                  <h3 class="why-sv__subtitle">Award Winning Customer Service</h3>
-                  <p class="why-sv__text">The best in the business. We are here to help!</p>
-                </div>
-              </li>
-
-            </ul>
-          </li>
-          <li class="why-sv__item">
-
-            <ul class="why-sv__list">
-              <li class="why-sv__subitem">
-                <div class="why-sv__img" style="background-image: url(images/why-sv/design2.png);"></div>
-                <div class="why-sv__content">
-                  <h3 class="why-sv__subtitle">Free Design Services</h3>
-                  <p class="why-sv__text">Need a slight tweak? Starting fom scratch? We can help</p>
-                </div>
-              </li>
-              <li class="why-sv__subitem">
-                <div class="why-sv__img" style="background-image: url(images/why-sv/price-match2.png);"></div>
-                <div class="why-sv__content">
-                  <h3 class="why-sv__subtitle">Price Match Guarantee</h3>
-                  <p class="why-sv__text">We guarantee that you get the best deal possible by choosing us</p>
-                </div>
-              </li>
-
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="partners section">
-      <div class="container">
-        <h2 class="partners__title">Businesses that Trust SVSigns.com</h2>
-        <ul class="partners__list">
-          <li class="parthers__item">
-            <img class="partners__img" src="images/partners/partners-1.png" alt="company partner logo">
-          </li>
-          <li class="parthers__item">
-            <img class="partners__img" src="images/partners/partners-2.png" alt="company partner logo">
-          </li>
-          <li class="parthers__item">
-            <img class="partners__img" src="images/partners/partners-3.png" alt="company partner logo">
-          </li>
-          <li class="parthers__item">
-            <img class="partners__img" src="images/partners/partners-4.png" alt="company partner logo">
-          </li>
-          <li class="parthers__item">
-            <img class="partners__img" src="images/partners/partners-5.png" alt="company partner logo">
-          </li>
-          <li class="parthers__item">
-            <img class="partners__img" src="images/partners/partners-6.png" alt="company partner logo">
-          </li>
-          <li class="parthers__item">
-            <img class="partners__img" src="images/partners/partners-7.png" alt="company partner logo">
-          </li>
-          <li class="parthers__item">
-            <img class="partners__img" src="images/partners/partners-8.png" alt="company partner logo">
-          </li>
-          <li class="parthers__item">
-            <img class="partners__img" src="images/partners/partners-9.png" alt="company partner logo">
-          </li>
-        </ul>
-      </div>
-    </section>
-
   </main>
 
   <footer class="footer">

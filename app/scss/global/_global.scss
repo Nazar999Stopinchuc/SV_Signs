@@ -78,3 +78,23 @@ body {
     fill: $accent-color;
   }
 }
+
+.btn-anim {
+  transition: background-color .3s, opacity .3s;
+
+  &:focus-visible {
+    background-color: $footer-bottom;
+  }
+
+  &:hover {
+    background-color: $footer-bottom;
+  }
+
+  &:active {
+    opacity: .8;
+  }
+}
+
+.none {
+  display: none;
+}

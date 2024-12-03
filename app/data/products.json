@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "For Sale Sign",
+    "descr": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "img": "images/produkts/product_1.1.png",
+    "reviews": "1972"
+  },
+  {
+    "id": 2,
+    "title": "Directional Sign",
+    "descr": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "img": "images/produkts/product_2.1.png",
+    "reviews": "1462"
+  },
+  {
+    "id": 3,
+    "title": "Open House Sign",
+    "descr": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "img": "images/produkts/product_3.1.png",
+    "reviews": "1862"
+  },
+  {
+    "id": 4,
+    "title": "Riders",
+    "descr": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "img": "images/produkts/product_4.1.png",
+    "reviews": "1298"
+  },
+  {
+    "id": 5,
+    "title": "Sandwich Boards",
+    "descr": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "img": "images/produkts/product_5.1.png",
+    "reviews": "1951"
+  }
+]

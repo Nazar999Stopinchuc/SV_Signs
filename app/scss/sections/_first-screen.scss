@@ -8,7 +8,6 @@
   }
 
   &__inner {
-    // min-height: 460px;
     padding: 15px 0;
     display: flex;
     align-items: center;
@@ -62,6 +61,19 @@
     flex-grow: 1;
     min-height: 112px;
     background-color: $accent-btn-color;
+    transition: background-color .3s, opacity .3s;
+
+    &:focus-visible {
+      background-color: $footer-bottom;
+    }
+
+    &:hover{
+      background-color: $footer-bottom;
+    }
+
+    &:active {
+      opacity: .8;
+    }
   }
 
   &__link {
@@ -76,7 +88,6 @@
     color: $body-background-color;
     text-transform: uppercase;
     @extend %montserrat-700;
-
   }
 
   &__svg {
