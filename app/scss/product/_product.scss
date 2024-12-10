@@ -1,0 +1,200 @@
+.product {
+  &__wrap {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
+    color: $text-color-product;
+  }
+
+  &__slider {
+    max-width: 670px;
+  }
+
+  &__constructor {
+    max-width: 750px;
+  }
+
+  &__deskr {
+    @extend %montserrat-500;
+    font-size: 16px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 50px;
+    @extend %montserrat-500;
+    margin-bottom: 20px;
+    white-space: nowrap;
+  }
+
+  &__descr-short {
+    font-size: 26px;
+    @extend %montserrat-500;
+    padding-bottom: 22px;
+    border-bottom: 2px solid $footer-border;
+    margin-bottom: 20px;
+  }
+
+  &__inner {
+    display: flex;
+    gap: 20px;
+    border-bottom: 2px solid $footer-border;
+    padding-bottom: 15px;
+  }
+
+  &__label {
+    font-size: 20px;
+    margin-bottom: 8px;
+    @extend %montserrat-700;
+    display: block;
+  }
+
+  &__input {
+    &--quant {
+      display: block;
+      padding: 15px;
+      width: 150px;
+      border: 1px solid $footer-border;
+      border-radius: 6px;
+      margin-bottom: 8px;
+      @extend %montserrat-500;
+    }
+  }
+
+  &__buy-more {
+    @extend %montserrat-700;
+    font-size: 14px;
+    color: $accent-btn-color;
+  }
+
+  &__select {
+    border-bottom: 2px solid $footer-border;
+    padding-bottom: 15px;
+
+    &--size {
+      flex-grow: 1;
+
+    }
+
+    &--size {
+      border-bottom: none;
+    }
+  }
+
+  &__quant {
+    border-bottom: none;
+  }
+
+  &__select-trigger {
+    position: relative;
+    cursor: pointer;
+    padding: 20px 15px;
+    color: $text-color-about;
+    @extend %montserrat-500;
+
+    &:hover .product__svg-arrow {
+      fill: none;
+      stroke: $accent-color;
+    }
+
+    & * {
+      pointer-events: none;
+    }
+
+    &--size {
+      padding: 15px;
+      width: 100%;
+      border: 1px solid $footer-border;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    &.active .product__svg-arrow {
+      top: 60%;
+      transform: translate(0, -50%) rotate(270deg);
+    }
+  }
+
+  &__svg-arrow {
+    position: absolute;
+    fill: none;
+    stroke: $product-simbol-color;
+    stroke-width: 2px;
+    height: 35px;
+    width: 35px;
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%) rotate(90deg);
+  }
+
+  &__select-options {
+    display: flex;
+    max-height: 1000px;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    &.none {
+      max-height: 0;
+    }
+  }
+
+  &__card {
+    cursor: pointer;
+    min-height: 154px;
+    width: 128px;
+    padding: 10px;
+    align-items: center;
+    border: 2px solid $product-simbol-color;
+    border-radius: 6px;
+    @extend %montserrat-700;
+    font-size: 11px;
+    align-items: center;
+    transition: border-color .3s;
+
+    &:hover {
+      border-color: $accent-color;
+    }
+
+    & * {
+      pointer-events: none;
+    }
+  }
+
+  &__select-title {
+    margin-bottom: 8px;
+  }
+
+  &__wrap-img {
+    height: 90px;
+    width: 90px;
+    margin: 0 auto;
+  }
+
+  &__img-box {
+    height: 90px;
+    width: 90px;
+    margin: 0 auto;
+  }
+
+  &__select-img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__btn {
+    display: block;
+    margin: 35px auto 0;
+    padding: 18px 200px;
+    color: $body-background-color;
+    background-color: $accent-color;
+    @extend %montserrat-700;
+    font-size: 30px;
+    border-radius: 12px;
+  }
+}

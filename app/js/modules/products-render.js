@@ -22,7 +22,6 @@ function productsRender() {
         productsData = await res.json();
       }
 
-
       if ((productsData.length > COUNT_SHOW_CARDS_CLICK) &&
         showCardsBtnWrap.classList.contains('none')) {
         showCardsBtnWrap.classList.remove('none');
@@ -48,13 +47,13 @@ function productsRender() {
 
   function createCards(data) {
     data.forEach(card => {
-      const { id, img, descr, title, reviews } = card;
+      const { id, img, descr_short, title, reviews } = card;
       const cardItem = `
       <li class="produkts__item">
             <article class="produkt-card" id="${id}">
               <a class="produkt-card__link" href="product.html?id=${id}"></a>
               <div class="produkt-card__img-wrap">
-                <img class="produkt-card__img" src="${img}" alt="product photo ${title}">
+                <img class="produkt-card__img" src="${img[0]}" alt="product photo ${title}">
               </div>
               <h3 class="produkt-card__title">${title}</h3>
               <div class="produkt-card__reviews">
@@ -91,7 +90,7 @@ function productsRender() {
                 </p>
               </div>
               <p class="produkt-card__deskr">
-                ${descr}
+                ${descr_short}
               </p>
               <a class="produkt-card__link-shop" href="product.html?id=${id}">Shop</a>
             </article>

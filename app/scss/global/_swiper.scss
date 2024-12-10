@@ -1,0 +1,30 @@
+.mySwiper {
+  margin-bottom: 25px;
+  width: 100%;
+  height: 120px;
+  user-select: none;
+}
+
+.mySwiper2 {
+  margin-bottom: 25px;
+  width: 100%;
+  height: 420px;
+  user-select: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: $product-simbol-color;
+  // user-select: none;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+}
+
+
+
+ 

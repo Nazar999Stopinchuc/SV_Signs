@@ -205,6 +205,14 @@
     transition: .3s linear;
     visibility: hidden;
     opacity: 0;
+
+    &--brokerages {
+      width: auto;
+      background-color: $body-background-color;
+      padding: 15px;
+      display: flex;
+      gap: 30px;
+    }
   }
 
   &__submenu-item {
@@ -219,6 +227,11 @@
     }
   }
 
+  &__submenu-link {
+    height: 100%;
+    width: 100%;
+  }
+
   &__svg-arrow {
     height: 22px;
     width: 22px;
@@ -226,6 +239,40 @@
     stroke: $body-background-color;
     stroke-width: 2px;
     transition: stroke .3s;
+    font-size: 16px;
+
+  }
+
+  &__brokerages-link {
+    color: $text-color-product;
+    white-space: nowrap;
+    padding: 5px 0;
+  }
+
+  &__brokerages-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    padding: 30px 150px;
+  }
+  &__brokerages-logos-item {
+    width: 150px;
+    height: 75px;
+    transition: scale .3s, opacity .3s;
+
+    &:hover {
+      scale: 1.1;
+    }
+
+    &:active {
+      opacity: .8;
+    }
+  }
+
+  &__brokerages-logos-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
   }
 }
 

@@ -23,6 +23,7 @@
     "gulp-uglify": "^3.0.2",
     "sass": "^1.69.5",
     "webpack": "^5.86.0",
-    "webpack-stream": "^7.0.0"
+    "webpack-stream": "^7.0.0",
+    "swiper": "^11.1.14"
   }
 }
