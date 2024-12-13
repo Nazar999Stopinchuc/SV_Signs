@@ -4,19 +4,17 @@
 @import 'global/mixin';
 @import 'global/libs';
 @import 'global/global';
-@import 'global/swiper';
 @import 'header/header';
 @import 'footer/footer';
 @import 'sections/first-screen';
-@import 'sections/about';
 @import 'sections/why-sv';
 @import 'sections/partners';
-@import 'produkts/produkts';
+@import 'components/produkts';
+@import 'components/social';
+@import 'components/produkt-card';
 @import 'contact_us/contact_us';
+@import 'components/swiper';
 @import 'product/product';
-
-
-
-
+@import 'brokerages/brokerages';
 
 

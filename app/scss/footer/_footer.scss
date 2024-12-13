@@ -1,5 +1,6 @@
 .footer {
   border-top: 2px solid $footer-border;
+
   &__svg {
     position: absolute;
     top: 50%;
@@ -88,24 +89,12 @@
     justify-content: space-between;
   }
 
-  &__payment,
-  &__social {
+  &__payment {
     display: flex;
     align-items: center;
     gap: 25px;
   }
-
-    &__social {
-      gap: 15px;
-    }
-
   &__payment-img {
     border-radius: 6px;
-  }
-
-  &__svg-social {
-    height: 35px;
-    width: 36px;
-    fill: $body-background-color;
   }
 }

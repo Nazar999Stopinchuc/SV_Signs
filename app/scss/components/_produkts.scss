@@ -1,0 +1,40 @@
+.produkts {
+  padding: 40px 0px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+
+  &__more {
+    position: relative;
+    background-color: $body-background-color;
+    padding: 0 25px;
+    margin: 0 auto;
+    font-size: 25px;
+    color: $partners-title;
+    @extend %montserrat-700;
+    z-index: 100;
+
+    &:active {
+      opacity: 1;
+    }
+  }
+
+  &__wrap-btn {
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      height: 2px;
+      background-color: $partners-title;
+      width: 100%;
+    }
+  }
+}
+

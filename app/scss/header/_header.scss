@@ -1,5 +1,5 @@
 .header {
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 
 .header-top {
@@ -92,6 +92,7 @@
 .header-bottom {
   &__menu {
     display: flex;
+    position: relative;
   }
 
   &__home,
@@ -205,14 +206,6 @@
     transition: .3s linear;
     visibility: hidden;
     opacity: 0;
-
-    &--brokerages {
-      width: auto;
-      background-color: $body-background-color;
-      padding: 15px;
-      display: flex;
-      gap: 30px;
-    }
   }
 
   &__submenu-item {
@@ -243,10 +236,21 @@
 
   }
 
+  &__brokerages {
+    display: flex;
+    position: absolute;
+    width: auto;
+    background-color: $footer-bottom;
+    padding: 15px;
+    gap: 30px;
+    z-index: 500;
+  }
+
   &__brokerages-link {
-    color: $text-color-product;
+    color: $body-background-color;
     white-space: nowrap;
     padding: 5px 0;
+    @extend %montserrat-500;
   }
 
   &__brokerages-logos {
@@ -254,7 +258,9 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 80px;
     padding: 30px 150px;
+    flex-grow: 1;
   }
+
   &__brokerages-logos-item {
     width: 150px;
     height: 75px;

@@ -19,12 +19,16 @@ function productPageRender() {
   });
   let productsData = [];
 
-
+  function moveToStartImmutable(array, value) {
+    return array.includes(value)
+      ? [value, ...array.filter(item => item !== value)]
+      : array;
+  };
 
   function getParametrURL(parametr) {
     const urlParametr = new URLSearchParams(window.location.search);
     return urlParametr.get(parametr);
-  }
+  };
 
   async function getProducts() {
     try {
@@ -66,13 +70,15 @@ function productPageRender() {
     const mainSliderWrapper = document.querySelector('.mySwiper2 .swiper-wrapper');
     const thumbSliderWrapper = document.querySelector('.mySwiper .swiper-wrapper');
     const productDescr = document.querySelector('.product__deskr');
+    const brokerage = getParametrURL('brokerage');
+    const imgs = Object.keys(product.img);
 
+    const filteredImgs = moveToStartImmutable(imgs, brokerage);
 
-
-    product.img.forEach((img) => {
+    filteredImgs.forEach((item) => {
       const mainSlide = `
       <div class="swiper-slide">
-        <img src="${img}">
+        <img src="${(product.img)[item]}">
       </div>
     `;
 
@@ -89,7 +95,6 @@ function productPageRender() {
   function renderConstructor(product) {
     const title = document.querySelector('.product__title');
     const descr = document.querySelector('.product__descr-short');
-    const currentPage = document.querySelector('#current-page');
     const fields = [
       { key: 'size', element: document.querySelector('#size-select') },
       { key: 'material', element: document.querySelector('#material-select') },
@@ -98,6 +103,7 @@ function productPageRender() {
       { key: 'printed-sides', element: document.querySelector('#printed_sides-select') },
       { key: 'riding-style', element: document.querySelector('#riding-style') },
       { key: 'colour', element: document.querySelector('#colour') },
+      { key: 'type', element: document.querySelector('#type') },
       {
         key: 'frames',
         element: document.querySelector('#frames-select'),
@@ -118,8 +124,6 @@ function productPageRender() {
 
     title.textContent = product.title || "Title missing";
     descr.textContent = product.descr_short || "Description is missing";
-    currentPage.textContent = product.title || "Title missing";
-
 
     fields.forEach(({ key, element, isComplex }) => {
       const optionsContainer = element.querySelector('.product__select-options');

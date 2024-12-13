@@ -1,0 +1,17 @@
+.social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  &__svg {
+    height: 35px;
+    width: 36px;
+    fill: $body-background-color;
+  }
+
+  &--contact-form {
+    & .social__svg {
+      fill: $footer-bottom;
+    }
+  }
+}

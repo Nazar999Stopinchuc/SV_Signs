@@ -3,12 +3,16 @@ function productsRender() {
 
   const cards = document.querySelector('.produkts__list')
   const showCardsBtn = document.querySelector('.produkts__more');
-  const showCardsBtnWrap = document.querySelector('.produkts__wrap-btn'); 
+  const showCardsBtnWrap = document.querySelector('.produkts__wrap-btn');
 
   let showCards = COUNT_SHOW_CARDS_CLICK;
   let countClickBtn = 1;
   let productsData = [];
 
+  function getParametrURL(parametr) {
+    const urlParametr = new URLSearchParams(window.location.search);
+    return urlParametr.get(parametr);
+  }
 
   async function getProducts() {
     try {
@@ -46,14 +50,23 @@ function productsRender() {
   };
 
   function createCards(data) {
+    const currentBrokerage = getParametrURL('brokerage');
+
     data.forEach(card => {
       const { id, img, descr_short, title, reviews } = card;
+
+      let showImg = Object.keys(img)[0];
+
+      if (!(currentBrokerage === null) && currentBrokerage in img) {
+        showImg = currentBrokerage;
+      }
+
       const cardItem = `
       <li class="produkts__item">
             <article class="produkt-card" id="${id}">
-              <a class="produkt-card__link" href="product.html?id=${id}"></a>
+              <a class="produkt-card__link" href="product.html?id=${id}&brokerage=${currentBrokerage}"></a>
               <div class="produkt-card__img-wrap">
-                <img class="produkt-card__img" src="${img[0]}" alt="product photo ${title}">
+                <img class="produkt-card__img" src="${img[showImg]}" alt="product photo ${title}">
               </div>
               <h3 class="produkt-card__title">${title}</h3>
               <div class="produkt-card__reviews">
@@ -103,7 +116,7 @@ function productsRender() {
   function sliceArrCards() {
     if (showCards >= productsData.length) return;
 
-    countClickBtn ++;
+    countClickBtn++;
     const countShowCards = COUNT_SHOW_CARDS_CLICK * countClickBtn;
 
     const arrCards = productsData.slice(showCards, countShowCards);

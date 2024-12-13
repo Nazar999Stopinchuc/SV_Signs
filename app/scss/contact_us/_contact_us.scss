@@ -59,23 +59,7 @@
     font-size: 22px;
     margin-bottom: 18px;
   }
-
-  &__social {
-    display: flex;
-    align-items: center;
-    gap: 22px;
-  }
-
-  &__social-link {
-    padding: 0;
-  }
-
-  &__svg-social {
-    height: 32px;
-    width: 35px;
-    fill: $footer-bottom;
-  }
-
+  
   &__link {
     font-size: 22px;
     @extend %montserrat-500;
