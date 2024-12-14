@@ -52,7 +52,8 @@
               <div class="header-bottom__submenu header-bottom__brokerages">
                 <ul class="header-bottom__brokerages-list">
                   <li class="header-bottom__brokerages-item">
-                    <a class="header-bottom__brokerages-link link-anim" href="brokerages.html?brokerage=berkshirehathaway">
+                    <a class="header-bottom__brokerages-link link-anim"
+                      href="brokerages.html?brokerage=berkshirehathaway">
                       Berkshire Hathaway
                     </a>
                   </li>
@@ -330,11 +331,11 @@
             </li>
           </ul>
 
-          <a class="header-bottom__search" href="#">
+          <button class="header-bottom__search" type="button" id="search">
             <svg class="header-bottom__svg header-bottom__svg--search">
               <use xlink:href="images/sprite.svg#search-icon"></use>
             </svg>
-          </a>
+          </button>
 
         </nav>
       </div>
@@ -508,7 +509,28 @@
     </section>
 
   </main>
-  
+
+  <div class="search">
+    <div class="container">
+      <button class="search__close link-anim">
+          <svg class="search__svg search__svg--close">
+            <use xlink:href="images/sprite.svg#close-icon"></use>
+          </svg>
+      </button>
+      <div class="search__wrap">
+        <form class="search__form">
+          <input type="text" class="search__input">
+          <button class="search__btn" disabled>
+            <svg class="search__svg search__svg--search">
+              <use xlink:href="images/sprite.svg#search-icon"></use>
+            </svg>
+          </button>
+        </form>
+        <ul class="search__list">
+        </ul>
+      </div>
+    </div>
+  </div>
   <footer class="footer">
     <div class="container">
       <div class="footer__wrap">
@@ -516,17 +538,17 @@
           <a class="logo logo--footer" href="#">
             <img class="logo__img" src="images/logo/logo.png" alt="company logo">
           </a>
-  
+
           <a class="footer__location-link link-anim" href="#" target="_blank">
             <p>2875 St Clair Avenue East</p>
             <p>Toronto, ON, M4B 1N4</p>
-  
+
             <svg class="footer__svg ">
               <use xlink:href="images/sprite.svg#location-icon"></use>
             </svg>
           </a>
         </div>
-  
+
         <ul class="footer__contacts">
           <li class="footer__contacts-item link-anim">
             <a class="footer__link" href="tel:4167204625">Phone: 416-720-4625</a>
@@ -548,7 +570,7 @@
             </svg>
           </li>
         </ul>
-  
+
         <nav class="footer__nav">
           <ul class="footer__menu">
             <li class="footer__menu-item">
@@ -570,7 +592,7 @@
         </nav>
       </div>
     </div>
-  
+
     <div class="footer__bottom">
       <div class="container">
         <div class="footer__bottom-wrap">
@@ -591,7 +613,7 @@
               <img class="footer__payment-img" src="images/footer/interac.jpg" alt="payment system logo">
             </li>
           </ul>
-  
+
           <ul class="social">
             <li class="social__item">
               <a class="social__link link-anim" href="#">
@@ -625,9 +647,9 @@
         </div>
       </div>
     </div>
-  
-  
-  
+
+
+
   </footer>
 
   <script src="js/main.min.js"></script>

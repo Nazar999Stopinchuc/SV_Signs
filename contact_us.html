@@ -327,11 +327,11 @@
             </li>
           </ul>
   
-          <a class="header-bottom__search" href="#">
+          <button class="header-bottom__search" type="button" id="search">
             <svg class="header-bottom__svg header-bottom__svg--search">
               <use xlink:href="images/sprite.svg#search-icon"></use>
             </svg>
-          </a>
+          </button>
   
         </nav>
       </div>
@@ -351,7 +351,7 @@
         <h1 class="contact-form__title">Contact Us</h1>
         <div class="contact-form__wrap">
 
-          <form class="form contact-form__form" id="contact-form" action = "https://api.web3forms.com/submit" method = "POST">
+          <form class="form contact-form__form" id="contact-form" method = "POST">
             <input type="hidden" name="access_key" value="709a41f0-23b5-4bc4-9e0c-495b6f556aa9">
 
             <div class="form__names">
@@ -459,6 +459,27 @@
     </section>
   </main>
 
+    <div class="search">
+      <div class="container">
+        <button class="search__close link-anim">
+          <svg class="search__svg search__svg--close">
+            <use xlink:href="images/sprite.svg#close-icon"></use>
+          </svg>
+        </button>
+        <div class="search__wrap">
+          <form class="search__form">
+            <input type="text" class="search__input">
+            <button class="search__btn" disabled>
+              <svg class="search__svg search__svg--search">
+                <use xlink:href="images/sprite.svg#search-icon"></use>
+              </svg>
+            </button>
+          </form>
+          <ul class="search__list">
+          </ul>
+        </div>
+      </div>
+    </div>
   <footer class="footer">
     <div class="container">
       <div class="footer__wrap">
