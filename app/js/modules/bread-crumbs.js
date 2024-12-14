@@ -14,7 +14,7 @@ function breadCrumbs() {
     try {
 
       if (!productsData.length) {
-        const product = await fetch('../data/products.json');
+        const product = await fetch('./data/products.json');
 
         if (!product.ok) {
           throw new Error(product.statusText);
@@ -24,7 +24,7 @@ function breadCrumbs() {
       };
 
       if (!brokerageData.length) {
-        const brokerage = await fetch('../data/brokerages.json');
+        const brokerage = await fetch('./data/brokerages.json');
 
         if (!brokerage.ok) {
           throw new Error(brokerage.statusText);

@@ -193,6 +193,11 @@
   &__out {
     margin-top: 20px;
     font-size: 23px;
+    display: none;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 6px;
     @extend %montserrat-500;
   }
 

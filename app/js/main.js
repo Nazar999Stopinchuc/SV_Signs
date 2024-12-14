@@ -6,6 +6,8 @@ import dropDown from "./modules/drop-down";
 import productPageRender from "./modules/product-page-render";
 import renderBrokerages from "./modules/brokerages";
 import breadCrumbs from "./modules/bread-crumbs";
+import modals from "./modules/modals";
+import search from "./modules/search";
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -17,4 +19,6 @@ window.addEventListener('DOMContentLoaded', () => {
   try { dropDown() } catch (error) {};
   try { renderBrokerages() } catch (error) {};
   try { breadCrumbs() } catch (error) {};
+  try { modals() } catch (error) {};
+  try { search() } catch (error) {};
 });
