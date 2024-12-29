@@ -1,5 +1,4 @@
-const modals = () => {
-  function bindModal(triggerSelector, modalSelector, closeSelector) {
+const modals = (triggerSelector, modalSelector, closeSelector) => {
     const trigger = document.querySelectorAll(triggerSelector),
       modal = document.querySelector(modalSelector),
       close = document.querySelector(closeSelector);
@@ -10,25 +9,14 @@ const modals = () => {
           e.preventDefault();
         }
 
-        modal.style.display = "block";
-        document.body.style.overflow = "hidden";
+        modal.classList.toggle('show');
       });
     });
 
     close.addEventListener('click', () => {
-      modal.style.display = "none";
-      document.body.style.overflow = "";
+      modal.classList.remove('show');
     });
 
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        modal.style.display = "none";
-        document.body.style.overflow = "";
-      }
-    });
-  }
-
-  bindModal('#search', '.search', '.search__close');
-};
+  };
 
 export default modals;

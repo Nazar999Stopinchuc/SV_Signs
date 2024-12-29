@@ -1,49 +1,49 @@
 .why-sv {
-  background-color: $why-sv-bg;
-  padding: 35px 0 50px;
+  background-color: $menu-bg;
+  padding: 55px 0 86px;
+
+  &--our-story {
+    background-color: $body-background-color;
+  }
 
   &__title {
-    font-size: 40px;
-    color: $text-color-about;
-    @extend %montserrat-500;
-    margin-bottom: 35px;
+    font-size: 42px;
+    color: $footer-bottom;
+    margin-bottom: 45px;
   }
 
   &__wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 15px;
   }
 
   &__item {
-    max-width: 400px;
+    max-width: 365px;
   }
 
-  &__subitem {
+  &__content {
     display: flex;
-    align-items: center;
-    gap: 15px;
-    @extend %montserrat-500;
-
-    &:not(:last-child) {
-      margin-bottom: 20px;
-    }
+    gap: 8px;
   }
 
   &__img {
-    min-height: 90px;
-    min-width: 90px;
-    border-radius: 50%;
+    min-height: 108px;
+    min-width: 108px;
     @extend %bg;
   }
 
   &__subtitle {
     white-space: nowrap;
-    margin-bottom: 15px;
-    font-size: 18px;
+    margin-bottom: 12px;
+    font-size: 30px;
+    color: $why-sv;
   }
 
   &__text {
-    font-size: 14px;
+    font-size: 20px;
+    @extend %montserrat-500;
+    color: $footer-bottom;
   }
 }

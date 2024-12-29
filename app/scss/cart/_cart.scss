@@ -1,0 +1,438 @@
+.cart {
+  padding-top: 30px;
+
+  &__step {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__back-btn {
+    position: relative;
+    font-size: 23px;
+    padding-left: 25px;
+    color: $footer-bottom;
+    @extend %montserrat-700;
+    margin-bottom: 50px;
+    transition: color .3s, opacity .3s;
+
+    &:hover {
+      color: $accent-color;
+    }
+
+    &:hover svg {
+      stroke: $accent-color;
+    }
+
+    &:active {
+      opacity: .8;
+    }
+
+    &:active svg {
+      opacity: .8;
+    }
+  }
+
+  &__btn-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%) rotate(180deg);
+    left: 0;
+    height: 25px;
+    width: 25px;
+    fill: none;
+    stroke: $footer-bottom;
+    stroke-width: 2px;
+    transition: stroke .3s, opacity .3s;
+  }
+
+  &__title {
+    font-size: 50px;
+    @extend %montserrat-500;
+    margin-bottom: 80px;
+    color: $cart-title;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 25px;
+    color: $cart-title;
+    margin-bottom: 30px;
+    border-bottom: 2px solid $footer-icon;
+  }
+
+  &__item-wrap {
+    display: flex;
+    align-items: flex-start;
+    gap: 90px;
+  }
+
+  &__item-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    font-size: 28px;
+    @extend %montserrat-500;
+    color: $cart-title;
+  }
+
+  &__img-wrap {
+    max-width: 205px;
+    padding: 30px;
+    background-color: $cart-img-bg;
+  }
+
+  &__details {
+    min-width: 550px;
+  }
+
+  &__subtitle {
+    font-size: 25px;
+    margin-bottom: 13px;
+  }
+
+  &__info {
+    font-size: 22px;
+    margin-bottom: 13px;
+    @extend %montserrat-500;
+
+    &.active-style .cart__svg-arrow {
+      transform: rotate(-90deg);
+    }
+
+    &--details {
+      cursor: pointer;
+      margin-bottom: 0;
+      transition: color .3s;
+
+
+      &:hover {
+        color: $accent-color;
+      }
+
+      &:hover .cart__svg-arrow {
+        stroke: $accent-color;
+      }
+    }
+  }
+
+  &__svg-arrow {
+    vertical-align: middle;
+    fill: none;
+    stroke: $accent-btn-color;
+    stroke-width: 3px;
+    height: 35px;
+    width: 35px;
+    transform: rotate(90deg);
+    transition: stroke .3s;
+    padding-right: 10px;
+  }
+
+  &__details-info {
+    font-size: 22px;
+    @extend %montserrat-500;
+    margin-bottom: 5px;
+
+    & span {
+      font-size: 18px;
+    }
+  }
+
+  &__show-details {
+    margin-bottom: 15px;
+  }
+
+  &__details-list {
+    display: none;
+
+    &.active-content {
+      display: block;
+    }
+  }
+
+  &__btn-remove {
+    color: $body-background-color;
+    background-color: $cart-btn;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 20px;
+    @extend %montserrat-700;
+    transition: background-color .3s, opacity .3s;
+
+    &:hover {
+      background-color: $accent-color;
+    }
+
+    &:active {
+      opacity: .8;
+    }
+  }
+
+  &__btn-return,
+  &__btn-next {
+    display: block;
+    @extend %montserrat-700;
+    text-align: center;
+    min-width: 250px;
+    font-size: 20px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    transition: background-color .3s, opacity .3s, color .3s;
+  }
+
+  &__btn-next {
+    color: $body-background-color;
+    background-color: $accent-color;
+    display: block;
+
+    &:hover {
+      background-color: $footer-bottom;
+    }
+
+    &:active {
+      opacity: .8;
+    }
+  }
+
+  &__btn-return {
+    display: inline-block;
+    color: $accent-color;
+    border: 4px solid $accent-color;
+
+    &:hover {
+      background-color: $accent-color;
+      color: $body-background-color;
+    }
+
+    &:active {
+      opacity: .8;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 150px;
+  }
+
+  &__form {
+    flex-grow: 1;
+  }
+
+  &__step-title {
+    font-size: 47px;
+    color: $accent-color;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    @extend %montserrat-500;
+    font-size: 37px;
+    margin-bottom: 50px;
+    color: $text-color-product;
+  }
+
+  &__contact {
+    @extend %montserrat-500;
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: $partners-title;
+
+    & span {
+      cursor: pointer;
+      @extend %montserrat-700;
+      color: $cart-btn;
+    }
+  }
+
+  &__contact-us {
+    display: inline-block;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 6px;
+    background-color: $menu-bg;
+    padding: 15px 35px 15px 15px;
+    z-index: 1000;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, .2), 0px 6px 6px rgba(0, 0, 0, .15);
+    transform: rotateX(-90deg);
+    transform-origin: 0 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s linear;
+
+    &.show {
+      opacity: 1;
+      visibility: visible;
+      transform: rotateX(0deg);
+    }
+  }
+
+  &__contacts-item {
+    position: relative;
+    font-size: 25px;
+    @extend %montserrat-500;
+    padding: 15px 13px 15px 75px;
+    white-space: nowrap;
+
+    &:not(:last-child) {
+      margin-bottom: 23px;
+    }
+  }
+
+  &__svg-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 25px;
+    width: 25px;
+  }
+
+  &__svg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 65px;
+    width: 65px;
+    fill: $footer-icon;
+    transform: translate(0, -50%);
+  }
+}
+
+.summary {
+  max-width: 520px;
+  padding: 35px 40px;
+  border: 2px solid $footer-border;
+  border-radius: 6px;
+
+  &__title {
+    font-size: 35px;
+    @extend %montserrat-500;
+    color: $text-color-about;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 25px;
+  }
+
+  &__img-wrap {
+    width: 135px;
+    height: 120px;
+    background-color: $cart-img-bg;
+    padding: 10px;
+  }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  &__subtitle {
+    color: $text-color-about;
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+
+  &__detail {
+    font-size: 22px;
+    @extend %montserrat-500;
+    margin-bottom: 5px;
+
+    & span {
+      font-size: 18px;
+      @extend %montserrat-400;
+    }
+  }
+
+  &__ship {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 2px solid $footer-border;
+  }
+
+  &__ship-title {
+    @extend %montserrat-500;
+    color: $text-color-about;
+    font-size: 30px;
+  }
+
+  &__switch-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: $text-color-about;
+    font-size: 20px;
+    @extend %montserrat-500;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__switch-input {
+    height: 22px;
+    width: 22px;
+  }
+}
+
+.steps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 105px;
+
+  &__item {
+    position: relative;
+    text-align: center;
+    max-width: 400px;
+    opacity: 0.6;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  &__title {
+    font-size: 35px;
+    color: $footer-bottom;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    font-size: 27px;
+    color: $text-color-product;
+  }
+
+  &__svg-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: -125px;
+    height: 65px;
+    width: 65px;
+    fill: none;
+    stroke: $footer-bottom;
+    stroke-width: 2px;
+  }
+}

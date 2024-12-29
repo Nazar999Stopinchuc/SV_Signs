@@ -1,14 +1,10 @@
+import { getParametrURL } from "./utyls";
+
 function breadCrumbs() {
   const breadCrumbsList = document.querySelector('.bread-crumbs__list');
   let productsData = [];
   let brokerageData = [];
   if (!breadCrumbsList) return;
-
-
-  function getParametrURL(parametr) {
-    const urlParametr = new URLSearchParams(window.location.search);
-    return urlParametr.get(parametr);
-  };
 
   async function getProducts() {
     try {

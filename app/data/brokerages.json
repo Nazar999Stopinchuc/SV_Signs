@@ -15,7 +15,7 @@
     "id": 3,
     "parametr": "homelife",
     "title": "Homelife",
-    "img-banner": "images/brokerages/homelife-banner.png"
+    "img-banner": "images/brokerages/homelife.png"
   },
   {
     "id": 4,
@@ -27,72 +27,42 @@
     "id": 5,
     "parametr": "remax",
     "title": "Remax",
-    "img-banner": "images/brokerages/rightathome-banner.png"
+    "img-banner": "images/brokerages/remax.png"
   },
   {
     "id": 6,
-    "parametr": "rex",
-    "title": "REX",
-    "img-banner": "images/brokerages/rightathome-banner.png"
-  },
-        {
-    "id": 7,
-    "parametr": "sutton",
-    "title": "Sutton",
-    "img-banner": "images/brokerages/rightathome-banner.png"
-  },
-          {
-    "id": 8,
-    "parametr": "yourchoice",
-    "title": "Your Choice",
-    "img-banner": "images/brokerages/rightathome-banner.png"
-  },
-            {
-    "id": 9,
-    "parametr": "zolo",
-    "title": "Zolo",
-    "img-banner": "images/brokerages/rightathome-banner.png"
-  },
-              {
-    "id": 10,
     "parametr": "homeward",
     "title": "Homeward",
-    "img-banner": "images/brokerages/rightathome-banner.png"
+    "img-banner": "images/brokerages/homeward.png"
   },
-                {
-    "id": 11,
+  {
+    "id": 7,
     "parametr": "royallepage",
     "title": "Royal LePage",
-    "img-banner": "images/brokerages/rightathome-banner.png"
+    "img-banner": "images/brokerages/royallepage.png"
   },
-                  {
-    "id": 12,
+  {
+    "id": 8,
     "parametr": "kellerwilliams",
     "title": "Keller Williams",
-    "img-banner": "images/brokerages/rightathome-banner.png"
+    "img-banner": "images/brokerages/kellerwilliams.png"
   },
-                    {
-    "id": 13,
+  {
+    "id": 9,
     "parametr": "century21",
     "title": "Century 21",
-    "img-banner": "images/brokerages/rightathome-banner.png"
+    "img-banner": "images/brokerages/century21.png"
   },
-                      {
-    "id": 14,
+  {
+    "id": 10,
     "parametr": "chestnutpark",
     "title": "Chestnut Park",
-    "img-banner": "images/brokerages/rightathome-banner.png"
+    "img-banner": "images/brokerages/chestnutpark.png"
   },
-                        {
-    "id": 15,
+  {
+    "id": 11,
     "parametr": "foresthill",
     "title": "Forest Hill",
-    "img-banner": "images/brokerages/rightathome-banner.png"
-  },
-                          {
-    "id": 16,
-    "parametr": "zoocasa",
-    "title": "Zoocasa",
-    "img-banner": "images/brokerages/rightathome-banner.png"
+    "img-banner": "images/brokerages/foresthill.png"
   }
 ]

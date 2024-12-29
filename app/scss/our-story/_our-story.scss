@@ -1,0 +1,52 @@
+.our-story {
+  &__baner {
+    padding: 88px 0;
+    text-align: center;
+    margin-bottom: 60px;
+    background-color: $menu-bg;
+  }
+
+  &__title {
+    font-size: 60px;
+    color: $our-story-title;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    gap: 55px;
+    padding-bottom: 60px;
+    border-bottom: 2px solid $our-story-line;
+
+    &:not(:last-child) {
+      margin-bottom: 75px;
+    }
+  }
+
+  &__content {
+    max-width: 735px;
+  }
+
+  &__subtitle {
+    font-size: 40px;
+    color: $footer-bottom;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-size: 32px;
+
+    & span {
+      @extend %montserrat-700;
+    }
+
+    @extend %montserrat-500;
+
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
+
+}

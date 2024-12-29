@@ -1,36 +1,28 @@
 .footer {
-  border-top: 2px solid $footer-border;
+  background-color: $footer-bg;
+
+  &__link {
+    &--tel {
+      font-size: 40px;
+      @extend %montserrat-700;
+    }
+  }
 
   &__svg {
     position: absolute;
     top: 50%;
     left: 0;
-    height: 65px;
-    width: 65px;
-    fill: $footer-icon;
+    height: 45px;
+    width: 45px;
+    fill: $body-background-color;
     transform: translate(0, -50%);
   }
 
   &__wrap {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     padding: 45px 0;
-  }
-
-  &__location {
-    margin-right: 20px;
-    padding-bottom: 60px;
-  }
-
-  &__location-link {
-    display: block;
-    position: relative;
-    padding-left: 65px;
-    text-align: center;
-    @extend %montserrat-500;
-    font-size: 23px;
-    white-space: nowrap;
   }
 
   &__contacts {
@@ -38,10 +30,11 @@
   }
 
   &__contacts-item {
+    color: $body-background-color;
     position: relative;
     font-size: 25px;
     @extend %montserrat-500;
-    padding: 15px 13px 15px 75px;
+    padding: 15px 13px 15px 55px;
     white-space: nowrap;
 
     &:not(:last-child) {
@@ -49,14 +42,25 @@
     }
   }
 
-  &__clock {
+  &__info-title {
     @extend %montserrat-700;
     font-size: 32px;
-    color: $accent-color;
+    color: $body-background-color;
     white-space: nowrap;
+    margin-bottom: 5px;
+  }
+
+  &__info-item {
+    margin-bottom: 30px;
+  }
+
+  &__info-text {
+    font-size: 25px;
+    color: $body-background-color;
   }
 
   &__menu-item {
+    color: $body-background-color;
     position: relative;
     padding-left: 30px;
     @extend %montserrat-500;
@@ -92,9 +96,70 @@
   &__payment {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 13px;
   }
+
   &__payment-img {
     border-radius: 6px;
+  }
+}
+
+.sign-up {
+  max-width: 305px;
+
+  &__title {
+    @extend %montserrat-700;
+    font-size: 32px;
+    color: $body-background-color;
+    white-space: nowrap;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    color: $body-background-color;
+    font-size: 22px;
+    @extend %montserrat-500;
+    margin-bottom: 12px;
+  }
+
+  &__form {
+    position: relative;
+    display: flex;
+    background-color: $body-background-color;
+    height: 55px;
+    margin-bottom: 70px;
+  }
+
+  &__input {
+    display: block;
+    flex-grow: 1;
+    padding: 5px 10px;
+    height: 100%;
+  }
+
+  &__btn {
+    display: block;
+    background-color: $accent-color;
+    height: 100%;
+    width: 55px;
+
+    &:hover .sign-up__svg-arrow {
+      stroke: $footer-bottom;
+    }
+  }
+
+  &__svg-arrow {
+    fill: none;
+    stroke: $body-background-color;
+    height: 35px;
+    width: 35px;
+
+    transition: stroke .3s;
+  }
+
+  &__out {
+    display: none;
+    position: absolute;
+    bottom: -60px;
   }
 }

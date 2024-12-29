@@ -8,27 +8,48 @@
   }
 
   &__inner {
-    padding: 15px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 55px 0 45px;
+    position: relative;
   }
 
   &__content {
-    max-width: 600px;
+    max-width: 700px;
     color: $body-background-color;
     padding-left: 60px;
   }
 
-  &__imgs {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
   &__img {
-    &--yard {
-      align-self: flex-end;
+    position: absolute;
+
+    &--baner {
+      height: 203px;
+      width: 391px;
+      top: -2%;
+      right: 0;
+    }
+
+    &--baner_2 {
+      height: 93px;
+      width: 200px;
+      top: 60%;
+      right: 2%;
+
+    }
+
+    &--sign {
+      height: 200px;
+      width: 200px;
+      top: 40%;
+      right: 14%;
+      z-index: 100;
+    }
+
+    &--s_board {
+      height: 261px;
+      width: 435px;
+      top: 22%;
+      right: 16%;
+      z-index: 100;
     }
   }
 
@@ -44,12 +65,13 @@
   }
 
   &__subtitle {
-    margin-bottom: 45px;
+    margin-bottom: 12px;
   }
 
   &__text {
     @extend %montserrat-700;
-    font-size: 25px;
+    font-size: 28px;
+    margin-top: 33px;
   }
 
   &__contacts {
@@ -67,7 +89,7 @@
       background-color: $footer-bottom;
     }
 
-    &:hover{
+    &:hover {
       background-color: $footer-bottom;
     }
 

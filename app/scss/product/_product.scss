@@ -189,12 +189,20 @@
 
   &__btn {
     display: block;
-    margin: 35px auto 0;
+    margin: 35px auto 20px;
     padding: 18px 200px;
     color: $body-background-color;
     background-color: $accent-color;
     @extend %montserrat-700;
     font-size: 30px;
     border-radius: 12px;
+  }
+
+  &__output {
+    display: block;
+    font-size: 30px;
+    @extend %montserrat-500;
+    color: $footer-bottom;
+    min-height: 40px;
   }
 }

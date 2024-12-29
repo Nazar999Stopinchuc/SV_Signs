@@ -1,5 +1,5 @@
 function productsRender() {
-  const COUNT_SHOW_CARDS_CLICK = 4;
+  const COUNT_SHOW_CARDS_CLICK = 8;
 
   const cards = document.querySelector('.produkts__list')
   const showCardsBtn = document.querySelector('.produkts__more');

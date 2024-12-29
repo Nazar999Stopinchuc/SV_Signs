@@ -95,72 +95,113 @@ function productPageRender() {
   function renderConstructor(product) {
     const title = document.querySelector('.product__title');
     const descr = document.querySelector('.product__descr-short');
-    const fields = [
-      { key: 'size', element: document.querySelector('#size-select') },
-      { key: 'material', element: document.querySelector('#material-select') },
-      { key: 'lamination', element: document.querySelector('#lamination-select') },
-      { key: 'grommets', element: document.querySelector('#grommets-select') },
-      { key: 'printed-sides', element: document.querySelector('#printed_sides-select') },
-      { key: 'riding-style', element: document.querySelector('#riding-style') },
-      { key: 'colour', element: document.querySelector('#colour') },
-      { key: 'type', element: document.querySelector('#type') },
-      {
-        key: 'frames',
-        element: document.querySelector('#frames-select'),
-        isComplex: true,
-      },
-      {
-        key: 'wire-stakes',
-        element: document.querySelector('#wire_stakes-select'),
-        isComplex: true,
-      },
-      {
-        key: 'reface',
-        element: document.querySelector('#reface'),
-        isComplex: true,
-      }
-    ];
+    const fieldsContainer = document.querySelector('.product__fields'); 
+
+    fieldsContainer.innerHTML = '';
 
 
     title.textContent = product.title || "Title missing";
     descr.textContent = product.descr_short || "Description is missing";
 
-    fields.forEach(({ key, element, isComplex }) => {
-      const optionsContainer = element.querySelector('.product__select-options');
-      const input = element.querySelector('.product__input');
-      const span = element.querySelector('span');
+    const fields = [
+      { key: 'size', label: 'Size', isComplex: false, isPredefined: true }, // Указываем, что "size" уже существует
+      { key: 'material', label: 'Material', isComplex: false },
+      { key: 'lamination', label: 'Lamination', isComplex: false },
+      { key: 'grommets', label: 'Grommets', isComplex: false },
+      { key: 'printed-sides', label: 'Printed Sides', isComplex: false },
+      { key: 'riding-style', label: 'Riding Style', isComplex: false },
+      { key: 'colour', label: 'Colour', isComplex: false },
+      { key: 'type', label: 'Type', isComplex: false },
+      { key: 'frames', label: 'Frames', isComplex: true },
+      { key: 'wire-stakes', label: 'Wire Stakes', isComplex: true },
+      { key: 'reface', label: 'Reface', isComplex: true },
+      { key: 'flag-pole', label: 'Flag Pole', isComplex: true },
+      { key: 'content-text', label: 'Content Text', isComplex: false },
+      { key: 'lock-Type', label: 'Lock Type', isComplex: false },
+      { key: 'frames-&-graphics', label: 'Frames & Graphics', isComplex: false },
+      { key: 'additional-options', label: 'Additional Options', isComplex: false },
+      { key: 'thickness', label: 'Thickness', isComplex: false },
+      { key: 'cut', label: 'Cut', isComplex: true },
+      { key: 'print-surface', label: 'Print Surface', isComplex: true },
+      { key: 'shape', label: 'Shape', isComplex: true },
+      { key: 'white-ink', label: 'White Ink', isComplex: true },
+      { key: 'edge-finish', label: 'Edge Finish', isComplex: true },
+      { key: 'grommets-2', label: 'Grommets', isComplex: true },
+      { key: 'accessories', label: 'Accessories', isComplex: true },
+    ];
 
-      optionsContainer.innerHTML = '';
+    fields.forEach(({ key, label, isComplex, isPredefined }) => {
+      if (!product[key] || product[key].length === 0) return; // Пропускаем пустые поля
 
-      if (product[key].length == 0) {
-        element.style.display = 'none';
+      if (isPredefined) {
+        // Для элемента "size" заполняем только его значения
+        const sizeElement = document.querySelector('#size-select');
+        const input = sizeElement.querySelector('.product__input');
+        const span = sizeElement.querySelector('span');
+        const optionsContainer = sizeElement.querySelector('.product__select-options');
+
+        // Очищаем контейнер с опциями
+        optionsContainer.innerHTML = '';
+
+        // Устанавливаем значение по умолчанию
+        const defaultValue = product[key][0];
+        input.value = defaultValue;
+        input.setAttribute('value', defaultValue); // Устанавливаем value для input
+        span.textContent = defaultValue;
+
+        // Добавляем опции
+        product[key].forEach(value => {
+          const optionHTML = `
+          <li class="product__select-option">
+            <article class="product__card" data-value="${value}">
+              <h3 class="product__select-title">${value}</h3>
+            </article>
+          </li>
+        `;
+          optionsContainer.insertAdjacentHTML('beforeend', optionHTML);
+        });
+
         return;
-      };
+      }
 
-
+      // Для остальных полей создаём элементы динамически
       const defaultValue = isComplex ? product[key][0].title : product[key][0];
-      input.value = defaultValue;
-      span.textContent = defaultValue;
 
-      product[key].forEach(item => {
-        const value = isComplex ? item.title : item;
-        const imgSrc = isComplex ? item.img : '#';
+      const fieldHTML = `
+      <div class="product__select" id="${key}-select">
+        <input type="text" class="product__input none" name="${key}" value="${defaultValue}">
+        <div class="product__select-trigger link-anim">
+          ${label}: <span>${defaultValue}</span>
+          <svg class="product__svg-arrow">
+            <use xlink:href="images/sprite.svg#arrow-icon"></use>
+          </svg>
+        </div>
+        <ul class="product__select-options none">
+          ${product[key]
+          .map(item => {
+            const value = isComplex ? item.title : item;
+            const imgSrc = isComplex ? item.img : '#';
+            return `
+                <li class="product__select-option">
+                  <article class="product__card" data-value="${value}">
+                    <h3 class="product__select-title">${value}</h3>
+                    <div class="product__img-box">
+                      <img src="${imgSrc}" alt="" class="product__select-img" onerror="this.style.display='none';">
+                    </div>
+                  </article>
+                </li>
+              `;
+          })
+          .join('')}
+        </ul>
+      </div>
+    `;
 
-        const optionHTML = `
-        <li class="product__select-option">
-          <article class="product__card" data-value="${value}">
-            <h3 class="product__select-title">${value}</h3>
-            <div class="product__img-box">
-            <img src="${imgSrc}" alt="" class="product__select-img" onerror="this.style.display='none';">
-            </div>
-          </article>
-        </li>
-      `;
-
-        optionsContainer.insertAdjacentHTML('beforeend', optionHTML);
-      });
+      fieldsContainer.insertAdjacentHTML('beforeend', fieldHTML);
     });
   }
+
+
 
   getProducts();
   swiperSlider()

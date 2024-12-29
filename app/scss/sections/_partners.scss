@@ -3,15 +3,15 @@
 
   &__title {
     font-size: 40px;
-    color: $partners-title;
+    color: $text-color-product;
     margin-bottom: 70px;
   }
-
-  &__list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 70px;
-  }
 }
+
+.swiper-partners {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  cursor: grab;
+}
+

@@ -1,6 +1,13 @@
 .produkts {
   padding: 40px 0px;
 
+  &__title {
+    font-size: 37px;
+    color: $text-color-product;
+    margin-bottom: 50px;
+    @extend %montserrat-500;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

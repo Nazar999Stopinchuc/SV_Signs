@@ -1,11 +1,112 @@
 [
   {
+    "id": 36,
+    "title": "Roll-up  Banners",
+    "descr": " A retractable bannerstand that effortlessly sets up in seconds, it features a compact design with rollaway graphics in the base that can be interchanged. Perfect for signage and travelling booth items. - Aluminum retractable bannerstand frame- Set up dimensions: 33.5'w x 79'h x 16'd- Graphic size: 33.5'w x 79'h- Non-curling flame retardant decolite banner graphic - Shipped in a nylon carrying bag",
+    "descr_short": "Portable - Customizable - Quick Setup",
+    "img": [
+      "images/produkts/product_36.1.png",
+      "images/produkts/product_36.2.png",
+      "images/produkts/product_36.3.png",
+      "images/produkts/product_36.4.png",
+      "images/produkts/product_36.5.png",
+      "images/produkts/product_36.6.png",
+      "images/produkts/product_36.7.png"
+    ],
+    "reviews": "15",
+    "size": [
+      "Custom"
+    ],
+    "frames-&-graphics": [
+      "Frames & Graphics",
+      "Graphics only"
+    ],
+    "additional-options": [
+      "1 LED Spot Light",
+      "EVA -38 Case (default cardboard box)"
+    ]
+  },
+  {
+    "id": 37,
+    "title": "Vinyl  Banners",
+    "descr": "Custom vinyl banners printed with fade-resistant UV ink on durable 13 oz vinyl. Includes free grommets and a welded hem for added strength. Perfect for both indoor and outdoor use for businesses, events or any special occasion.",
+    "descr_short": "Vibrant - Durable - Customizable",
+    "img": [
+      "images/produkts/product_37.1.png",
+      "images/produkts/product_37.2.png",
+      "images/produkts/product_37.3.png",
+      "images/produkts/product_37.4.png",
+      "images/produkts/product_37.5.png",
+      "images/produkts/product_37.6.png",
+      "images/produkts/product_37.7.png"
+    ],
+    "reviews": "11",
+    "size": [
+      "Custom"
+    ],
+    "printed-sides": [
+      "Single Sided"
+    ],
+    "thickness": [
+      "13 oz Vinyl"
+    ],
+    "edge-finish": [
+      {
+        "title": "Welded Hem",
+        "img": "images/accessories/edge-1.png"
+      },
+      {
+        "title": "None (Flush Cut)",
+        "img": "images/accessories/edge-2.png"
+      }
+    ],
+    "grommets-2": [
+      {
+        "title": "Every 2-3 ft",
+        "img": "images/accessories/grommets-1.png"
+      },
+      {
+        "title": "Every 12-18 in",
+        "img": "images/accessories/grommets-2.png"
+      },
+      {
+        "title": "4 Corners",
+        "img": "images/accessories/grommets-3.png"
+      },
+      {
+        "title": "Top Corners",
+        "img": "images/accessories/grommets-4.png"
+      },
+      {
+        "title": "None",
+        "img": "images/accessories/grommets-5.png"
+      }
+    ],
+    "accessories": [
+      {
+        "title": "Hanging Clips",
+        "img": "images/accessories/accessories-1.png"
+      },
+      {
+        "title": "Suction Cups",
+        "img": "images/accessories/accessories-2.png"
+      },
+      {
+        "title": "Suction Cups",
+        "img": "images/accessories/accessories-3.png"
+      }
+    ]
+  },
+  {
     "id": 1,
     "title": "For Sale Sign",
     "category": "Real Estate Signs",
     "descr": "Crafted from durable 10MM heavy-duty Coroplast, this double-sided,    full-color sign is built to attract attention. Personalize it with your name, phone number, website, photo, and office information to make it uniquely yours. We’ll design a standout sign that perfectly represents you and your brand.",
-    "descr_short": "Crafted from durable 10MM heavy-duty Coroplast...",
+    "descr_short": "High-Visibility - Personal Touch - Built to Last",
     "img": {
+      "product_1.4": "images/produkts/product_1.4.png",
+      "chestnutpark": "images/produkts/product_1.chestnutpark.png",
+      "foresthill": "images/produkts/product_1.foresthill.png",
       "remax": "images/produkts/product_1.remax.png",
       "rex": "images/produkts/product_1.rex.png",
       "berkshirehathaway": "images/produkts/product_1.berkshirehathaway.png",
@@ -23,7 +124,7 @@
       "product_1.2": "images/produkts/product_1.2.png",
       "product_1.3": "images/produkts/product_1.3.png"
     },
-    "reviews": "1972",
+    "reviews": "16",
     "size": [
       "24”x32",
       "30”x32",
@@ -33,11 +134,9 @@
       "Custom"
     ],
     "material": [
+      "3MM Alupanel",
       "10MM Coroplast",
       "Digital Print on Vinyl"
-    ],
-    "printed-sides": [
-      "Single Sided"
     ],
     "lamination": [
       "None",
@@ -46,10 +145,6 @@
     "grommets": [
       "Standard 5 Grommets Included"
     ],
-    "type": [],
-    "riding-style": [],
-    "wire-stakes": [],
-    "colour": [],
     "frames": [
       {
         "title": "Metal A-Frame 24”x18”",
@@ -59,16 +154,54 @@
         "title": "Metal Post & Base Heavy Duty",
         "img": "images/accessories/metal-post.jpg"
       }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Insert Signs",
+    "descr": "Our Insert Signs are designed for durability and longevity, making them perfect for outdoor advertising. Weatherproof and portable, these signs are ideal for capturing attention in any environment.Please note that the A-frame sign holder is not included by default but can be ordered separately",
+    "descr_short": "Our Insert Signs are designed for durability and longevity...",
+    "img": {
+      "royallepage": "images/produkts/product_4.royallepage.png",
+      "berkshirehathaway": "images/produkts/product_4.berkshirehathaway.png",
+      "foresthill": "images/produkts/product_4.foresthill.png",
+      "century21": "images/produkts/product_4.century21.png",
+      "remax": "images/produkts/product_4.remax.png",
+      "homelife": "images/produkts/product_4.homelife.png",
+      "yourchoice": "images/produkts/product_4.yourchoice.png",
+      "zolo": "images/produkts/product_4.zolo.png",
+      "homeward": "images/produkts/product_4.homeward.png",
+      "rightathome": "images/produkts/product_4.rightathome.png",
+      "kellerwilliams": "images/produkts/product_4.kellerwilliams.png"
+    },
+    "reviews": "12",
+    "size": [
+      "24”x18”",
+      "30”x18”",
+      "Custom"
     ],
-    "reface": []
+    "material": [
+      "4MM Coroplast"
+    ],
+    "printed-sides": [
+      "Single Sided"
+    ],
+    "lamination": [
+      "None",
+      "Standard Lamination"
+    ]
   },
   {
     "id": 2,
     "title": "Directional Sign",
     "category": "Real Estate Signs",
     "descr": " Directional signs are an ideal choice for outdoor advertising and promotion. Made from durable, waterproof material, these signs can be printed on one or both sides in vibrant full colour, ensuring your message stands out in any environment. Perfect for real estate, elections, and event promotions, they are lightweight and easy to install with optional grommets or H-stands.",
-    "descr_short": "Directional signs are an ideal choice for outdoor advertising and promotion.",
+    "descr_short": "Guiding - Durable - Versatile",
     "img": {
+      "kellerwilliams": "images/produkts/product_2.kellerwilliams.png",
+      "chestnutpark": "images/produkts/product_2.chestnutpark.png",
+      "foresthill": "images/produkts/product_2.foresthill.png",
+      "berkshirehathaway": "images/produkts/product_2.berkshirehathaway.png",
       "zolo": "images/produkts/product_2.zolo.png",
       "remax": "images/produkts/product_2.remax.png",
       "homelife": "images/produkts/product_2.homelife.png",
@@ -78,9 +211,10 @@
       "homeward": "images/produkts/product_2.homeward.png",
       "rightathome": "images/produkts/product_2.rightathome.png",
       "rex": "images/produkts/product_2.rex.png",
-      "century21": "images/produkts/product_2.century21.png"
+      "century21": "images/produkts/product_2.century21.png",
+      "product_2.1": "images/produkts/product_2.1.png"
     },
-    "reviews": "1462",
+    "reviews": "14",
     "size": [
       "24”x10",
       "24”x12",
@@ -93,12 +227,6 @@
     "printed-sides": [
       "Double Sided"
     ],
-    "type": [],
-    "lamination": [],
-    "grommets": [],
-    "riding-style": [],
-    "frames": [],
-    "colour": [],
     "wire-stakes": [
       {
         "title": "None",
@@ -113,128 +241,16 @@
         "img": "images/accessories/duty-stakes.png"
       }
     ],
-    "reface": []
-  },
-  {
-    "id": 3,
-    "title": "Sandwich Board",
-    "descr": "Crafted from premium Crezon material with vibrant digital print on vinyl, this double-sided sandwich board features a durable plastic handle and protective lamination coating. The re-writable surface allows for easy message updates.Bonus Service: We offer Sandwich Board Reface and Handle Replacement, renewing your sign's facing with high-quality adhesive vinyl.",
-    "descr_short": "Crafted from premium Crezon material with vibrant digital...",
-    "img": {
-      "product_3.1": "images/produkts/product_3.1.png",
-      "remax": "images/produkts/product_3.remax.png",
-      "berkshirehathaway": "images/produkts/product_3.berkshirehathaway.png",
-      "homelife": "images/produkts/product_3.homelife.png",
-      "bosley": "images/produkts/product_3.bosley.png",
-      "sutton": "images/produkts/product_3.sutton.png",
-      "yourchoice": "images/produkts/product_3.yourchoice.png",
-      "homeward": "images/produkts/product_3.homeward.png",
-      "rightathome": "images/produkts/product_3.rightathome.png",
-      "royallepage": "images/produkts/product_3.royallepage.png",
-      "rex": "images/produkts/product_3.rex.png",
-      "kellerwilliams": "images/produkts/product_3.kellerwilliams.png",
-      "century21": "images/produkts/product_3.century21.png"
-    },
-    "reviews": "1862",
-    "size": [
-      "18”x24",
-      "19”x29",
-      "24”x32",
-      "Custom"
-    ],
-    "material": [
-      "Crezon",
-      "Digital Print on Vinyl",
-      "Plastic handle"
-    ],
-    "printed-sides": [
-      "Single Sided"
-    ],
-    "lamination": [
-      "None",
-      "Standard Lamination"
-    ],
-    "type": [],
-    "grommets": [],
-    "riding-style": [],
-    "frames": [],
-    "colour": [],
-    "wire-stakes": [
-      {
-        "title": "None",
-        "img": "#"
-      },
-      {
-        "title": "Standard",
-        "img": "images/accessories/standard-stakes.png"
-      },
-      {
-        "title": "Heavy Duty",
-        "img": "images/accessories/duty-stakes.png"
-      }
-    ],
-    "reface": [
-      {
-        "title": "Reface",
-        "img": "images/accessories/reface.png"
-      },
-      {
-        "title": "Reface & Handle Replacement",
-        "img": "images/accessories/reface.png"
-      },
-      {
-        "title": "Handle Replace",
-        "img": "images/accessories/reface.png"
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "title": "Insert Signs",
-    "descr": "Our Insert Signs are designed for durability and longevity, making them perfect for outdoor advertising. Weatherproof and portable, these signs are ideal for capturing attention in any environment.Please note that the A-frame sign holder is not included by default but can be ordered separately",
-    "descr_short": "Our Insert Signs are designed for durability and longevity...",
-    "img": {
-      "royallepage": "images/produkts/product_4.royallepage.png",
-      "century21": "images/produkts/product_4.century21.png",
-      "remax": "images/produkts/product_4.remax.png",
-      "homelife": "images/produkts/product_4.homelife.png",
-      "yourchoice": "images/produkts/product_4.yourchoice.png",
-      "zolo": "images/produkts/product_4.zolo.png",
-      "homeward": "images/produkts/product_4.homeward.png",
-      "rightathome": "images/produkts/product_4.rightathome.png",
-      "kellerwilliams": "images/produkts/product_4.kellerwilliams.png"
-    },
-    "reviews": "1298",
-    "size": [
-      "24”x18”",
-      "30”x18”",
-      "Custom"
-    ],
-    "material": [
-      "4MM Coroplast",
-      "Digital Print on Vinyl"
-    ],
-    "printed-sides": [
-      "Single Sided"
-    ],
-    "lamination": [
-      "None",
-      "Standard Lamination"
-    ],
-    "type": [],
-    "grommets": [],
-    "colour": [],
-    "riding-style": [],
-    "frames": [],
-    "wire-stakes": [],
     "reface": []
   },
   {
     "id": 5,
     "title": "Riders",
     "descr": "Our vibrant white and red Riders are perfect for highlighting your listings. These reusable signs are easy to install, fade-resistant, weatherproof, and cost-effective. Available in different sizes and two riding style options, they ensure your message stands out effectively.",
-    "descr_short": "Our vibrant white and red Riders are perfect for highlighting your listings...",
+    "descr_short": "Vibrant - Reusable - Weatherproof",
     "img": [
+      "images/produkts/product_5.9.png",
+      "images/produkts/product_5.10.png",
       "images/produkts/product_5.1.png",
       "images/produkts/product_5.2.png",
       "images/produkts/product_5.3.png",
@@ -242,9 +258,11 @@
       "images/produkts/product_5.5.png",
       "images/produkts/product_5.6.png",
       "images/produkts/product_5.7.png",
-      "images/produkts/product_5.8.png"
+      "images/produkts/product_5.8.png",
+      "images/produkts/product_5.11.png",
+      "images/produkts/product_5.12.png"
     ],
-    "reviews": "1981",
+    "reviews": "9",
     "size": [
       "18”x6”",
       "24”x6”",
@@ -257,12 +275,11 @@
     ],
     "material": [
       "10MM Coroplast",
-      "Digital Print on Vinyl"
+      "3MM Alupanel"
     ],
     "printed-sides": [
       "Double Sided"
     ],
-    "lamination": [],
     "riding-style": [
       "Bottom Rider",
       "Top Rider - Vertical Flute"
@@ -271,18 +288,133 @@
       "None",
       "Two Grommets on Top",
       " 4 Grommets on Top and Bottom"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Sandwich Board",
+    "descr": "Crafted from premium Crezon material with vibrant digital print on vinyl, this double-sided sandwich board features a durable plastic handle and protective lamination coating. The re-writable surface allows for easy message updates.Bonus Service: We offer Sandwich Board Reface and Handle Replacement, renewing your sign's facing with high-quality adhesive vinyl.",
+    "descr_short": "Sturdy - Customizable - Eye-Catching",
+    "img": {
+      "product_3.1": "images/produkts/product_3.1.png",
+      "remax": "images/produkts/product_3.remax.png",
+      "berkshirehathaway": "images/produkts/product_3.berkshirehathaway.png",
+      "chestnutpark": "images/produkts/product_3.chestnutpark.png",
+      "foresthill": "images/produkts/product_3.foresthill.png",
+      "product_3.2": "images/produkts/product_3.2.png",
+      "homelife": "images/produkts/product_3.homelife.png",
+      "bosley": "images/produkts/product_3.bosley.png",
+      "sutton": "images/produkts/product_3.sutton.png",
+      "yourchoice": "images/produkts/product_3.yourchoice.png",
+      "homeward": "images/produkts/product_3.homeward.png",
+      "rightathome": "images/produkts/product_3.rightathome.png",
+      "royallepage": "images/produkts/product_3.royallepage.png",
+      "rex": "images/produkts/product_3.rex.png",
+      "kellerwilliams": "images/produkts/product_3.kellerwilliams.png",
+      "century21": "images/produkts/product_3.century21.png"
+    },
+    "reviews": "10",
+    "size": [
+      "18”x24",
+      "19”x29",
+      "24”x32",
+      "Custom"
     ],
-    "type": [],
-    "colour": [],
-    "frames": [],
-    "wire-stakes": [],
-    "reface": []
+    "material": [
+      "Crezon",
+      "Digital Print on Vinyl",
+      "Plastic handle"
+    ],
+    "lamination": [
+      "None",
+      "Standard Lamination"
+    ],
+    "reface": [
+      {
+        "title": "Reface",
+        "img": "images/accessories/reface.png"
+      },
+      {
+        "title": "Reface & Handle Replacement",
+        "img": "images/accessories/reface-2.png"
+      },
+      {
+        "title": "Handle Replace",
+        "img": "images/accessories/reface-3.png"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Flags",
+    "category": "Real Estate Signs",
+    "descr": "Our custom feather flag banners are made from 4 oz. polyester fabric. We bring your unique design to life using a full-color dye-sublimation digital printing process. Choose from three popular sizes and four different bases depending on your intended use.",
+    "descr_short": "Customizable - Lightweight - Eye-Catching",
+    "img": {
+      "remax": "images/produkts/product_12.remax.png",
+      "product_1.1": "images/produkts/product_12.1.png",
+      "chestnutpark": "images/produkts/product_12.chestnutpark.png",
+      "foresthill": "images/produkts/product_12.foresthill.png",
+      "berkshirehathaway": "images/produkts/product_12.berkshirehathaway.png",
+      "product_1.2": "images/produkts/product_12.2.png",
+      "homelife": "images/produkts/product_12.homelife.png",
+      "bosley": "images/produkts/product_12.bosley.png",
+      "homeward": "images/produkts/product_12.homeward.png",
+      "rightathome": "images/produkts/product_12.rightathome.png",
+      "royallepage": "images/produkts/product_12.royallepage.png",
+      "kellerwilliams": "images/produkts/product_12.kellerwilliams.png",
+      "century21": "images/produkts/product_12.century21.png"
+    },
+    "reviews": "16",
+    "size": [
+      "9”",
+      "13”",
+      "17”",
+      "Custom"
+    ],
+    "printed-sides": [
+      "Single Sided",
+      "Double Sided"
+    ],
+    "content-text": [
+      "Art Work File Name is required"
+    ],
+    "flag-pole": [
+      {
+        "title": "None",
+        "img": "#"
+      },
+      {
+        "title": "Ground Stake",
+        "img": "images/accessories/flag.1.png"
+      },
+      {
+        "title": "Heavy Duty Cross Base",
+        "img": "images/accessories/flag.2.png"
+      },
+      {
+        "title": "Flag Tire Base",
+        "img": "images/accessories/flag.3.png"
+      },
+      {
+        "title": "Water Bag",
+        "img": "images/accessories/flag.4.png"
+      },
+      {
+        "title": "Optional Carry Bag",
+        "img": "images/accessories/flag.5.png"
+      },
+      {
+        "title": "Double Sides Graphic",
+        "img": "images/accessories/flag.6.png"
+      }
+    ]
   },
   {
     "id": 6,
     "title": "Sleeves",
     "descr": "Our Sold Sleeves easily slide over the top of your personalized For Sale Sign, showcasing your sales success. No clips, clamps, or tools are needed—simply place and remove them as needed. Designed to withstand any weather conditions, these sleeves won’t fade or corrode when used outdoors.",
-    "descr_short": "Our Sold Sleeves easily slide over the top of your personalized...",
+    "descr_short": "Simple - Durable - Weather-Resistant",
     "img": [
       "images/produkts/product_6.1.png",
       "images/produkts/product_6.2.png",
@@ -293,7 +425,7 @@
       "images/produkts/product_6.7.png",
       "images/produkts/product_6.8.png"
     ],
-    "reviews": "1951",
+    "reviews": "17",
     "size": [
       "17”x5”",
       "24”x6”",
@@ -304,15 +436,7 @@
     ],
     "printed-sides": [
       "Double Sided"
-    ],
-    "type": [],
-    "colour": [],
-    "lamination": [],
-    "grommets": [],
-    "riding-style": [],
-    "frames": [],
-    "wire-stakes": [],
-    "reface": []
+    ]
   },
   {
     "id": 7,
@@ -324,7 +448,7 @@
       "images/produkts/product_7.2.png",
       "images/produkts/product_7.3.png"
     ],
-    "reviews": "1951",
+    "reviews": "11",
     "size": [
       "6”x12”",
       "Custom"
@@ -352,40 +476,32 @@
     "id": 8,
     "title": "Metal A-Frame",
     "descr": "A-Frame Sign Holder is perfect for displaying your signs outdoors. Made from durable metal construction, this versatile stand is designed for long-lasting use and allows you to insert signs on both sides, ensuring your promotions are visible from multiple directions. Note: Signage is not included but can be ordered separately",
-    "descr_short": "A-Frame Sign Holder is perfect for displaying your signs outdoors...",
+    "descr_short": "Sturdy - Versatile - Eye-Catching",
     "img": [
       "images/produkts/product_8.1.png",
       "images/produkts/product_8.2.png",
       "images/produkts/product_8.3.png",
       "images/produkts/product_8.4.png"
     ],
-    "reviews": "1951",
+    "reviews": "11",
     "size": [
       "24”x18”"
     ],
     "material": [
       "Powder coated metal"
-    ],
-    "type": [],
-    "printed-sides": [],
-    "colour": [],
-    "lamination": [],
-    "grommets": [],
-    "riding-style": [],
-    "frames": [],
-    "wire-stakes": [],
-    "reface": []
+    ]
   },
   {
     "id": 9,
     "title": "Post &Base",
     "descr": "Boost visibility for your For Sale signs with our sturdy Metal Posts! Made of two durable, powder-coated iron pieces, these posts provide stability with a spike that secures them in the ground. Perfect for showcasing your signs effectively!",
-    "descr_short": "Boost visibility for your For Sale signs with our sturdy Metal Posts!...",
+    "descr_short": "Sturdy - Durable - Stable",
     "img": [
       "images/produkts/product_9.1.png",
-      "images/produkts/product_9.2.png"
+      "images/produkts/product_9.2.png",
+      "images/produkts/product_9.3.png"
     ],
-    "reviews": "1951",
+    "reviews": "11",
     "size": [
       "24”",
       "32”",
@@ -393,38 +509,1487 @@
     ],
     "material": [
       "1.25″ Square Metal Tubing (Full Pipe)"
-    ],
-      "type": [],
-    "printed-sides": [],
-    "colour": [],
-    "lamination": [],
-    "grommets": [],
-    "riding-style": [],
-    "frames": [],
-    "wire-stakes": [],
-    "reface": []
+    ]
   },
   {
     "id": 10,
     "title": "Wire Stakes ",
     "descr": "Securely display your real estate directional signs with our sturdy H stands designed for Coroplast yard signs. These weatherproof stands are easy to install—just step the ends into the ground and place your sign board on top. Choose from regular or heavy-duty options for 4mm Coroplast. Our H stands resist sway and bending, ensuring your signs stay in place. ",
-    "descr_short": "Reusable- Long-lasting-Weatherproof",
+    "descr_short": "Sturdy - Easy to Install - Weatherproof",
     "img": [
       "images/produkts/product_10.1.png",
       "images/produkts/product_10.2.png",
       "images/produkts/product_10.2.png"
     ],
-    "reviews": "1951",
-    "size": ["no options"],
-    "type": ["Heavy Duty", "Regualr"],
-    "material": [],
-    "printed-sides": [],
-    "colour": [],
-    "lamination": [],
-    "grommets": [],
-    "riding-style": [],
-    "frames": [],
-    "wire-stakes": [],
-    "reface": []
+    "reviews": "12",
+    "size": [
+      "no options"
+    ],
+    "type": [
+      "Heavy Duty",
+      "Regualr"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Signs",
+    "category": "These large, durable signs are designed to attract potential buyers and help you fill vacancies quickly. We print your artwork on high-quality materials using fade-resistant ink, ensuring your signs are weatherproof and perfect for outdoor advertising. Get noticed and boost your sales—shop now!",
+    "descr_short": "Eye-Catching - Durable - Weatherproof",
+    "img": {
+      "royallepage": "images/produkts/product_11.royallepage.png",
+      "remax": "images/produkts/product_11.remax.png",
+      "bosley": "images/produkts/product_11.bosley.png",
+      "homeward": "images/produkts/product_11.homeward.png",
+      "rightathome": "images/produkts/product_11.rightathome.png",
+      "kellerwilliams": "images/produkts/product_11.kellerwilliams.png",
+      "century21": "images/produkts/product_11.century21.png",
+      "product_1.1": "images/produkts/product_11.1.png",
+      "product_1.2": "images/produkts/product_11.2.png",
+      "product_1.3": "images/produkts/product_11.3.png",
+      "product_1.4": "images/produkts/product_11.4.png",
+      "product_1.5": "images/produkts/product_11.5.png"
+    },
+    "reviews": "11",
+    "size": [
+      "Custom"
+    ],
+    "material": [
+      "4MM Coroplast",
+      "10MM Coroplast",
+      "12MM Crezon Board",
+      "3MM Alupanel"
+    ],
+    "printed-sides": [
+      "Single Sided",
+      "Double Sided"
+    ],
+    "lamination": [
+      "None",
+      "Standard Lamination"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Brochure Holder with Business Card Pocket",
+    "descr": "Showcase your printed materials with our affordable Brochure & Pamphlet Holder with business card pocket. Lightweight yet durable, it’s perfect for distributing your marketing materials. ",
+    "descr_short": "Affordable - Lightweight - Durable",
+    "img": [
+      "images/produkts/product_13.1.png"
+    ],
+    "reviews": "12",
+    "size": [
+      "9 x 4 x 10"
+    ],
+    "material": [
+      "high impact clear plastic "
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Acrylic Business Card Holder",
+    "descr": "Showcase your business cards with our sleek Acrylic Business Card Holder Stand featuring rounded edges and corners. This stylish holder keeps your cards visible and accessible, making it perfect for any desk or display. Lightweight and durable, it's an ideal solution for organizing your contact information",
+    "descr_short": "Affordable - Lightweight - Durable",
+    "img": [
+      "images/produkts/product_14.1.png",
+      "images/produkts/product_14.2.png"
+    ],
+    "reviews": "12",
+    "size": [
+      "4 x 2 x 3"
+    ],
+    "material": [
+      "Plastic Acrylic, Transparent"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Lock Box",
+    "descr": "Real estate lock boxes provide a secure and convenient way to store your property keys and manage access to listings. Access your keys quickly whenever you need to show a house for sale.We offer two types of lock boxes:Single Lock (Black): Holds multiple keys or key cards and features a door guard rubber bumper to protect surfaces.Double Lock (Silver): Offers enhanced security with a shackle that remains locked until a separate 3-digit code is entered, even after the key compartment is opened.Both options are made from durable materials to withstand outdoor conditions and can be placed on doorknobs, fences, railings, pipes, and more. Secure your listings with our high-quality lock boxes!",
+    "descr_short": "Secure - Convenient - Durable",
+    "img": [
+      "images/produkts/product_15.1.png"
+    ],
+    "reviews": "12",
+    "size": [
+      "no options"
+    ],
+    "lock-Type": [
+      "Single Lock, Regular",
+      "Double Lock"
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Don’t Let the Cat Out Sign",
+    "descr": "Keep your space clean with our Stock Remove Shoes Signs for realtors! Just place the sign at the entrance to remind guests to remove their shoes, leave business cards, and lock up before leaving. Made from durable Coroplast, these signs are perfect for indoor and outdoor use—a smart, cost-effective choice for any property",
+    "descr_short": "Attention-Grabbing - Fun - Informative",
+    "img": [
+      "images/produkts/product_16.1.png"
+    ],
+    "reviews": "11",
+    "size": [
+      "6”x12”",
+      "Custom"
+    ],
+    "material": [
+      "4MM Coroplast"
+    ],
+    "printed-sides": [
+      "Single Sided"
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Don’t Let the Cat Out Sign",
+    "descr": "Keep your space clean with our Stock Remove Shoes Signs for realtors! Just place the sign at the entrance to remind guests to remove their shoes, leave business cards, and lock up before leaving. Made from durable Coroplast, these signs are perfect for indoor and outdoor use—a smart, cost-effective choice for any property",
+    "descr_short": "Attention-Grabbing - Fun - Informative",
+    "img": [
+      "images/produkts/product_17.1.png"
+    ],
+    "reviews": "11",
+    "size": [
+      "6”x12”",
+      "Custom"
+    ],
+    "material": [
+      "4MM Coroplast"
+    ],
+    "printed-sides": [
+      "Single Sided"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Zip Ties",
+    "descr": "....",
+    "descr_short": "...",
+    "img": [
+      "images/produkts/product_18.1.png",
+      "images/produkts/product_18.2.png"
+    ],
+    "reviews": "12",
+    "size": [
+      "8”"
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Adhesive Address Envelope",
+    "descr": "This envelope easily attaches to Open House Sandwich Boards, A-Frames, or Directional Signs, allowing you to display your contact information without the need for a separate sign. It saves you money by enabling quick address changes—simply replace the printed address paper. ",
+    "descr_short": "Convenient - Cost-Effective - Versatile",
+    "img": [
+      "images/produkts/product_19.1.png",
+      "images/produkts/product_19.2.png",
+      "images/produkts/product_19.3.png"
+    ],
+    "reviews": "14",
+    "size": [
+      "16”x4”"
+    ]
+  },
+  {
+    "id": 20,
+    "title": "U Clips",
+    "descr": "The U-Clip is  is required hardware for Post Base. Use it to attach hanging signs to the sign frame arm. Each sign hanger post requires 3 clips (2 on top and 1 on a side).Additionally, the U-Clip can be attached to the post of the sign frame - either the peg top or scroll top - for a side anchor. Secure the hanging sign to this clip. It prevents the sign from flapping too much with the wind or from swinging completely horizontal.",
+    "descr_short": "Convenient - Cost-Effective - Versatile",
+    "img": [
+      "images/produkts/product_20.1.png"
+    ],
+    "reviews": "9",
+    "size": [
+      "no options"
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Hanging Clips",
+    "descr": "The Hanging Clips is  is required hardware for Post Base. Use it to attach hanging signs to the sign frame arm. Each sign hanger post requires 3 clips (2 on top and 1 on a side) Hanging clips are made of high-quality 304 stainless steel that is sturdy, durable and anti-corrosion.",
+    "descr_short": "Convenient - Cost-Effective - Versatile",
+    "img": [
+      "images/produkts/product_21.1.png",
+      "images/produkts/product_21.2.png",
+      "images/produkts/product_21.3.png",
+      "images/produkts/product_21.4.png"
+    ],
+    "reviews": "11",
+    "size": [
+      "no options"
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Vinyl Lettering and numbers",
+    "descr": "Create unique vinyl lettering with 2 mil adhesive vinyl, available in over 30 colors. Mix and match colors in your design for a personalized touch. Use our online design tool or upload your own file to craft fully custom lettering.",
+    "descr_short": "100% Customizable - Easy to Install - Free Design Services",
+    "img": [
+      "images/produkts/product_22.1.png",
+      "images/produkts/product_22.2.png",
+      "images/produkts/product_22.3.png",
+      "images/produkts/product_22.4.png",
+      "images/produkts/product_22.5.png",
+      "images/produkts/product_22.6.png",
+      "images/produkts/product_22.7.png"
+    ],
+    "reviews": "8",
+    "size": [
+      "no options"
+    ],
+    "cut": [
+      {
+        "title": "Standard Cut Vinyl",
+        "img": "images/accessories/cut-1.png"
+      },
+      {
+        "title": "Reverse Cut",
+        "img": "images/accessories/cut-2.png"
+      }
+    ],
+    "print-surface": [
+      {
+        "title": "Standard ",
+        "img": "images/accessories/surface-1.png"
+      },
+      {
+        "title": "Inside Glass",
+        "img": "images/accessories/surface-2.png"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Frosted Lettering",
+    "descr": "Upgrade your office with professional frosted window decals and lettering, available in a variety of styles. Made from durable 2 mil frosted vinyl, these decals create eye-catching displays for your windows and doors.",
+    "descr_short": "Fully Customizable - Provides Privacy - Indoor and Outdoor Use",
+    "img": [
+      "images/produkts/product_23.1.png",
+      "images/produkts/product_23.2.png",
+      "images/produkts/product_23.3.png",
+      "images/produkts/product_23.4.png"
+    ],
+    "reviews": "7",
+    "size": [
+      "no options"
+    ],
+    "cut": [
+      {
+        "title": "Standard Cut Vinyl",
+        "img": "images/accessories/cut-1.png"
+      },
+      {
+        "title": "Reverse Cut",
+        "img": "images/accessories/cut-2.png"
+      }
+    ],
+    "print-surface": [
+      {
+        "title": "Standard ",
+        "img": "images/accessories/surface-1.png"
+      },
+      {
+        "title": "Inside Glass",
+        "img": "images/accessories/surface-2.png"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Perforated Window Decals",
+    "descr": "Showcase your brand with perforated window decals, printed with UV ink on micro-perforated vinyl. These decals display vibrant graphics on the outside while maintaining visibility from the inside. Create stunning, full-window advertisements to promote your business or message!",
+    "descr_short": "Easy Installation - Vibrant Colors - One-Way Vision ",
+    "img": [
+      "images/produkts/product_24.1.png",
+      "images/produkts/product_24.2.png",
+      "images/produkts/product_24.3.png",
+      "images/produkts/product_24.4.png",
+      "images/produkts/product_24.5.png",
+      "images/produkts/product_24.6.png",
+      "images/produkts/product_24.7.png",
+      "images/produkts/product_24.8.png"
+    ],
+    "reviews": "7",
+    "size": [
+      "no options"
+    ],
+    "lamination": [
+      "None (Standard)",
+      "Protective Laminate (Glossy)"
+    ],
+    "shape": [
+      {
+        "title": "Rounded Corners (1”)",
+        "img": "images/accessories/shape-1.png"
+      },
+      {
+        "title": "Squire/Rectangle",
+        "img": "images/accessories/shape-2.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-3.png"
+      },
+      {
+        "title": "Custom",
+        "img": "images/accessories/shape-4.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-5.png"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Opaque Window Decals",
+    "descr": "Create a bold statement with vibrant opaque window decals, printed with UV ink on durable 3 mil adhesive vinyl. Perfect for indoor and outdoor use, these decals are ideal for displaying store hours and more on any storefront, window, or glass door!",
+    "descr_short": "Full Colour Printing - Inside/Outside Glass  ",
+    "img": [
+      "images/produkts/product_25.1.png",
+      "images/produkts/product_25.2.png",
+      "images/produkts/product_25.3.png",
+      "images/produkts/product_25.4.png",
+      "images/produkts/product_25.5.png",
+      "images/produkts/product_25.6.png"
+    ],
+    "reviews": "7",
+    "size": [
+      "no options"
+    ],
+    "lamination": [
+      "None (Standard)",
+      "Protective Laminate (Glossy)"
+    ],
+    "shape": [
+      {
+        "title": "Rounded Corners (1”)",
+        "img": "images/accessories/shape-1.png"
+      },
+      {
+        "title": "Squire/Rectangle",
+        "img": "images/accessories/shape-2.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-3.png"
+      },
+      {
+        "title": "Custom",
+        "img": "images/accessories/shape-4.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-5.png"
+      }
+    ],
+    "print-surface": [
+      {
+        "title": "Standard ",
+        "img": "images/accessories/surface-1.png"
+      },
+      {
+        "title": "Inside Glass",
+        "img": "images/accessories/surface-2.png"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Clear Window Decals",
+    "descr": "Our clear window decals use premium adhesive and are perfect for showcasing messages on storefront glass and other smooth surfaces.",
+    "descr_short": "Weatherproof & Water-resistant – Fast Turnaround – Budget-friendly   ",
+    "img": [
+      "images/produkts/product_26.1.png",
+      "images/produkts/product_26.2.png",
+      "images/produkts/product_26.3.png",
+      "images/produkts/product_26.4.png",
+      "images/produkts/product_26.5.png",
+      "images/produkts/product_26.6.png",
+      "images/produkts/product_26.7.png"
+    ],
+    "reviews": "13",
+    "size": [
+      "no options"
+    ],
+    "shape": [
+      {
+        "title": "Rounded Corners (1”)",
+        "img": "images/accessories/shape-1.png"
+      },
+      {
+        "title": "Squire/Rectangle",
+        "img": "images/accessories/shape-2.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-3.png"
+      },
+      {
+        "title": "Custom",
+        "img": "images/accessories/shape-4.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-5.png"
+      }
+    ],
+    "print-surface": [
+      {
+        "title": "Standard ",
+        "img": "images/accessories/surface-1.png"
+      },
+      {
+        "title": "Inside Glass",
+        "img": "images/accessories/surface-2.png"
+      }
+    ],
+    "white-ink": [
+      {
+        "title": "Clear Background",
+        "img": "images/accessories/white-ink-1.png"
+      },
+      {
+        "title": "Remove White",
+        "img": "images/accessories/white-ink-2.png"
+      },
+      {
+        "title": "Follow File Settings",
+        "img": "images/accessories/white-ink-3.png"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Frosted Window Decals",
+    "descr": "Upgrade your office with professional frosted window decals and lettering, available in a variety of styles. Made from durable 2 mil frosted vinyl, these decals create eye-catching displays for your windows and doors.",
+    "descr_short": "Fully Customizable - Provides Privacy - Indoor and Outdoor Use ",
+    "img": [
+      "images/produkts/product_27.1.png",
+      "images/produkts/product_27.2.png",
+      "images/produkts/product_27.3.png",
+      "images/produkts/product_27.4.png",
+      "images/produkts/product_27.5.png",
+      "images/produkts/product_27.6.png"
+    ],
+    "reviews": "11",
+    "size": [
+      "no options"
+    ],
+    "print-surface": [
+      {
+        "title": "Standard ",
+        "img": "images/accessories/surface-1.png"
+      },
+      {
+        "title": "Inside Glass",
+        "img": "images/accessories/surface-2.png"
+      }
+    ],
+    "cut": [
+      {
+        "title": "Standard Cut Vinyl",
+        "img": "images/accessories/cut-1.png"
+      },
+      {
+        "title": "Reverse Cut",
+        "img": "images/accessories/cut-2.png"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "title": "Wall Stickers",
+    "descr": "Description:Our wall decals are printed with UV ink on durable adhesive vinyl, making them perfect for indoor use. These decals are ideal for offices, businesses, retail spaces, or home decor.",
+    "descr_short": "Versatile - Durable - Waterproof ",
+    "img": [
+      "images/produkts/product_28.1.png",
+      "images/produkts/product_28.2.png",
+      "images/produkts/product_28.3.png",
+      "images/produkts/product_28.4.png",
+      "images/produkts/product_28.5.png",
+      "images/produkts/product_28.6.png"
+    ],
+    "reviews": "9",
+    "size": [
+      "no options"
+    ],
+    "shape": [
+      {
+        "title": "Rounded Corners (1”)",
+        "img": "images/accessories/shape-1.png"
+      },
+      {
+        "title": "Squire/Rectangle",
+        "img": "images/accessories/shape-2.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-3.png"
+      },
+      {
+        "title": "Custom",
+        "img": "images/accessories/shape-4.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-5.png"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "title": "Permanent Decals",
+    "descr": " Our durable permanent decals are printed with eco-friendly UV ink on adhesive vinyl. Built to last, they’re ideal for long-term indoor, outdoor, resisting heat, rain, dirt, and dust.",
+    "descr_short": " Long-lasting – High-adhesive – Great For Indoor and Outdoor Use ",
+    "img": [
+      "images/produkts/product_29.1.png",
+      "images/produkts/product_29.2.png",
+      "images/produkts/product_29.3.png",
+      "images/produkts/product_29.4.png",
+      "images/produkts/product_29.5.png"
+    ],
+    "reviews": "8",
+    "size": [
+      "no options"
+    ],
+    "shape": [
+      {
+        "title": "Rounded Corners (1”)",
+        "img": "images/accessories/shape-1.png"
+      },
+      {
+        "title": "Squire/Rectangle",
+        "img": "images/accessories/shape-2.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-3.png"
+      },
+      {
+        "title": "Custom",
+        "img": "images/accessories/shape-4.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-5.png"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "title": "Floor Decals",
+    "descr": "Our durable indoor and outdoor floor decals feature laminate protection, slip resistance, and fade-resistant UV ink. Perfect for directions, advertising, and traffic guidance.",
+    "descr_short": " Durable - Removable- Slip Resistant ",
+    "img": [
+      "images/produkts/product_30.1.png",
+      "images/produkts/product_30.2.png",
+      "images/produkts/product_30.3.png",
+      "images/produkts/product_30.4.png"
+    ],
+    "reviews": "13",
+    "size": [
+      "Custom"
+    ],
+    "shape": [
+      {
+        "title": "Rounded Corners (1”)",
+        "img": "images/accessories/shape-1.png"
+      },
+      {
+        "title": "Squire/Rectangle",
+        "img": "images/accessories/shape-2.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-3.png"
+      },
+      {
+        "title": "Custom",
+        "img": "images/accessories/shape-4.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-5.png"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Vehicle Decals",
+    "descr": "Increase brand visibility with our custom vinyl car and truck lettering! Made from durable adhesive vinyl, our lettering is available in various colours and shapes. Plus, our premium lettering won’t damage your vehicle's windows or body.",
+    "descr_short": " 100% Customizable - Weatherproof and Waterproof  ",
+    "img": [
+      "images/produkts/product_31.1.png",
+      "images/produkts/product_31.2.png",
+      "images/produkts/product_31.3.png",
+      "images/produkts/product_31.4.png"
+    ],
+    "reviews": "11",
+    "size": [
+      "Custom"
+    ],
+    "cut": [
+      {
+        "title": "Standard Cut Vinyl",
+        "img": "images/accessories/cut-1.png"
+      },
+      {
+        "title": "Reverse Cut",
+        "img": "images/accessories/cut-2.png"
+      },
+      {
+        "title": "Rounded Corners (1”)",
+        "img": "images/accessories/shape-1.png"
+      },
+      {
+        "title": "Squire/Rectangle",
+        "img": "images/accessories/shape-2.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-3.png"
+      },
+      {
+        "title": "Custom",
+        "img": "images/accessories/shape-4.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-5.png"
+      }
+    ],
+    "print-surface": [
+      {
+        "title": "Standard ",
+        "img": "images/accessories/surface-1.png"
+      },
+      {
+        "title": "Inside Glass",
+        "img": "images/accessories/surface-2.png"
+      }
+    ],
+    "white-ink": [
+      {
+        "title": "Clear Background",
+        "img": "images/accessories/white-ink-1.png"
+      },
+      {
+        "title": "Remove White",
+        "img": "images/accessories/white-ink-2.png"
+      },
+      {
+        "title": "Follow File Settings",
+        "img": "images/accessories/white-ink-3.png"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "title": "Car Magnets",
+    "descr": "Enhance your advertising with our car and truck magnets! Made from high-quality materials, these magnets stay securely in place, ensuring your message reaches a wider audience. Our eye-catching vehicle magnets are a smart choice for mobile marketing!",
+    "descr_short": " Vibrant Colours - Weatherproof and Waterproof ",
+    "img": [
+      "images/produkts/product_32.1.png",
+      "images/produkts/product_32.2.png",
+      "images/produkts/product_32.3.png",
+      "images/produkts/product_32.4.png",
+      "images/produkts/product_32.5.png"
+    ],
+    "reviews": "6",
+    "size": [
+      "Custom"
+    ],
+    "shape": [
+      {
+        "title": "Rounded Corners (1”)",
+        "img": "images/accessories/shape-1.png"
+      },
+      {
+        "title": "Squire/Rectangle",
+        "img": "images/accessories/shape-2.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-3.png"
+      },
+      {
+        "title": "Custom",
+        "img": "images/accessories/shape-4.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-5.png"
+      }
+    ],
+    "lamination": [
+      "None (Standard)",
+      "Protective Laminate (Glossy)"
+    ]
+  },
+  {
+    "id": 33,
+    "title": "Stickers",
+    "descr": "Our custom stickers come in a range of shapes, sizes, materials, and quantities. Perfect for any occasion, they’re a great way to get your brand on the move.",
+    "descr_short": " Multiple Shapes and Sizes - Quick Turnaround",
+    "img": [
+      "images/produkts/product_33.1.png",
+      "images/produkts/product_33.2.png",
+      "images/produkts/product_33.3.png",
+      "images/produkts/product_33.4.png",
+      "images/produkts/product_33.5.png"
+    ],
+    "reviews": "6",
+    "size": [
+      "Custom"
+    ],
+    "shape": [
+      {
+        "title": "Rounded Corners (1”)",
+        "img": "images/accessories/shape-1.png"
+      },
+      {
+        "title": "Squire/Rectangle",
+        "img": "images/accessories/shape-2.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-3.png"
+      },
+      {
+        "title": "Custom",
+        "img": "images/accessories/shape-4.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-5.png"
+      }
+    ],
+    "material": [
+      "Glossy White Vinyl",
+      "Clear Film"
+    ]
+  },
+  {
+    "id": 34,
+    "title": "Roll Labels",
+    "descr": "Our roll labels come in various shapes, sizes, materials, and quantities. They’re a cost-effective solution for labeling your products, packaging, and more!",
+    "descr_short": "Multiple Shapes and Sizes - Quick Turnaround",
+    "img": [
+      "images/produkts/product_34.1.png",
+      "images/produkts/product_34.2.png",
+      "images/produkts/product_34.3.png",
+      "images/produkts/product_34.4.png"
+    ],
+    "reviews": "5",
+    "size": [
+      "Custom"
+    ],
+    "shape": [
+      {
+        "title": "Rounded Corners (1”)",
+        "img": "images/accessories/shape-1.png"
+      },
+      {
+        "title": "Squire/Rectangle",
+        "img": "images/accessories/shape-2.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-3.png"
+      },
+      {
+        "title": "Custom",
+        "img": "images/accessories/shape-4.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-5.png"
+      }
+    ],
+    "material": [
+      "Glossy White Vinyl",
+      "Clear Film"
+    ]
+  },
+  {
+    "id": 35,
+    "title": "Bumper Stickers",
+    "descr": "Our bumper stickers are designed to withstand harsh weather conditions and road splatter, ensuring they remain intact and vibrant over time. With vivid full-color printing, you can easily personalize your car stickers to reflect your style or message. ",
+    "descr_short": "Durable - Customizable - Eye-Catching",
+    "img": [
+      "images/produkts/product_35.1.png",
+      "images/produkts/product_35.2.png",
+      "images/produkts/product_35.3.png",
+      "images/produkts/product_35.4.png"
+    ],
+    "reviews": "5",
+    "size": [
+      "Custom"
+    ],
+    "shape": [
+      {
+        "title": "Rounded Corners (1”)",
+        "img": "images/accessories/shape-1.png"
+      },
+      {
+        "title": "Squire/Rectangle",
+        "img": "images/accessories/shape-2.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-3.png"
+      },
+      {
+        "title": "Custom",
+        "img": "images/accessories/shape-4.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-5.png"
+      }
+    ],
+    "material": [
+      "Glossy White Vinyl",
+      "Clear Film"
+    ]
+  },
+  {
+    "id": 38,
+    "title": "Mesh  Banners",
+    "descr": "Description:  Our digitally printed construction mesh fence banners are designed to withstand the elements, making them perfect for outdoor advertising and signage. Crafted from strong 8 oz. vinyl mesh material, these banners allow wind to pass through, ensuring they remain intact and vibrant even in windy conditions.",
+    "descr_short": "Durable - Wind-Resistant - Customizable",
+    "img": [
+      "images/produkts/product_38.1.png",
+      "images/produkts/product_38.2.png",
+      "images/produkts/product_38.3.png",
+      "images/produkts/product_38.4.png",
+      "images/produkts/product_38.5.png"
+    ],
+    "reviews": "15",
+    "size": [
+      "Custom"
+    ],
+    "printed-sides": [
+      "Single Sided"
+    ],
+    "edge-finish": [
+      {
+        "title": "Sewn Hem",
+        "img": "images/accessories/edge-4.png"
+      },
+      {
+        "title": "Reinforced Edges",
+        "img": "images/accessories/edge-5.png"
+      },
+      {
+        "title": "None (Flush Cut)",
+        "img": "images/accessories/edge-6.png"
+      }
+    ],
+    "grommets-2": [
+      {
+        "title": "Every 2-3 ft",
+        "img": "images/accessories/grommets-1.png"
+      },
+      {
+        "title": "Every 12-18 in",
+        "img": "images/accessories/grommets-2.png"
+      },
+      {
+        "title": "4 Corners",
+        "img": "images/accessories/grommets-3.png"
+      },
+      {
+        "title": "Top Corners",
+        "img": "images/accessories/grommets-4.png"
+      },
+      {
+        "title": "None",
+        "img": "images/accessories/grommets-5.png"
+      }
+    ],
+    "accessories": [
+      {
+        "title": "Hanging Clips",
+        "img": "images/accessories/accessories-1.png"
+      },
+      {
+        "title": "Suction Cups",
+        "img": "images/accessories/accessories-2.png"
+      },
+      {
+        "title": "Suction Cups",
+        "img": "images/accessories/accessories-3.png"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "title": "Reception Signs",
+    "descr": "Make a lasting first impression with our custom laser-cut reception signs, featuring a raised 3D logo design that enhances your business's professionalism. Crafted from high-quality materials, these signs are perfect for welcoming visitors and guiding them to your reception area.",
+    "descr_short": "Elegant - Customizable - Eye-Catching",
+    "img": [
+      "images/produkts/product_39.1.png",
+      "images/produkts/product_39.2.png",
+      "images/produkts/product_39.3.png"
+    ],
+    "reviews": "15",
+    "size": [
+      "Custom"
+    ],
+    "colour": [
+      "MIRROR SILVER",
+      "BRUSHED SILVER",
+      "MIRROR GOLD",
+      "BRUSHED GOLD",
+      "MIRROR ROSE GOLD",
+      "BRUSHED ROSE GOLD COPPER",
+      "MATTE GOLD",
+      "OTHER COLOURS"
+    ]
+  },
+  {
+    "id": 40,
+    "title": "Room/Door Signs",
+    "descr": " Our custom room and door signs are designed to enhance navigation and add a touch of elegance to any space. Perfect for hotels, apartments, and offices, these signs can feature personalized room numbers or names, crafted from high-quality materials for durability.",
+    "descr_short": "Customizable - Elegant - Functional",
+    "img": [
+      "images/produkts/product_40.1.png",
+      "images/produkts/product_40.2.png",
+      "images/produkts/product_40.3.png",
+      "images/produkts/product_40.4.png",
+      "images/produkts/product_40.5.png"
+    ],
+    "reviews": "8",
+    "size": [
+      "Custom"
+    ],
+    "colour": [
+      "MIRROR SILVER",
+      "BRUSHED SILVER",
+      "MIRROR GOLD",
+      "BRUSHED GOLD",
+      "MIRROR ROSE GOLD",
+      "BRUSHED ROSE GOLD COPPER",
+      "MATTE GOLD",
+      "OTHER COLOURS"
+    ]
+  },
+  {
+    "id": 41,
+    "title": "Directional Signs",
+    "descr": "Our custom directional signs are essential for effective wayfinding in any business environment. Designed to enhance navigation, these signs feature clear graphics and arrows to guide visitors effortlessly through your space.",
+    "descr_short": "Informative - Customizable - Clear",
+    "img": [
+      "images/produkts/product_41.1.png",
+      "images/produkts/product_41.2.png",
+      "images/produkts/product_41.3.png"
+    ],
+    "reviews": "8",
+    "size": [
+      "Custom"
+    ],
+    "colour": [
+      "MIRROR SILVER",
+      "BRUSHED SILVER",
+      "MIRROR GOLD",
+      "BRUSHED GOLD",
+      "MIRROR ROSE GOLD",
+      "BRUSHED ROSE GOLD COPPER",
+      "MATTE GOLD",
+      "OTHER COLOURS"
+    ],
+    "material": [
+      "4MM Coroplast",
+      "10MM Coroplast",
+      "12MM Crezon Board",
+      "3MM Alupanel"
+    ]
+  },
+  {
+    "id": 42,
+    "title": "Wall Graphics",
+    "descr": " Transform your workspace with our large custom business name wall decals, designed to enhance your office decor and inspire productivity. Made from high-quality vinyl, these motivational vinyl stickers feature a customized letter sign that showcases your company name in a stylish and professional manner.",
+    "descr_short": "Customizable - Motivational - Eye-Catching",
+    "img": [
+      "images/produkts/product_28.1.png",
+      "images/produkts/product_28.2.png",
+      "images/produkts/product_28.3.png",
+      "images/produkts/product_28.4.png",
+      "images/produkts/product_28.5.png",
+      "images/produkts/product_28.6.png"
+    ],
+    "reviews": "9",
+    "size": [
+      "Custom"
+    ],
+    "material": [
+      "Vinyl"
+    ]
+  },
+  {
+    "id": 43,
+    "title": "Backlit Signs",
+    "descr": "Transform your business branding with our custom backlit signs, featuring 3D metal letters that create a stunning halo-lit effect. Designed to make your company name and logo stand out, these illuminated signs provide a professional and eye-catching display for any business environment.",
+    "descr_short": "Illuminating - Professional - Customizable",
+    "img": [
+      "images/produkts/product_43.1.png",
+      "images/produkts/product_43.2.png",
+      "images/produkts/product_43.3.png",
+      "images/produkts/product_43.4.png"
+    ],
+    "reviews": "11",
+    "size": [
+      "Custom"
+    ],
+    "colour": [
+      "MIRROR SILVER",
+      "BRUSHED SILVER",
+      "MIRROR GOLD",
+      "BRUSHED GOLD",
+      "MIRROR ROSE GOLD",
+      "BRUSHED ROSE GOLD COPPER",
+      "MATTE GOLD",
+      "OTHER COLOURS"
+    ]
+  },
+  {
+    "id": 44,
+    "title": "Window Frosting",
+    "descr": "Enhance your space with our custom window frosting, designed to provide privacy while allowing natural light to filter through. Ideal for doors and windows, this privacy frosting vinyl is perfect for offices, homes, or commercial spaces, adding a touch of sophistication to any environment.",
+    "descr_short": "Elegant - Functional - Customizable",
+    "img": [
+      "images/produkts/product_44.1.png",
+      "images/produkts/product_44.2.png",
+      "images/produkts/product_44.3.png",
+      "images/produkts/product_44.4.png",
+      "images/produkts/product_44.5.png"
+    ],
+    "reviews": "13",
+    "size": [
+      "Custom"
+    ],
+    "cut": [
+      {
+        "title": "Standard Cut Vinyl",
+        "img": "images/accessories/cut-1.png"
+      },
+      {
+        "title": "Reverse Cut",
+        "img": "images/accessories/cut-2.png"
+      }
+    ],
+    "print-surface": [
+      {
+        "title": "Standard ",
+        "img": "images/accessories/surface-1.png"
+      },
+      {
+        "title": "Inside Glass",
+        "img": "images/accessories/surface-2.png"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "title": "Store Front Signs",
+    "descr": "Elevate your business visibility with our custom storefront signs, designed to make a powerful impression. Featuring 3D metal logos and business name signs, these eye-catching displays are perfect for attracting customers and enhancing your brand identity.",
+    "descr_short": "Customizable - Eye-Catching - Distinctive",
+    "img": [
+      "images/produkts/product_45.1.png",
+      "images/produkts/product_45.2.png",
+      "images/produkts/product_45.3.png",
+      "images/produkts/product_45.4.png"
+    ],
+    "reviews": "9",
+    "size": [
+      "Custom"
+    ],
+    "colour": [
+      "MIRROR SILVER",
+      "BRUSHED SILVER",
+      "MIRROR GOLD",
+      "BRUSHED GOLD",
+      "MIRROR ROSE GOLD",
+      "BRUSHED ROSE GOLD COPPER",
+      "MATTE GOLD",
+      "OTHER COLOURS"
+    ]
+  },
+  {
+    "id": 46,
+    "title": "Street/Aluminum Signs",
+    "descr": "Enhance safety and communication with our custom signs, designed to convey essential information clearly. With various shapes and sizes available, you can create effective signage that meets your requirements while enhancing the aesthetic of your surroundings.",
+    "descr_short": "Customizable - Durable - Informative",
+    "img": [
+      "images/produkts/product_46.1.png",
+      "images/produkts/product_46.2.png",
+      "images/produkts/product_46.3.png",
+      "images/produkts/product_46.4.png"
+    ],
+    "reviews": "12",
+    "size": [
+      "Custom"
+    ],
+    "material": [
+      "Aluminum, vinyl"
+    ]
+  },
+  {
+    "id": 47,
+    "title": "Floor Graphics",
+    "descr": "Our custom vinyl floor graphic decals are ideal for both indoor and outdoor use, designed to make a striking impact at any event or celebration. ",
+    "descr_short": "Versatile - Eye-Catching - Customizable",
+    "img": [
+      "images/produkts/product_30.1.png",
+      "images/produkts/product_30.2.png",
+      "images/produkts/product_30.3.png",
+      "images/produkts/product_30.4.png"
+    ],
+    "reviews": "15",
+    "size": [
+      "Custom"
+    ]
+  },
+  {
+    "id": 48,
+    "title": "Fence Signs",
+    "descr": "Our digitally printed construction mesh fence banners are designed to withstand the elements, making them perfect for outdoor advertising and signage. Crafted from strong 8 oz. vinyl mesh material, these banners allow wind to pass through, ensuring they remain intact and vibrant even in windy conditions.",
+    "descr_short": "Durable - Wind-Resistant - Customizable",
+    "img": [
+      "images/produkts/product_38.1.png",
+      "images/produkts/product_38.2.png",
+      "images/produkts/product_38.3.png",
+      "images/produkts/product_38.4.png",
+      "images/produkts/product_38.5.png"
+    ],
+    "reviews": "15",
+    "size": [
+      "Custom"
+    ],
+    "printed-sides": [
+      "Single Sided"
+    ],
+    "edge-finish": [
+      {
+        "title": "Sewn Hem",
+        "img": "images/accessories/edge-4.png"
+      },
+      {
+        "title": "Reinforced Edges",
+        "img": "images/accessories/edge-5.png"
+      },
+      {
+        "title": "None (Flush Cut)",
+        "img": "images/accessories/edge-6.png"
+      }
+    ],
+    "grommets-2": [
+      {
+        "title": "Every 2-3 ft",
+        "img": "images/accessories/grommets-1.png"
+      },
+      {
+        "title": "Every 12-18 in",
+        "img": "images/accessories/grommets-2.png"
+      },
+      {
+        "title": "4 Corners",
+        "img": "images/accessories/grommets-3.png"
+      },
+      {
+        "title": "Top Corners",
+        "img": "images/accessories/grommets-4.png"
+      },
+      {
+        "title": "None",
+        "img": "images/accessories/grommets-5.png"
+      }
+    ],
+    "accessories": [
+      {
+        "title": "Hanging Clips",
+        "img": "images/accessories/accessories-1.png"
+      },
+      {
+        "title": "Suction Cups",
+        "img": "images/accessories/accessories-2.png"
+      },
+      {
+        "title": "Suction Cups",
+        "img": "images/accessories/accessories-3.png"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "title": "Car Magnets",
+    "descr": "Enhance your advertising with our durable car and truck magnets! Made from high-quality materials, these magnets stay securely in place, ensuring your message reaches a wider audience. Our eye-catching vehicle magnets are a smart choice for mobile marketing!",
+    "descr_short": "Easy to Install - Damage-Free Removal - Weather-Proof",
+    "img": [
+      "images/produkts/product_49.1.png",
+      "images/produkts/product_49.2.png",
+      "images/produkts/product_49.3.png",
+      "images/produkts/product_49.4.png",
+      "images/produkts/product_49.5.png"
+    ],
+    "reviews": "10",
+    "size": [
+      "Custom"
+    ],
+    "shape": [
+      {
+        "title": "Rounded Corners (1”)",
+        "img": "images/accessories/shape-1.png"
+      },
+      {
+        "title": "Squire/Rectangle",
+        "img": "images/accessories/shape-2.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-3.png"
+      },
+      {
+        "title": "Custom",
+        "img": "images/accessories/shape-4.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-5.png"
+      }
+    ],
+    "lamination": [
+      "None (Standard)",
+      "Protective Laminate (Glossy)"
+    ]
+  },
+  {
+    "id": 50,
+    "title": "Car & Truck Lettering",
+    "descr": "Increase brand visibility with our custom vinyl car and truck lettering! Made from durable 2 mil adhesive vinyl, our lettering is available in various colors and shapes. Upload your design or create one online—it's easy! Plus, our premium lettering won’t damage your vehicle's windows or body.",
+    "descr_short": "100% Customizable - Easy to Install - Weatherproof and Waterproof ",
+    "img": [
+      "images/produkts/product_50.1.png",
+      "images/produkts/product_50.2.png",
+      "images/produkts/product_50.3.png",
+      "images/produkts/product_50.4.png",
+      "images/produkts/product_50.5.png"
+    ],
+    "reviews": "10",
+    "size": [
+      "Custom"
+    ],
+    "shape": [
+      {
+        "title": "Rounded Corners (1”)",
+        "img": "images/accessories/shape-1.png"
+      },
+      {
+        "title": "Squire/Rectangle",
+        "img": "images/accessories/shape-2.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-3.png"
+      },
+      {
+        "title": "Custom",
+        "img": "images/accessories/shape-4.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-5.png"
+      }
+    ],
+    "print-surface": [
+      {
+        "title": "Standard ",
+        "img": "images/accessories/surface-1.png"
+      },
+      {
+        "title": "Inside Glass",
+        "img": "images/accessories/surface-2.png"
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "title": "Clear Vehicle Decals",
+    "descr": "Increase brand visibility with our custom vinyl car and truck lettering! Made from durable 2 mil adhesive vinyl, our lettering is available in various colors and shapes. Upload your design or create one online—it's easy! Plus, our premium lettering won’t damage your vehicle's windows or body.",
+    "descr_short": "100% Customizable - Easy to Install - Weatherproof and Waterproof ",
+    "img": [
+      "images/produkts/product_51.1.png",
+      "images/produkts/product_50.2.png",
+      "images/produkts/product_50.3.png",
+      "images/produkts/product_50.4.png",
+      "images/produkts/product_50.5.png"
+    ],
+    "reviews": "10",
+    "size": [
+      "Custom"
+    ],
+    "shape": [
+      {
+        "title": "Rounded Corners (1”)",
+        "img": "images/accessories/shape-1.png"
+      },
+      {
+        "title": "Squire/Rectangle",
+        "img": "images/accessories/shape-2.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-3.png"
+      },
+      {
+        "title": "Custom",
+        "img": "images/accessories/shape-4.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-5.png"
+      }
+    ],
+    "print-surface": [
+      {
+        "title": "Standard ",
+        "img": "images/accessories/surface-1.png"
+      },
+      {
+        "title": "Inside Glass",
+        "img": "images/accessories/surface-2.png"
+      }
+    ],
+    "white-ink": [
+      {
+        "title": "Clear Background ",
+        "img": "images/accessories/white-ink-1.png"
+      },
+      {
+        "title": "Remove White",
+        "img": "images/accessories/white-ink-2.png"
+      },
+      {
+        "title": "Follow File Settings",
+        "img": "images/accessories/white-ink-2.png"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "title": "Opaque Vehicle Decals",
+    "descr": "Make a statement on the road with our eye-catching opaque vehicle decals! Crafted from weather-resistant 3 mil vinyl and printed with UV-resistant ink, these custom decals are built to endure and won’t harm your car’s exterior. Stand out and promote your message with confidence!",
+    "descr_short": "100% Customizable - Easy to Install - Weatherproof and Waterproof ",
+    "img": [
+      "images/produkts/product_52.1.png",
+      "images/produkts/product_52.2.png",
+      "images/produkts/product_52.3.png",
+      "images/produkts/product_52.4.png",
+      "images/produkts/product_52.5.png"
+    ],
+    "reviews": "10",
+    "size": [
+      "Custom"
+    ],
+    "shape": [
+      {
+        "title": "Rounded Corners (1”)",
+        "img": "images/accessories/shape-1.png"
+      },
+      {
+        "title": "Squire/Rectangle",
+        "img": "images/accessories/shape-2.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-3.png"
+      },
+      {
+        "title": "Custom",
+        "img": "images/accessories/shape-4.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-5.png"
+      }
+    ],
+    "print-surface": [
+      {
+        "title": "Standard ",
+        "img": "images/accessories/surface-1.png"
+      },
+      {
+        "title": "Inside Glass",
+        "img": "images/accessories/surface-2.png"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "title": "Perforated Vehicle Decals",
+    "descr": "Vehicle decals printed with UV-resistant ink on micro-perforated vinyl offer a unique solution for window coverage. These decals enable you to fully cover your windows while maintaining visibility from the inside of your vehicle. It's an excellent method to enhance brand visibility without compromising your line of sight!",
+    "descr_short": "Easy Installation - Perforated Vinyl - One-Way Vision ",
+    "img": [
+      "images/produkts/product_53.1.png",
+      "images/produkts/product_53.2.png",
+      "images/produkts/product_53.3.png",
+      "images/produkts/product_53.4.png",
+      "images/produkts/product_53.5.png"
+    ],
+    "reviews": "13",
+    "size": [
+      "Custom"
+    ],
+    "shape": [
+      {
+        "title": "Rounded Corners (1”)",
+        "img": "images/accessories/shape-1.png"
+      },
+      {
+        "title": "Squire/Rectangle",
+        "img": "images/accessories/shape-2.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-3.png"
+      },
+      {
+        "title": "Custom",
+        "img": "images/accessories/shape-4.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-5.png"
+      }
+    ],
+    "lamination": [
+      "Protective Laminate",
+      "None (Standard)"
+    ]
+  },
+  {
+    "id": 54,
+    "title": "Fleet Graphics",
+    "descr": "Description: Enhance your fleet’s look with custom graphics! Opt for solid color vinyl lettering or choose spot graphics printed on durable adhesive vinyl to make a lasting impression.",
+    "descr_short": "Description: Enhance your fleet’s look with custom graphics!.. ",
+    "img": [
+      "images/produkts/product_54.1.png",
+      "images/produkts/product_54.2.png",
+      "images/produkts/product_54.3.png",
+      "images/produkts/product_54.4.png"
+    ],
+    "reviews": "12",
+    "size": [
+      "Custom"
+    ],
+    "print-surface": [
+      {
+        "title": "Standard ",
+        "img": "images/accessories/surface-1.png"
+      },
+      {
+        "title": "Inside Glass",
+        "img": "images/accessories/surface-2.png"
+      }
+    ]
   }
 ]

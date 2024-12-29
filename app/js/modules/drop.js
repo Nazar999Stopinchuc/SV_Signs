@@ -1,42 +1,55 @@
 
-function drop(inputAt, inputLabelAt, fileNameAt) {
-  const input = document.querySelector(inputAt);
-  const inputLabel = document.querySelector(inputLabelAt);
-  const fileName = document.querySelector(fileNameAt);
+function initializeDropHandlers(containerSelector) {
+  const container = document.querySelector(containerSelector);
 
-    function highlight(item) {
-      item.style.border = "3px solid #FF7E14";
-      item.style.backgroundColor = "#6B80BF";
-    }
-
-    function unhighlight(item) {
-      item.style.border = "3px dashed #B8B8B8";
-      item.style.backgroundColor = "#F2F2F2";
-    }
-
-
-
-    input.addEventListener('drop', (e) => {
-      input.files = e.dataTransfer.files;
-      fileName.textContent = input.files[0].name;
-    });
-
-    input.addEventListener('change', () => {
-      if (input.files.length > 0) {
-        fileName.textContent = input.files[0].name;
-      } else {
-        fileName.textContent = "File not selected";
-      }
-    });
-
-    ['dragenter', 'dragover'].forEach(eventName => {
-      input.addEventListener(eventName, () => highlight(inputLabel));
-    });
-
-    ['dragleave', 'drop'].forEach(eventName => {
-      input.addEventListener(eventName, () => unhighlight(inputLabel));
-    });
+  function highlight(item) {
+    item.style.border = "3px solid #FF7E14";
+    item.style.backgroundColor = "#6B80BF";
   }
 
+  function unhighlight(item) {
+    item.style.border = "3px dashed #B8B8B8";
+    item.style.backgroundColor = "#F2F2F2";
+  }
 
-export default drop;
+  container.addEventListener('dragenter', (e) => {
+    const inputLabel = e.target.closest('[data-drop-label]');
+    if (inputLabel) highlight(inputLabel);
+  });
+
+  container.addEventListener('dragover', (e) => {
+    e.preventDefault(); 
+  });
+
+  container.addEventListener('dragleave', (e) => {
+    const inputLabel = e.target.closest('[data-drop-label]');
+    if (inputLabel) unhighlight(inputLabel);
+  });
+
+  container.addEventListener('drop', (e) => {
+    e.preventDefault(); 
+    const input = e.target.closest('[data-drop-input]');
+    const inputLabel = e.target.closest('[data-drop-label]');
+    const fileName = inputLabel ? inputLabel.querySelector('[data-file-name]') : null;
+
+    if (input && fileName) {
+      input.files = e.dataTransfer.files;
+      fileName.textContent = input.files[0] ? input.files[0].name : "File not selected";
+      unhighlight(inputLabel);
+    }
+  });
+
+  container.addEventListener('change', (e) => {
+    const input = e.target.closest('[data-drop-input]');
+    if (input) {
+      const inputLabel = input.closest('[data-drop-label]');
+      const fileName = inputLabel ? inputLabel.querySelector('[data-file-name]') : null;
+      if (fileName) {
+        fileName.textContent = input.files[0] ? input.files[0].name : "File not selected";
+      }
+    }
+  });
+}
+
+
+export default initializeDropHandlers;

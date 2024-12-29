@@ -49,15 +49,15 @@ function search() {
         const highlightedName = insertMark(produktName, pos, input.value.length);
 
         const productItem = `
-           <li class="serch__item">
-              <a class="search__link link-anim" href="product.html?id=${produkt.id}">${highlightedName}</a>
+           <li class="search__item">
+              <a class="search__link" href="product.html?id=${produkt.id}">${highlightedName}</a>
             </li>
         `;
         produktsList.insertAdjacentHTML('beforeend', productItem);
       } else {
         const productItem = `
-           <li class="serch__item">
-              <a class="search__link link-anim" href="product.html?id=${produkt.id}">${product.title}</a>
+           <li class="search__item">
+              <a class="search__link" href="product.html?id=${produkt.id}">${product.title}</a>
             </li>
         `;
         produktsList.insertAdjacentHTML('beforeend', productItem);
