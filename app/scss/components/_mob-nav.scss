@@ -1,0 +1,75 @@
+.mob-nav {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  padding: 20px 0;
+  background-color: $partners-title;
+  height: 100px;
+  width: 100%;
+  z-index: 2000;
+
+  @include mq ('desktop') {
+    display: block;
+  }
+
+  @include mq ('phone') {
+    height: 60px;
+    padding: 10px 0;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  &__svg {
+    height: 45px;
+    width: 45px;
+    stroke: $body-background-color;
+    stroke-width: 2px;
+    fill: none;
+
+    &--home {
+      stroke: none;
+      fill: $body-background-color;
+    }
+
+    @include mq ('phone') {
+      height: 35px;
+      width: 35px;
+    }
+  }
+
+  &__cart {
+    position: relative;
+    border: 1px solid transparent;
+    padding: 5px 5px 0;
+    border-radius: 6px;
+  }
+
+  &__cart-svg {
+    height: 35px;
+    width: 35px;
+    fill: none;
+    stroke: $footer-bottom;
+    stroke-width: 3px;
+    transition: stroke .3s;
+  }
+
+  &__cart-quantity {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 22px;
+    width: 22px;
+    top: -5px;
+    right: -5px;
+    border-radius: 50%;
+    font-size: 16px;
+    background-color: $accent-color;
+    color: $body-background-color;
+    transition: background-color .3s;
+  }
+}

@@ -2,14 +2,18 @@
   background-color: $menu-bg;
   padding: 55px 0 86px;
 
+  @include mq ('phone') {
+    padding: 20px 0 25px;
+  }
+
   &--our-story {
     background-color: $body-background-color;
   }
 
   &__title {
-    font-size: 42px;
+    @include adaptiv-value ('font-size', 42, 20, 1);
+    @include adaptiv-value ('margin-bottom', 45, 15, 1);
     color: $footer-bottom;
-    margin-bottom: 45px;
   }
 
   &__wrap {
@@ -17,10 +21,19 @@
     align-items: center;
     justify-content: space-between;
     gap: 15px;
+
+    @include mq ('tablet-2') {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__item {
-    max-width: 365px;
+    @include adaptiv-value ('max-width', 446, 320, 1);
+
+    @include mq ('tablet-2') {
+      max-width: 100%;
+    }
   }
 
   &__content {
@@ -29,20 +42,22 @@
   }
 
   &__img {
-    min-height: 108px;
-    min-width: 108px;
+    height: 77px;
+    width: 77px;
+    @include adaptiv-value ('height', 77, 55, 1);
+    @include adaptiv-value ('width', 77, 55, 1);
     @extend %bg;
   }
 
   &__subtitle {
     white-space: nowrap;
-    margin-bottom: 12px;
-    font-size: 30px;
+    @include adaptiv-value ('font-size', 30, 18, 1);
+    @include adaptiv-value ('margin-bottom', 12, 10, 1);
     color: $why-sv;
   }
 
   &__text {
-    font-size: 20px;
+    @include adaptiv-value ('font-size', 20, 14, 1);
     @extend %montserrat-500;
     color: $footer-bottom;
   }

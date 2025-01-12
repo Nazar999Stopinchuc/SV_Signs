@@ -1,10 +1,13 @@
 .partners {
   padding: 55px 0;
+  @include mq ('phone') {
+      padding: 20px 0;
+    }
 
   &__title {
-    font-size: 40px;
+    @include adaptiv-value ('font-size', 40, 20, 1);
+    @include adaptiv-value ('margin-bottom', 70, 15, 1);
     color: $text-color-product;
-    margin-bottom: 70px;
   }
 }
 

@@ -5,14 +5,26 @@
     justify-content: space-between;
     gap: 20px;
     color: $text-color-product;
+
+    @include mq ('desktop') {
+      flex-direction: column;
+    }
   }
 
   &__slider {
     max-width: 670px;
+
+    @include mq ('desktop') {
+      max-width: 100%;
+    }
   }
 
   &__constructor {
     max-width: 750px;
+
+    @include mq ('desktop') {
+      max-width: 100%;
+    }
   }
 
   &__deskr {
@@ -22,9 +34,9 @@
 
   &__title {
     text-transform: uppercase;
-    font-size: 50px;
+    @include adaptiv-value ('font-size', 50, 20, 1);
+    @include adaptiv-value ('margin-bottom', 20, 10, 1);
     @extend %montserrat-500;
-    margin-bottom: 20px;
     white-space: nowrap;
   }
 
@@ -34,6 +46,9 @@
     padding-bottom: 22px;
     border-bottom: 2px solid $footer-border;
     margin-bottom: 20px;
+    @include adaptiv-value ('font-size', 26, 16, 1);
+    @include adaptiv-value ('margin-bottom', 20, 10, 1);
+    @include adaptiv-value ('padding-bottom', 22, 10, 1);
   }
 
   &__inner {
@@ -44,7 +59,7 @@
   }
 
   &__label {
-    font-size: 20px;
+    @include adaptiv-value ('font-size', 20, 14, 1);
     margin-bottom: 8px;
     @extend %montserrat-700;
     display: block;
@@ -70,7 +85,7 @@
 
   &__select {
     border-bottom: 2px solid $footer-border;
-    padding-bottom: 15px;
+    @include adaptiv-value ('padding-bottom', 15, 10, 1);
 
     &--size {
       flex-grow: 1;
@@ -107,12 +122,16 @@
       width: 100%;
       border: 1px solid $footer-border;
       border-radius: 6px;
-      margin-bottom: 15px;
+      @include adaptiv-value ('margin-bottom', 15, 10, 1);
     }
 
     &.active .product__svg-arrow {
       top: 60%;
       transform: translate(0, -50%) rotate(270deg);
+    }
+
+    @include mq ('phone') {
+      padding: 15px 10px;
     }
   }
 
@@ -195,14 +214,24 @@
     background-color: $accent-color;
     @extend %montserrat-700;
     font-size: 30px;
+    @include adaptiv-value ('font-size', 30, 20, 1);
     border-radius: 12px;
+
+    @include mq ('phone') {
+      padding: 10px 30px;
+      margin: 15px auto 10px;
+    }
   }
 
   &__output {
     display: block;
-    font-size: 30px;
+    @include adaptiv-value ('font-size', 30, 20, 1);
     @extend %montserrat-500;
     color: $footer-bottom;
     min-height: 40px;
+
+    @include mq ('phone') {
+      min-height: 20px;
+    }
   }
 }

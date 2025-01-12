@@ -1,8 +1,14 @@
 .produkt-card {
   position: relative;
   border-radius: 6px;
-  height: 500px;
-  width: 380px;
+
+  @include mq ('tablet') {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2),
+      0px 6px 6px rgba(0, 0, 0, 0.15);
+  }
+
+  @include adaptiv-value ('height', 500, 280, 1);
+  @include adaptiv-value ('width', 380, 150, 1);
   padding: 25px;
 
   &:hover {
@@ -26,6 +32,24 @@
     display: block;
   }
 
+  @include mq ('tablet') {
+    &:hover .produkt-card__img-wrap {
+      @include adaptiv-value ('height', 300, 100, 1);
+    }
+
+    &:hover .produkt-card__reviews {
+      display: flex;
+    }
+
+    &:hover .produkt-card__link-shop {
+      display: none;
+    }
+
+    &:hover .produkt-card__deskr {
+      display: none;
+    }
+  }
+
   &__link {
     position: absolute;
     z-index: 100;
@@ -38,9 +62,9 @@
     justify-content: center;
     background-color: $produkt-bg;
     border-radius: 6px;
-    padding: 10px;
-    margin-bottom: 40px;
-    height: 300px;
+    @include adaptiv-value ('height', 300, 100, 1);
+    @include adaptiv-value ('margin-bottom', 40, 15, 1);
+    @include adaptiv-value ('padding', 10, 5, 1);
     overflow: hidden;
   }
 
@@ -51,17 +75,28 @@
   }
 
   &__title {
-    font-size: 28px;
-    margin-bottom: 15px;
-    // white-space: nowrap;
+    @include adaptiv-value ('font-size', 28, 14, 1);
+    @include adaptiv-value ('margin-bottom', 15, 5, 1);
     @extend %montserrat-500;
+
+    @include mq ('tablet') {
+      text-align: center;
+    }
   }
 
   &__reviews {
     display: flex;
     align-items: center;
-    gap: 15px;
+    @include adaptiv-value ('gap', 15, 5, 1);
     white-space: nowrap;
+
+    @include mq ('tablet') {
+      flex-direction: column;
+    }
+  }
+
+  &__reviews-quantity {
+    @include adaptiv-value ('font-size', 18, 12, 1);
   }
 
   &__stars {
@@ -72,8 +107,8 @@
 
   &__svg {
     fill: $accent-color;
-    height: 25px;
-    width: 25px;
+    height: 15px;
+    width: 15px;
   }
 
   &__deskr {

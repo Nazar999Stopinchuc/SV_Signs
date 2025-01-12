@@ -1,8 +1,8 @@
 .search {
   background-color: $menu-bg;
   z-index: 1000;
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   display: none;
@@ -13,13 +13,14 @@
 
   &__wrap {
     padding: 30px;
+    @include adaptiv-value ('padding', 30, 10, 1);
     border-radius: 12px;
   }
 
   &__inner {
     display: flex;
     align-items: center;
-    gap: 20px;
+    @include adaptiv-value ('gap', 20, 10, 1);
   }
 
   &__form {
@@ -35,13 +36,13 @@
     flex-grow: 1;
     display: block;
     padding: 5px 10px;
-    font-size: 22px;
+    @include adaptiv-value ('font-size', 22, 16, 1);
     background-color: transparent;
   }
 
   &__list {
-    margin-top: 15px;
-    max-height: 800px;
+    @include adaptiv-value ('max-height', 800, 400, 1);
+    @include adaptiv-value ('margin-top', 15, 10, 1);
     overflow: hidden;
   }
 
@@ -58,7 +59,7 @@
   &__link {
     display: block;
     padding: 10px;
-    font-size: 22px;
+    @include adaptiv-value ('font-size', 22, 16, 1);
     white-space: nowrap;
     @extend %montserrat-500;
 
@@ -71,6 +72,8 @@
   &__svg {
     height: 30px;
     width: 30px;
+    @include adaptiv-value ('height', 30, 20, 1);
+    @include adaptiv-value ('width', 30, 20, 1);
 
     &--close {
       fill: $footer-bottom;

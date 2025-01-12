@@ -1,0 +1,142 @@
+.terms {
+  padding: 5px 0 16px;
+
+  &__wrap {
+    padding: 0 30px;
+
+    @include mq ('desktop') {
+      padding: 0;
+    }
+  }
+
+  &__subsection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @include mq ('desktop') {
+      flex-direction: column;
+    }
+
+    &--order {
+      @include adaptiv-value ('gap', 95, 20, 1);
+
+      @include mq ('desktop-2') {
+        gap: 0;
+        flex-direction: column-reverse;
+      }
+    }
+
+    &--options {
+      justify-content: flex-end;
+      @include adaptiv-value ('gap', 200, 20, 1);
+
+      @include mq ('desktop') {
+        gap: 20px;
+      }
+    }
+
+    &--delivery {
+      @include adaptiv-value ('gap', 95, 20, 1);
+
+      @include mq ('desktop') {
+        gap: 20px;
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
+  &__content {
+    &--order {
+      max-width: 610px;
+
+      @include mq ('desktop-2') {
+        max-width: 100%;
+        flex-grow: 1;
+      }
+    }
+
+    &--options {
+      max-width: 765px;
+
+      @include mq ('desktop') {
+        max-width: 100%;
+        flex-grow: 1;
+      }
+    }
+
+    &--delivery {
+      max-width: 892px;
+
+      @include mq ('desktop') {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 33px;
+    margin-bottom: 28px;
+    @include adaptiv-value ('font-size', 33, 18, 1);
+    @include adaptiv-value ('margin-bottom', 28, 10, 1);
+    color: $footer-bottom;
+  }
+
+  &__list {
+    @include adaptiv-value ('padding-left', 30, 15, 1);
+  }
+
+  &__item {
+    @include adaptiv-value ('font-size', 24, 16, 1);
+    list-style-type: disc;
+    @extend %montserrat-700;
+
+    &:not(:last-child) {
+      margin-bottom: 23px;
+      @include adaptiv-value ('margin-bottom', 23, 10, 1);
+    }
+
+    &--options {
+      margin-bottom: 5px;
+      @extend %montserrat-400;
+    }
+  }
+
+  &__item-options {
+    @include adaptiv-value ('font-size', 22, 14, 1);
+    list-style-type: disc;
+    @extend %montserrat-500;
+
+    & span {
+      @extend %montserrat-700;
+      @include adaptiv-value ('font-size', 24, 16, 1);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__text {
+    @extend %montserrat-500;
+    @include adaptiv-value ('font-size', 24, 16, 1);
+    margin-top: 5px;
+  }
+
+  &__sublist {
+    margin-top: 5px;
+    @include adaptiv-value ('padding-left', 30, 15, 1);
+  }
+
+  &__subitem {
+    list-style-type: disc;
+    @extend %montserrat-500;
+    @include adaptiv-value ('font-size', 20, 14, 1);
+  }
+
+  &__note {
+    @extend %montserrat-500;
+    @include adaptiv-value ('margin-top', 25, 10, 1);
+  }
+
+}

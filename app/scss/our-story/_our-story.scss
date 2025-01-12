@@ -1,42 +1,61 @@
 .our-story {
   &__baner {
     padding: 88px 0;
+
+    @include mq ('phone') {
+        padding: 20px 0;
+    }
+
     text-align: center;
-    margin-bottom: 60px;
+    @include adaptiv-value ('margin-bottom', 60, 20, 1);
     background-color: $menu-bg;
   }
 
   &__title {
-    font-size: 60px;
+    @include adaptiv-value ('font-size', 60, 22, 1);
+    @include adaptiv-value ('max-width', 980, 380, 1);
     color: $our-story-title;
-    max-width: 980px;
     margin: 0 auto;
   }
 
   &__item {
     display: flex;
     justify-content: space-between;
-    gap: 55px;
-    padding-bottom: 60px;
+    @include adaptiv-value ('gap', 55, 15, 1);
+    @include adaptiv-value ('padding-bottom', 60, 15, 1);
     border-bottom: 2px solid $our-story-line;
 
     &:not(:last-child) {
-      margin-bottom: 75px;
+      @include adaptiv-value ('margin-bottom', 75, 15, 1);
+    }
+
+    @include mq ('desktop') {
+      flex-direction: column;
+    }
+
+    &--story {
+      @include mq ('desktop') {
+        flex-direction: column-reverse;
+      }
     }
   }
 
   &__content {
     max-width: 735px;
+
+    @include mq ('desktop') {
+      max-width: 100%;
+    }
   }
 
   &__subtitle {
-    font-size: 40px;
+    @include adaptiv-value ('font-size', 40, 18, 1);
+    @include adaptiv-value ('margin-bottom', 30, 15, 1);
     color: $footer-bottom;
-    margin-bottom: 30px;
   }
 
   &__text {
-    font-size: 32px;
+    @include adaptiv-value ('font-size', 32, 14, 1);
 
     & span {
       @extend %montserrat-700;
@@ -45,7 +64,7 @@
     @extend %montserrat-500;
 
     &:not(:last-child) {
-      margin-bottom: 35px;
+      @include adaptiv-value ('margin-bottom', 35, 15, 1);
     }
   }
 

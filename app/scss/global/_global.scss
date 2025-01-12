@@ -24,6 +24,11 @@ body {
   animation: hide-elem 2s forwards;
 }
 
+.lock {
+  overflow: hidden;
+}
+
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -49,6 +54,10 @@ body {
 
 .section {
   margin-bottom: 65px;
+
+  @include mq ('phone') {
+    margin-bottom: 20px;
+  }
 }
 
 .link-anim {
@@ -102,4 +111,9 @@ body {
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
+}
+
+.title {
+  font-size: 37px;
+  @extend %montserrat-500;
 }

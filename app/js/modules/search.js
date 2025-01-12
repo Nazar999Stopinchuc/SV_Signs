@@ -65,9 +65,6 @@ function search() {
     })
   };
 
-
-  
-  
   input.addEventListener('input', () => loadProducts(productsData));
   getProducts();
 };

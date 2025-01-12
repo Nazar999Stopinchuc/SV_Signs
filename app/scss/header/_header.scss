@@ -3,12 +3,31 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include mq ('tablet') {
+      padding-top: 5px;
+    }
   }
 
   &__menu {
     display: flex;
     align-items: center;
     gap: 30px;
+
+
+    @include mq ('desktop') {
+      display: none;
+    }
+
+    &--mob {
+      @include mq ('desktop') {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 15px;
+        align-items: flex-start;
+      }
+    }
   }
 
   &__item {
@@ -17,7 +36,7 @@
 
   &__link {
     &--tel {
-      font-size: 36px;
+      @include adaptiv-value ('font-size', 36, 16, 1);
       color: $footer-bottom;
       @extend %montserrat-700;
     }
@@ -25,12 +44,16 @@
     &--quote {
       display: block;
       padding: 10px 20px;
-      font-size: 27px;
+      @include adaptiv-value ('font-size', 27, 14, 1);
       @extend %montserrat-700;
       color: $body-background-color;
       background-color: $footer-bottom;
       border-radius: 12px;
       transition: background-color .3s, opacity .3s;
+
+      @include mq ('tablet') {
+        padding: 10px;
+      }
 
       &:focus-visible {
         background-color: $accent-color;
@@ -52,6 +75,10 @@
     border: 1px solid transparent;
     padding: 5px 5px 0;
     border-radius: 6px;
+
+    @include mq ('desktop') {
+      display: none;
+    }
 
     &:hover .header-top__cart-svg {
       stroke: $accent-color;
@@ -87,6 +114,11 @@
 
 .header-bottom {
   position: relative;
+
+  @include mq ('desktop') {
+    display: none;
+  }
+
   &__menu {
     display: flex;
     position: relative;
@@ -114,11 +146,11 @@
 
   &__search {
     &:focus-visible svg {
-      stroke: $accent-color;
+      stroke: $body-background-color;
     }
 
     &:hover svg {
-      stroke: $accent-color;
+      stroke: $body-background-color;
     }
 
     &:active {
@@ -128,11 +160,11 @@
 
   &__home {
     &:focus-visible svg {
-      fill: $accent-color;
+      fill: $body-background-color;
     }
 
     &:hover svg {
-      fill: $accent-color;
+      fill: $body-background-color;
     }
 
     &:active {
@@ -173,9 +205,17 @@
     background-color: $bg-menu-btn;
     padding: 0 25px;
     color: $text-color-product;
-    @extend %montserrat-700;
+    @extend %montserrat-500;
     transition: background .1s, color .1s, ;
 
+    &--mob {
+      position: relative;
+      display: block;
+      flex-grow: 0;
+      min-height: auto;
+      padding: 15px 15px;
+      width: 100%;
+    }
 
     &:hover {
       background-color: $footer-bottom;
@@ -199,7 +239,7 @@
     min-height: 650px;
     background-color: $menu-bg;
     color: $bg-menu-btn;
-    padding: 10px 20px;
+    padding: 30px 20px 20px 50px;
     transform-origin: 0 0;
     transform: rotateX(-90deg);
     visibility: hidden;
@@ -268,6 +308,13 @@
     transition: stroke .3s;
     font-size: 16px;
 
+    &--mob {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      transform: translate(0, -65%) rotate(90deg);
+    }
+
   }
 
   &__brokerages-link {
@@ -285,15 +332,111 @@
   border: 1px solid transparent;
 
   &__img {
-    max-width: 500px;
+    @include adaptiv-value ('max-width', 500, 120, 1);
   }
 
-  &--footer .logo__img {
-    max-width: 360px;
-    margin-bottom: 85px;
+  &--mob .logo__img {
+    @include adaptiv-value ('max-width', 300, 120, 1);
   }
+
 
   &:focus-visible {
     border: 1px solid $accent-color;
+  }
+}
+
+.burger {
+  @include burger (44px, 34px, 3px, $cart-title);
+  display: none;
+  z-index: 100;
+
+  @include mq ('desktop') {
+    display: block;
+  }
+}
+
+.burger-close {
+&__svg-arrow {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 40px;
+  width: 40px;
+}
+}
+
+.menu-mob {
+  padding: 0 20px 60px;
+  position: fixed;
+  transform: translate(-150%, 0);
+  inset: 0;
+  width: 50%;
+  font-size: 18px;
+  background-color: $menu-bg;
+  z-index: 1000;
+
+  transition: transform .3s;
+  overflow-y: auto;
+
+
+  &--active {
+    transform: translate(0, 0%);
+  }
+
+  @include mq ('tablet') {
+    width: 100%;
+  }
+
+
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__item {
+    position: relative;
+    background-color: $bg-menu-btn;
+    padding: 0 25px;
+    color: $text-color-product;
+    @extend %montserrat-500;
+    padding: 15px 15px;
+    width: 100%;
+  }
+
+  &__svg-arrow {
+    height: 30px;
+    width: 30px;
+    fill: none;
+    stroke: $text-color-about;
+    stroke-width: 2px;
+    transition: stroke .3s;
+    font-size: 16px;
+    position: absolute;
+    top: 3px;
+    right: 15px;
+    transform: rotate(90deg);
+
+    &--sub {
+      stroke: $footer-bottom;
+      right: 0;
+    }
+  }
+
+  &__list {
+    display: none;
+    margin-top: 10px;
+    padding-left: 15px;
+    color: $footer-bottom;
+    max-width: 265px;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__submenu-item {
+    position: relative;
+    padding: 10px 0;
   }
 }

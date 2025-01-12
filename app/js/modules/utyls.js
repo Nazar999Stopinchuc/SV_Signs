@@ -16,10 +16,15 @@ export function getParametrURL(parametr) {
 };
 
 export function setBasketLocalStorageQuont() {
-  const basketCount = document.querySelector('.header-top__cart-quantity');
-  if (!basketCount) return;
+const basketCounts = document.querySelectorAll('.header-top__cart-quantity'); 
+  if (!basketCounts.length) return;
+
   const cartData = getLocalStorage('products') || [];
-  basketCount.textContent = cartData.length;
+  const count = cartData.length;
+
+  basketCounts.forEach(basketCount => {
+    basketCount.textContent = count; 
+  });
 }
 
 export function filterEmptyValues(obj) {

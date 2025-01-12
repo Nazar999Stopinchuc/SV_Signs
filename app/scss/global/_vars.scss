@@ -25,9 +25,12 @@ $our-story-line: #9C9C9C;
 
 $breakpoints: (
   "phone": 560px,
+  "phone-2": 660px,
   "tablet": 768px,
   "tablet-2": 992px,
-  "desktop": 1230px
+  "desktop": 1230px,
+  "desktop-2": 1330px,
+  "desktop-3": 1600px
 );
 
 $maxWidth: 1920;

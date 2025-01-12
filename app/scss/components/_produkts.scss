@@ -1,11 +1,19 @@
 .produkts {
-  padding: 40px 0px;
+  padding: 0 0 40px 0;
 
   &__title {
-    font-size: 37px;
+    @include adaptiv-value ('font-size', 37, 22, 1);
+    @include adaptiv-value ('margin-bottom', 28, 15, 1);
     color: $text-color-product;
-    margin-bottom: 50px;
     @extend %montserrat-500;
+  }
+
+  &__item {
+    @include mq ('desktop') {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
   }
 
   &__list {
@@ -13,6 +21,15 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     margin-bottom: 50px;
+    @include adaptiv-value ('margin-bottom', 50, 20, 1);
+
+    @include mq ('desktop-3') {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include mq ('desktop') {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__more {
@@ -20,8 +37,8 @@
     background-color: $body-background-color;
     padding: 0 25px;
     margin: 0 auto;
-    font-size: 25px;
-    color: $partners-title;
+    @include adaptiv-value ('font-size', 25, 16, 1);
+    color: $footer-bottom;
     @extend %montserrat-700;
     z-index: 100;
 
@@ -39,9 +56,8 @@
       top: 50%;
       transform: translate(0, -50%);
       height: 2px;
-      background-color: $partners-title;
+      background-color: $our-story-line;
       width: 100%;
     }
   }
 }
-

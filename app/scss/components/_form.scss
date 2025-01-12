@@ -4,9 +4,11 @@
       display: none;
     }
   }
+
   &__label {
     display: block;
     font-size: 20px;
+    @include adaptiv-value ('font-size', 20, 16, 1);
     @extend %montserrat-500;
     color: $partners-title;
     margin-bottom: 12px;
@@ -39,11 +41,11 @@
 
   &__input {
     display: block;
-    margin-bottom: 28px;
+    @include adaptiv-value ('margin-bottom', 28, 15, 1);
     border: 1px solid $footer-border;
     width: 100%;
     padding: 14px;
-    font-size: 20px;
+    @include adaptiv-value ('font-size', 20, 14, 1);
     border: 3px solid $footer-border;
     transition: border-color .3s;
 
@@ -88,6 +90,11 @@
   &__names {
     display: flex;
     gap: 30px;
+
+    @include mq ('phone') {
+      flex-direction: column;
+      gap: 0;
+    }
   }
 
   &__address {
@@ -109,6 +116,7 @@
 
   &__custom-button {
     font-size: 20px;
+    @include adaptiv-value ('font-size', 20, 14, 1);
     @extend %montserrat-500;
     color: $footer-bottom;
     padding: 10px;
@@ -118,7 +126,7 @@
   }
 
   &__file-name {
-    font-size: 20px;
+    @include adaptiv-value ('font-size', 20, 14, 1);
     @extend %montserrat-500;
     color: $footer-icon;
   }
@@ -130,6 +138,11 @@
     @extend %montserrat-700;
     font-size: 20px;
     border-radius: 6px;
+
+    @include mq ('phone') {
+      display: block;
+      margin: 0 auto;
+    }
   }
 
   &__out {

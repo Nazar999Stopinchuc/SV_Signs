@@ -19,12 +19,6 @@ function productPageRender() {
   });
   let productsData = [];
 
-  function moveToStartImmutable(array, value) {
-    return array.includes(value)
-      ? [value, ...array.filter(item => item !== value)]
-      : array;
-  };
-
   function getParametrURL(parametr) {
     const urlParametr = new URLSearchParams(window.location.search);
     return urlParametr.get(parametr);
@@ -73,24 +67,41 @@ function productPageRender() {
     const brokerage = getParametrURL('brokerage');
     const imgs = Object.keys(product.img);
 
-    const filteredImgs = moveToStartImmutable(imgs, brokerage);
 
-    filteredImgs.forEach((item) => {
+    mainSliderWrapper.innerHTML = '';
+    thumbSliderWrapper.innerHTML = '';
+
+ 
+    if (brokerage && product.img[brokerage]) {
       const mainSlide = `
-      <div class="swiper-slide">
-        <img src="${(product.img)[item]}">
-      </div>
-    `;
+        <div class="swiper-slide">
+          <img src="${product.img[brokerage]}">
+        </div>
+      `;
 
       mainSliderWrapper.insertAdjacentHTML('beforeend', mainSlide);
       thumbSliderWrapper.insertAdjacentHTML('beforeend', mainSlide);
+    } else {
+  
+      imgs.forEach((item) => {
+        const mainSlide = `
+            <div class="swiper-slide">
+              <img src="${product.img[item]}">
+            </div>
+          `;
 
-      swiper.update();
-      swiper2.update();
-    });
+        mainSliderWrapper.insertAdjacentHTML('beforeend', mainSlide);
+        thumbSliderWrapper.insertAdjacentHTML('beforeend', mainSlide);
+      });
+    }
+
+
+    swiper.update();
+    swiper2.update();
+
 
     productDescr.textContent = product.descr;
-  };
+  }
 
   function renderConstructor(product) {
     const title = document.querySelector('.product__title');

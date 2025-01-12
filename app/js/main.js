@@ -15,6 +15,8 @@ import accordion from "./modules/accardion";
 import sentCart from "./modules/sendingCart";
 import signUp from "./modules/sign-up";
 import sviperInit from "./modules/sviper-init";
+import burger from "./modules/burger";
+import accordionMob from "./modules/acardion";
 
 
 
@@ -30,6 +32,7 @@ window.addEventListener('DOMContentLoaded', () => {
   try { renderBrokerages() } catch (error) { };
   try { breadCrumbs() } catch (error) { };
   try { modals('#search', '.search', '.search__close') } catch (error) { };
+  try { modals('#search-mob', '.search', '.search__close') } catch (error) { };
   try { modals('#show-contacts', '.cart__contact-us', '.cart__close') } catch (error) { };
   try { search() } catch (error) { };
   try { addToCart() } catch (error) { };
@@ -38,4 +41,6 @@ window.addEventListener('DOMContentLoaded', () => {
   try { accordion('#ditails-btn', '.cart__items') } catch (error) { };
   try { sentCart() } catch (error) { };
   try { sviperInit() } catch (error) { };
+  try { burger() } catch (error) { };
+  try { accordionMob() } catch (error) { };
 });

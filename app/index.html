@@ -5,6 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SV Signs</title>
+  <link rel="icon" type="image/png" href="images/favicon/" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon//favicon.svg" />
+  <link rel="shortcut icon" href="images/favicon//favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon//apple-touch-icon.png" />
+  <link rel="manifest" href="images/favicon//site.webmanifest" />
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -35,6 +40,11 @@
               </a>
             </li>
           </ul>
+
+          <button class="burger" type="button">
+            <span class="burger__line"></span>
+            <span class="sr-only">Открыть меню</span>
+          </button>
         </nav>
       </div>
 
@@ -539,31 +549,531 @@
           </button>
 
         </nav>
+      </div>
 
-        <div class="search">
-          <div class="container">
+      <div class="menu-mob">
+        <a class="logo logo--mob" href="index.html">
+          <img class="logo__img" src="images/logo/logo-mob.png" alt="company logo">
+        </a>
 
-            <div class="search__wrap">
-              <div class="search__inner">
-                <form class="search__form">
-                  <input type="text" class="search__input">
-                  <button class="search__btn" disabled>
-                    <svg class="search__svg search__svg--search">
-                      <use xlink:href="images/sprite.svg#search-icon"></use>
-                    </svg>
-                  </button>
-                </form>
-                <button class="search__close link-anim">
-                  <svg class="search__svg search__svg--close">
-                    <use xlink:href="images/sprite.svg#close-icon"></use>
-                  </svg>
-                </button>
-              </div>
-              <ul class="search__list">
-              </ul>
-            </div>
-          </div>
-        </div>
+        <button class="burger-close" type="button">
+          <svg class="burger-close__svg-arrow">
+            <use xlink:href="images/sprite.svg#cros"></use>
+          </svg>
+        </button>
+
+
+        <ul class="menu-mob__navigation">
+
+          <li class="menu-mob__item acardion-triger">Commercial signs
+
+            <svg class="menu-mob__svg-arrow">
+              <use xlink:href="images/sprite.svg#arrow-icon"></use>
+            </svg>
+
+            <ul class="menu-mob__list acardion-content">
+              <li class="menu-mob__submenu-item acardion-triger">
+                Brokerages
+                <svg class="menu-mob__svg-arrow menu-mob__svg-arrow--sub">
+                  <use xlink:href="images/sprite.svg#arrow-icon"></use>
+                </svg>
+                <ul class="menu-mob__list acardion-content">
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="brokerages.html?brokerage=berkshirehathaway">
+                      Berkshire Hathaway
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="brokerages.html?brokerage=bosley">
+                      Bosley
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="brokerages.html?brokerage=century21">
+                      Century 21
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="brokerages.html?brokerage=chestnutpark">
+                      Chestnut Park
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="brokerages.html?brokerage=foresthill">
+                      Forest Hill
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="brokerages.html?brokerage=homelife">
+                      Homelife
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="brokerages.html?brokerage=homeward">
+                      Homeward
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="brokerages.html?brokerage=kellerwilliams">
+                      Keller Williams
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="brokerages.html?brokerage=remax">
+                      Remax
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="brokerages.html?brokerage=rightathome">
+                      Right At Home
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="brokerages.html?brokerage=royallepage">
+                      Royal LePage
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-mob__submenu-item">
+                <a href="product.html?id=11" class="header-bottom__submenu-link">Signs</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-mob__item acardion-triger">Real Estate Signs
+            <svg class="menu-mob__svg-arrow">
+              <use xlink:href="images/sprite.svg#arrow-icon"></use>
+            </svg>
+
+            <ul class="menu-mob__list acardion-content">
+              <li class="menu-mob__submenu-item acardion-triger">Brokerages
+
+                <svg class="menu-mob__svg-arrow menu-mob__svg-arrow--sub">
+                  <use xlink:href="images/sprite.svg#arrow-icon"></use>
+                </svg>
+                <ul class="menu-mob__list acardion-content">
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="brokerages.html?brokerage=berkshirehathaway">
+                      Berkshire Hathaway
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="brokerages.html?brokerage=bosley">
+                      Bosley
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="brokerages.html?brokerage=century21">
+                      Century 21
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="brokerages.html?brokerage=chestnutpark">
+                      Chestnut Park
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="brokerages.html?brokerage=foresthill">
+                      Forest Hill
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="brokerages.html?brokerage=homelife">
+                      Homelife
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="brokerages.html?brokerage=homeward">
+                      Homeward
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="brokerages.html?brokerage=kellerwilliams">
+                      Keller Williams
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="brokerages.html?brokerage=remax">
+                      Remax
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="brokerages.html?brokerage=rightathome">
+                      Right At Home
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="brokerages.html?brokerage=royallepage">
+                      Royal LePage
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="menu-mob__submenu-item">
+                <a class="menu-mob__submenu-link" href="product.html?id=1">For Sale Signs</a>
+              </li>
+
+              <li class="menu-mob__submenu-item">
+                <a class="menu-mob__submenu-link" href="product.html?id=2">Directional Signs</a>
+              </li>
+              <li class="menu-mob__submenu-item">
+                <a class="menu-mob__submenu-link" href="product.html?id=3">Sandwich Boards</a>
+              </li>
+              <li class="menu-mob__submenu-item">
+                <a class="menu-mob__submenu-link" href="product.html?id=4">Insert Signs</a>
+              </li>
+              <li class="menu-mob__submenu-item">
+                <a class="menu-mob__submenu-link" href="product.html?id=5">Riders</a>
+              </li>
+              <li class="menu-mob__submenu-item">
+                <a class="menu-mob__submenu-link" href="product.html?id=6">Sleeves</a>
+              </li>
+              <li class="menu-mob__submenu-item">
+                <a class="menu-mob__submenu-link" href="product.html?id=12">Flags</a>
+              </li>
+
+              <li class="menu-mob__submenu-item acardion-triger">Frames & Hardware
+                <svg class="menu-mob__svg-arrow menu-mob__svg-arrow--sub">
+                  <use xlink:href="images/sprite.svg#arrow-icon"></use>
+                </svg>
+                <ul class="menu-mob__list acardion-content">
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=8">
+                      Metal A-Frame
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=9">
+                      Post & Base
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=10">
+                      Wire Stakes
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="menu-mob__submenu-item acardion-triger">
+                Sign Accessories
+                <svg class="menu-mob__svg-arrow menu-mob__svg-arrow--sub">
+                  <use xlink:href="images/sprite.svg#arrow-icon"></use>
+                </svg>
+                <ul class="menu-mob__list acardion-content">
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=13">
+                      Brochure Holder with Business Card Pocket
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=14">
+                      Acrylic Business Card Holder
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=15">
+                      Lock Box
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=7">
+                      Remove Shoes Sign
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=16">
+                      Don’t Let the Cat Out Sign
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=17">
+                      Friendly Dog Inside Sign
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=18">
+                      Zip Ties
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=19">
+                      Adhesive Address Envelope
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=20">
+                      U Clips
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=21">
+                      Hanging Clips
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-mob__item acardion-triger">Decals
+            <svg class="menu-mob__svg-arrow ">
+              <use xlink:href="images/sprite.svg#arrow-icon"></use>
+            </svg>
+            <ul class="menu-mob__list acardion-content">
+              <li class="menu-mob__submenu-item acardion-triger">
+                Vinyl Lettering and Numbers
+                <svg class="menu-mob__svg-arrow menu-mob__svg-arrow--sub">
+                  <use xlink:href="images/sprite.svg#arrow-icon"></use>
+                </svg>
+                <ul class="menu-mob__list acardion-content">
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=22">
+                      Vinyl Lettering and numbers
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=23">
+                      Frosted Lettering
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="menu-mob__submenu-item acardion-triger">
+                Window Decals
+                <svg class="menu-mob__svg-arrow menu-mob__svg-arrow--sub">
+                  <use xlink:href="images/sprite.svg#arrow-icon"></use>
+                </svg>
+                <ul class="menu-mob__list acardion-content">
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=24">
+                      Perforated Window Decals
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=25">
+                      Opaque Window Decals
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=26">
+                      Clear Window Decals
+                    </a>
+                  </li>
+
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=27">
+                      Frosted Window Decals
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="menu-mob__submenu-item acardion-triger">
+                Wall Decals
+                <svg class="menu-mob__svg-arrow menu-mob__svg-arrow--sub">
+                  <use xlink:href="images/sprite.svg#arrow-icon"></use>
+                </svg>
+                <ul class="menu-mob__list acardion-content">
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=28">
+                      Wall Stickers
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=29">
+                      Permanent Stickers
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="menu-mob__submenu-item">
+                <a class="menu-mob__submenu-link" href="product.html?id=30">Floor Decals</a>
+              </li>
+
+              <li class="menu-mob__submenu-item acardion-triger">
+                Car Decals
+                <svg class="menu-mob__svg-arrow menu-mob__svg-arrow--sub">
+                  <use xlink:href="images/sprite.svg#arrow-icon"></use>
+                </svg>
+                <ul class="menu-mob__list acardion-content">
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=31">
+                      Vehicle Decals
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=32">
+                      Car Magnets
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="menu-mob__submenu-item acardion-triger">
+                Other
+                <svg class="menu-mob__svg-arrow menu-mob__svg-arrow--sub">
+                  <use xlink:href="images/sprite.svg#arrow-icon"></use>
+                </svg>
+                <ul class="menu-mob__list acardion-content">
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=33">
+                      Stickers
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=34">
+                      Roll Labels
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=35">
+                      Bumper Stickers
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-mob__item acardion-triger">Banners
+            <svg class="menu-mob__svg-arrow ">
+              <use xlink:href="images/sprite.svg#arrow-icon"></use>
+            </svg>
+            <ul class="menu-mob__list acardion-content">
+              <li class="menu-mob__submenu-item link-anim">
+                <a class="menu-mob__submenu-link" href="product.html?id=36">
+                  Roll-up Banners
+                </a>
+              </li>
+              <li class="menu-mob__submenu-item link-anim">
+                <a class="menu-mob__submenu-link" href="product.html?id=37">
+                  Vinyl Banner
+                </a>
+              </li>
+              <li class="menu-mob__submenu-item link-anim">
+                <a class="menu-mob__submenu-link" href="product.html?id=38">
+                  Mesh Banners
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-mob__item acardion-triger">Custom Signs
+            <svg class="menu-mob__svg-arrow">
+              <use xlink:href="images/sprite.svg#arrow-icon"></use>
+            </svg>
+            <ul class="menu-mob__list acardion-content">
+              <li class="menu-mob__submenu-item">
+                <a class="menu-mob__submenu-link" href="product.html?id=12">Flags</a>
+              </li>
+
+              <li class="menu-mob__submenu-item acardion-triger">Office Signs
+                <svg class="menu-mob__svg-arrow menu-mob__svg-arrow--sub">
+                  <use xlink:href="images/sprite.svg#arrow-icon"></use>
+                </svg>
+                <ul class="menu-mob__list acardion-content">
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=39">
+                      Reception Signs
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=40">
+                      Room/Door Signs
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=41">
+                      Directional Signs
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=42">
+                      Wall Graphics
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=43">
+                      Backlit Signs
+                    </a>
+                  </li>
+                  <li class="menu-mob__submenu-item">
+                    <a class="menu-mob__link" href="product.html?id=44">
+                      Window Frosting
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="menu-mob__submenu-item">
+                <a class="menu-mob__submenu-link" href="product.html?id=45">Store Front Signs</a>
+              </li>
+              <li class="menu-mob__submenu-item">
+                <a class="menu-mob__submenu-link" href="product.html?id=46">Street/Aluminum Signs</a>
+              </li>
+              <li class="menu-mob__submenu-item">
+                <a class="menu-mob__submenu-link" href="product.html?id=47">Floor Graphics</a>
+              </li>
+              <li class="menu-mob__submenu-item">
+                <a class="menu-mob__submenu-link" href="product.html?id=42">Wall Graphics</a>
+              </li>
+              <li class="menu-mob__submenu-item">
+                <a class="menu-mob__submenu-link" href="product.html?id=48">Fence Signs</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-mob__item acardion-triger">Vehicle Signs
+            <svg class="menu-mob__svg-arrow ">
+              <use xlink:href="images/sprite.svg#arrow-icon"></use>
+            </svg>
+
+            <ul class="menu-mob__list acardion-content">
+              <li class="menu-mob__submenu-item">
+                <a class="menu-mob__submenu-link" href="product.html?id=49">Car Magnets</a>
+              </li>
+              <li class="menu-mob__submenu-item">
+                <a class="menu-mob__submenu-link" href="product.html?id=50">Car & Truck Lettering</a>
+              </li>
+              <li class="menu-mob__submenu-item">
+                <a class="menu-mob__submenu-link" href="product.html?id=51">Clear Vehicle Decals</a>
+              </li>
+              <li class="menu-mob__submenu-item">
+                <a class="menu-mob__submenu-link" href="product.html?id=52">Opaque Vehicle Decals</a>
+              </li>
+              <li class="menu-mob__submenu-item">
+                <a class="menu-mob__submenu-link" href="product.html?id=53">Perforated Vehicle Decals</a>
+              </li>
+              <li class="menu-mob__submenu-item">
+                <a class="menu-mob__submenu-link" href="product.html?id=54">Fleet Graphics</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="header-top__menu header-top__menu--mob">
+          <li class="header-top__item">
+            <a class="header-top__link header-top__link--tel link-anim" href="tel:4167204625">416-720-4625</a>
+          </li>
+          <li class="header-top__item">
+            <a class="header-top__link header-top__link--quote" href="contact_us.html">GET A QUOTE</a>
+          </li>
+
+          <li class="header-top__item">
+            <a class="header-top__cart link-anim" href="cart.html">
+              <svg class="header-top__cart-svg">
+                <use xlink:href="images/sprite.svg#shopping_cart-icon"></use>
+              </svg>
+              <span class="header-top__cart-quantity">0</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </header>
@@ -605,14 +1115,14 @@
 
           </li>
           <li class="first-screen__item">
-            <a class="first-screen__link" href="mail:svsigns@sympatico.ca">GET QUOTE
+            <a class="first-screen__link" href="mailto:svsigns@sympatico.ca">GET QUOTE
               <svg class="first-screen__svg">
                 <use xlink:href="images/sprite.svg#email-icon"></use>
               </svg>
             </a>
           </li>
           <li class="first-screen__item">
-            <a class="first-screen__link" href="#" target="_blank">FIND US
+            <a class="first-screen__link" href="https://maps.app.goo.gl/6VK74UjdCRDtmYet9" target="_blank">FIND US
               <svg class="first-screen__svg">
                 <use xlink:href="images/sprite.svg#location-icon"></use>
               </svg>
@@ -624,7 +1134,7 @@
     </section>
 
     <section class="produkts sektion">
-      <h2 class="sr-only">produkts</h2>
+      <h2 class="sr-only title">produkts</h2>
       <div class="container">
         <h2 class="produkts__title">Most Popular</h2>
         <ul class="produkts__list"></ul>
@@ -637,12 +1147,12 @@
 
     <section class="why-sv">
       <div class="container">
-        <h2 class="why-sv__title">Why SV Signs?</h2>
+        <h2 class="why-sv__title title">Why SV Signs?</h2>
         <ul class="why-sv__wrap">
           <li class="why-sv__item">
             <h3 class="why-sv__subtitle">Effortless Process</h3>
             <div class="why-sv__content">
-              <div class="why-sv__img" style="background-image: url(images/why-sv/price-match.png);"></div>
+              <img class="why-sv__img" src="images/why-sv/price-match.png" alt="img">
               <p class="why-sv__text">We handle everything, from design to delivery, so you can focus on what matters
                 most</p>
             </div>
@@ -651,7 +1161,7 @@
           <li class="why-sv__item">
             <h3 class="why-sv__subtitle">Designed for You</h3>
             <div class="why-sv__content">
-              <div class="why-sv__img" style="background-image: url(images/why-sv/designing.png);"></div>
+              <img class="why-sv__img" src="images/why-sv/designing.png" alt="img">
               <p class="why-sv__text">We create signs that align with your goals, whether for branding, or property
                 listings</p>
             </div>
@@ -659,7 +1169,7 @@
           <li class="why-sv__item">
             <h3 class="why-sv__subtitle">Quality that Stands Out</h3>
             <div class="why-sv__content">
-              <div class="why-sv__img" style="background-image: url(images/why-sv/quality.png);"></div>
+              <img class="why-sv__img" src="images/why-sv/quality.png" alt="img">
               <p class="why-sv__text">Our signs are designed to leave a lasting impression, combining creativity with
                 durability</p>
             </div>
@@ -670,7 +1180,7 @@
 
     <section class="partners section">
       <div class="container">
-        <h2 class="partners__title">Businesses that Trust SVSigns.com</h2>
+        <h2 class="partners__title title">Businesses that Trust SVSigns.com</h2>
 
         <div class="swiper-partners">
           <div class="swiper-wrapper">
@@ -780,13 +1290,13 @@
               <a class="footer__menu-link link-anim" href="our-story.html">About Us</a>
             </li>
             <li class="footer__menu-item">
-              <a class="footer__menu-link link-anim" href="#">Shipping</a>
-            </li>
-            <li class="footer__menu-item">
-              <a class="footer__menu-link link-anim" href="#">Our Work</a>
+              <a class="footer__menu-link link-anim" href="terms.html">Shipping</a>
             </li>
             <li class="footer__menu-item">
               <a class="footer__menu-link link-anim" href="contact_us.html">Contact Us</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link link-anim" href="terms.html">Terms & Turnouts</a>
             </li>
           </ul>
         </nav>
@@ -801,7 +1311,8 @@
             <h3 class="footer__info-title">Follow Us</h3>
             <ul class="social">
               <li class="social__item">
-                <a class="social__link link-anim" href="https://www.instagram.com/sv.signs?igsh=ZXl2Nm5mMTFzbW00&utm_source=qr" target="_blank">
+                <a class="social__link link-anim"
+                  href="https://www.instagram.com/sv.signs?igsh=ZXl2Nm5mMTFzbW00&utm_source=qr" target="_blank">
                   <svg class="social__svg">
                     <use xlink:href="images/sprite.svg#instagram-icon"></use>
                   </svg>
@@ -815,7 +1326,7 @@
                 </a>
               </li>
               <li class="social__item link-anim">
-                <a class="social__link" href="#" target="_blank">
+                <a class="social__link" href="https://linkedin.com/in/sv-signs-b6a855343" target="_blank">
                   <svg class="social__svg">
                     <use xlink:href="images/sprite.svg#linkedin-icon"></use>
                   </svg>
@@ -866,6 +1377,64 @@
       </div>
     </div>
   </footer>
+
+  <div class="mob-nav">
+    <div class="container">
+      <ul class="mob-nav__wrap">
+
+        <li class="mob-nav__item">
+          <a class="mob-nav__home" href="index.html">
+            <svg class="mob-nav__svg mob-nav__svg--home">
+              <use xlink:href="images/sprite.svg#home-Icon"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="mob-nav__item">
+          <a class="mob-nav__cart link-anim" href="cart.html">
+            <svg class="mob-nav__svg">
+              <use xlink:href="images/sprite.svg#shopping_cart-icon"></use>
+            </svg>
+            <span class="mob-nav__cart-quantity header-top__cart-quantity">0</span>
+          </a>
+        </li>
+
+        <li class="mob-nav__item">
+          <button class="mob-nav__search" type="button" id="search-mob">
+            <svg class="mob-nav__svg ">
+              <use xlink:href="images/sprite.svg#search-icon"></use>
+            </svg>
+          </button>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+  <div class="search">
+    <div class="container">
+
+      <div class="search__wrap">
+        <div class="search__inner">
+          <form class="search__form">
+            <input type="text" class="search__input">
+            <button class="search__btn" disabled>
+              <svg class="search__svg search__svg--search">
+                <use xlink:href="images/sprite.svg#search-icon"></use>
+              </svg>
+            </button>
+          </form>
+          <button class="search__close link-anim">
+            <svg class="search__svg search__svg--close">
+              <use xlink:href="images/sprite.svg#close-icon"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="search__list">
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <script src="js/main.min.js"></script>
 </body>

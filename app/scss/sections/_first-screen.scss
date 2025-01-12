@@ -1,4 +1,5 @@
 .first-screen {
+  margin-bottom: 28px;
 
   &__wrap {
     background-repeat: no-repeat;
@@ -10,12 +11,20 @@
   &__inner {
     padding: 55px 0 45px;
     position: relative;
+
+    @include mq ('phone-2') {
+      padding: 25px 0 20px;
+    }
   }
 
   &__content {
     max-width: 700px;
     color: $body-background-color;
     padding-left: 60px;
+
+    @include mq ('phone-2') {
+      padding-left: 10px;
+    }
   }
 
   &__img {
@@ -24,16 +33,25 @@
     &--baner {
       height: 203px;
       width: 391px;
+      @include adaptiv-value ('height', 203, 160, 1);
+      @include adaptiv-value ('width', 391, 290, 1);
       top: -2%;
       right: 0;
+
+      @include mq ('phone-2') {
+        display: none;
+      }
     }
 
     &--baner_2 {
-      height: 93px;
-      width: 200px;
+      @include adaptiv-value ('height', 93, 63, 1);
+      @include adaptiv-value ('width', 200, 100, 1);
       top: 60%;
       right: 2%;
 
+      @include mq ('tablet') {
+        display: none;
+      }
     }
 
     &--sign {
@@ -42,6 +60,10 @@
       top: 40%;
       right: 14%;
       z-index: 100;
+
+      @include mq ('tablet-2') {
+        display: none;
+      }
     }
 
     &--s_board {
@@ -50,28 +72,35 @@
       top: 22%;
       right: 16%;
       z-index: 100;
+
+      @include mq ('desktop') {
+        display: none;
+      }
     }
   }
 
   &__title,
   &__subtitle {
-    font-size: 42px;
+    @include adaptiv-value ('font-size', 42, 20, 1);
     @extend %montserrat-700;
     text-transform: uppercase;
   }
 
   &__title {
     margin-bottom: 10px;
+    @include adaptiv-value ('margin-bottom', 10, 5, 1);
   }
 
   &__subtitle {
     margin-bottom: 12px;
+    @include adaptiv-value ('margin-bottom', 12, 5, 1);
   }
 
   &__text {
     @extend %montserrat-700;
-    font-size: 28px;
     margin-top: 33px;
+    @include adaptiv-value ('font-size', 28, 18, 1);
+    @include adaptiv-value ('margin-top', 33, 15, 1);
   }
 
   &__contacts {
@@ -82,6 +111,7 @@
   &__item {
     flex-grow: 1;
     min-height: 112px;
+    @include adaptiv-value ('min-height', 112, 70, 1);
     background-color: $accent-btn-color;
     transition: background-color .3s, opacity .3s;
 
@@ -96,6 +126,20 @@
     &:active {
       opacity: .8;
     }
+
+    @include mq ('tablet') {
+      &:focus-visible {
+        background-color: $accent-btn-color;
+      }
+
+      &:hover {
+        background-color: $accent-btn-color;
+      }
+
+      &:active {
+        opacity: 1;
+      }
+    }
   }
 
   &__link {
@@ -106,7 +150,7 @@
     height: 100%;
     width: 100%;
     padding-bottom: 10px;
-    font-size: 20px;
+    @include adaptiv-value ('font-size', 20, 14, 1);
     color: $body-background-color;
     text-transform: uppercase;
     @extend %montserrat-700;
@@ -118,8 +162,8 @@
     left: 50%;
     transform: translate(-50%, 0);
     fill: $body-background-color;
-    height: 80px;
-    width: 80px;
+    @include adaptiv-value ('height', 80, 40, 1);
+    @include adaptiv-value ('width', 80, 40, 1);
   }
 
 }
