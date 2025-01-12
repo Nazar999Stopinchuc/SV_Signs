@@ -162,6 +162,7 @@
     "descr": "Our Insert Signs are designed for durability and longevity, making them perfect for outdoor advertising. Weatherproof and portable, these signs are ideal for capturing attention in any environment.Please note that the A-frame sign holder is not included by default but can be ordered separately",
     "descr_short": "Our Insert Signs are designed for durability and longevity...",
     "img": {
+      "product_4.1": "images/produkts/product_4.1.png",
       "royallepage": "images/produkts/product_4.royallepage.png",
       "berkshirehathaway": "images/produkts/product_4.berkshirehathaway.png",
       "foresthill": "images/produkts/product_4.foresthill.png",
@@ -198,6 +199,7 @@
     "descr": " Directional signs are an ideal choice for outdoor advertising and promotion. Made from durable, waterproof material, these signs can be printed on one or both sides in vibrant full colour, ensuring your message stands out in any environment. Perfect for real estate, elections, and event promotions, they are lightweight and easy to install with optional grommets or H-stands.",
     "descr_short": "Guiding - Durable - Versatile",
     "img": {
+      "product_2.2": "images/produkts/product_2.2.png",
       "kellerwilliams": "images/produkts/product_2.kellerwilliams.png",
       "chestnutpark": "images/produkts/product_2.chestnutpark.png",
       "foresthill": "images/produkts/product_2.foresthill.png",
@@ -244,50 +246,46 @@
     "reface": []
   },
   {
-    "id": 5,
-    "title": "Riders",
-    "descr": "Our vibrant white and red Riders are perfect for highlighting your listings. These reusable signs are easy to install, fade-resistant, weatherproof, and cost-effective. Available in different sizes and two riding style options, they ensure your message stands out effectively.",
-    "descr_short": "Vibrant - Reusable - Weatherproof",
+    "id": 32,
+    "title": "Car Magnets",
+    "descr": "Enhance your advertising with our car and truck magnets! Made from high-quality materials, these magnets stay securely in place, ensuring your message reaches a wider audience. Our eye-catching vehicle magnets are a smart choice for mobile marketing!",
+    "descr_short": " Vibrant Colours - Weatherproof and Waterproof ",
     "img": [
-      "images/produkts/product_5.9.png",
-      "images/produkts/product_5.10.png",
-      "images/produkts/product_5.1.png",
-      "images/produkts/product_5.2.png",
-      "images/produkts/product_5.3.png",
-      "images/produkts/product_5.4.png",
-      "images/produkts/product_5.5.png",
-      "images/produkts/product_5.6.png",
-      "images/produkts/product_5.7.png",
-      "images/produkts/product_5.8.png",
-      "images/produkts/product_5.11.png",
-      "images/produkts/product_5.12.png"
+      "images/produkts/product_32.1.png",
+      "images/produkts/product_32.2.png",
+      "images/produkts/product_32.3.png",
+      "images/produkts/product_32.4.png",
+      "images/produkts/product_32.5.png"
     ],
-    "reviews": "9",
+    "reviews": "6",
     "size": [
-      "18”x6”",
-      "24”x6”",
-      "24”x8”",
-      "24”x12”",
-      "30”x6”",
-      "32”x6”",
-      "36”x6”",
       "Custom"
     ],
-    "material": [
-      "10MM Coroplast",
-      "3MM Alupanel"
+    "shape": [
+      {
+        "title": "Rounded Corners (1”)",
+        "img": "images/accessories/shape-1.png"
+      },
+      {
+        "title": "Squire/Rectangle",
+        "img": "images/accessories/shape-2.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-3.png"
+      },
+      {
+        "title": "Custom",
+        "img": "images/accessories/shape-4.png"
+      },
+      {
+        "title": "Circle/Oval",
+        "img": "images/accessories/shape-5.png"
+      }
     ],
-    "printed-sides": [
-      "Double Sided"
-    ],
-    "riding-style": [
-      "Bottom Rider",
-      "Top Rider - Vertical Flute"
-    ],
-    "grommets": [
-      "None",
-      "Two Grommets on Top",
-      " 4 Grommets on Top and Bottom"
+    "lamination": [
+      "None (Standard)",
+      "Protective Laminate (Glossy)"
     ]
   },
   {
@@ -351,6 +349,7 @@
     "descr": "Our custom feather flag banners are made from 4 oz. polyester fabric. We bring your unique design to life using a full-color dye-sublimation digital printing process. Choose from three popular sizes and four different bases depending on your intended use.",
     "descr_short": "Customizable - Lightweight - Eye-Catching",
     "img": {
+      "royallepage": "images/produkts/product_12.royallepage.png",
       "remax": "images/produkts/product_12.remax.png",
       "product_1.1": "images/produkts/product_12.1.png",
       "chestnutpark": "images/produkts/product_12.chestnutpark.png",
@@ -361,7 +360,6 @@
       "bosley": "images/produkts/product_12.bosley.png",
       "homeward": "images/produkts/product_12.homeward.png",
       "rightathome": "images/produkts/product_12.rightathome.png",
-      "royallepage": "images/produkts/product_12.royallepage.png",
       "kellerwilliams": "images/produkts/product_12.kellerwilliams.png",
       "century21": "images/produkts/product_12.century21.png"
     },
@@ -408,6 +406,123 @@
         "title": "Double Sides Graphic",
         "img": "images/accessories/flag.6.png"
       }
+    ]
+  },
+  {
+    "id": 38,
+    "title": "Mesh  Banners",
+    "descr": "Description:  Our digitally printed construction mesh fence banners are designed to withstand the elements, making them perfect for outdoor advertising and signage. Crafted from strong 8 oz. vinyl mesh material, these banners allow wind to pass through, ensuring they remain intact and vibrant even in windy conditions.",
+    "descr_short": "Durable - Wind-Resistant - Customizable",
+    "img": [
+      "images/produkts/product_38.1.png",
+      "images/produkts/product_38.2.png",
+      "images/produkts/product_38.3.png",
+      "images/produkts/product_38.4.png",
+      "images/produkts/product_38.5.png"
+    ],
+    "reviews": "15",
+    "size": [
+      "Custom"
+    ],
+    "printed-sides": [
+      "Single Sided"
+    ],
+    "edge-finish": [
+      {
+        "title": "Sewn Hem",
+        "img": "images/accessories/edge-4.png"
+      },
+      {
+        "title": "Reinforced Edges",
+        "img": "images/accessories/edge-5.png"
+      },
+      {
+        "title": "None (Flush Cut)",
+        "img": "images/accessories/edge-6.png"
+      }
+    ],
+    "grommets-2": [
+      {
+        "title": "Every 2-3 ft",
+        "img": "images/accessories/grommets-1.png"
+      },
+      {
+        "title": "Every 12-18 in",
+        "img": "images/accessories/grommets-2.png"
+      },
+      {
+        "title": "4 Corners",
+        "img": "images/accessories/grommets-3.png"
+      },
+      {
+        "title": "Top Corners",
+        "img": "images/accessories/grommets-4.png"
+      },
+      {
+        "title": "None",
+        "img": "images/accessories/grommets-5.png"
+      }
+    ],
+    "accessories": [
+      {
+        "title": "Hanging Clips",
+        "img": "images/accessories/accessories-1.png"
+      },
+      {
+        "title": "Suction Cups",
+        "img": "images/accessories/accessories-2.png"
+      },
+      {
+        "title": "Suction Cups",
+        "img": "images/accessories/accessories-3.png"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Riders",
+    "descr": "Our vibrant white and red Riders are perfect for highlighting your listings. These reusable signs are easy to install, fade-resistant, weatherproof, and cost-effective. Available in different sizes and two riding style options, they ensure your message stands out effectively.",
+    "descr_short": "Vibrant - Reusable - Weatherproof",
+    "img": [
+      "images/produkts/product_5.9.png",
+      "images/produkts/product_5.10.png",
+      "images/produkts/product_5.1.png",
+      "images/produkts/product_5.2.png",
+      "images/produkts/product_5.3.png",
+      "images/produkts/product_5.4.png",
+      "images/produkts/product_5.5.png",
+      "images/produkts/product_5.6.png",
+      "images/produkts/product_5.7.png",
+      "images/produkts/product_5.8.png",
+      "images/produkts/product_5.11.png",
+      "images/produkts/product_5.12.png"
+    ],
+    "reviews": "9",
+    "size": [
+      "18”x6”",
+      "24”x6”",
+      "24”x8”",
+      "24”x12”",
+      "30”x6”",
+      "32”x6”",
+      "36”x6”",
+      "Custom"
+    ],
+    "material": [
+      "10MM Coroplast",
+      "3MM Alupanel"
+    ],
+    "printed-sides": [
+      "Double Sided"
+    ],
+    "riding-style": [
+      "Bottom Rider",
+      "Top Rider - Vertical Flute"
+    ],
+    "grommets": [
+      "None",
+      "Two Grommets on Top",
+      " 4 Grommets on Top and Bottom"
     ]
   },
   {
@@ -1182,49 +1297,6 @@
     ]
   },
   {
-    "id": 32,
-    "title": "Car Magnets",
-    "descr": "Enhance your advertising with our car and truck magnets! Made from high-quality materials, these magnets stay securely in place, ensuring your message reaches a wider audience. Our eye-catching vehicle magnets are a smart choice for mobile marketing!",
-    "descr_short": " Vibrant Colours - Weatherproof and Waterproof ",
-    "img": [
-      "images/produkts/product_32.1.png",
-      "images/produkts/product_32.2.png",
-      "images/produkts/product_32.3.png",
-      "images/produkts/product_32.4.png",
-      "images/produkts/product_32.5.png"
-    ],
-    "reviews": "6",
-    "size": [
-      "Custom"
-    ],
-    "shape": [
-      {
-        "title": "Rounded Corners (1”)",
-        "img": "images/accessories/shape-1.png"
-      },
-      {
-        "title": "Squire/Rectangle",
-        "img": "images/accessories/shape-2.png"
-      },
-      {
-        "title": "Circle/Oval",
-        "img": "images/accessories/shape-3.png"
-      },
-      {
-        "title": "Custom",
-        "img": "images/accessories/shape-4.png"
-      },
-      {
-        "title": "Circle/Oval",
-        "img": "images/accessories/shape-5.png"
-      }
-    ],
-    "lamination": [
-      "None (Standard)",
-      "Protective Laminate (Glossy)"
-    ]
-  },
-  {
     "id": 33,
     "title": "Stickers",
     "descr": "Our custom stickers come in a range of shapes, sizes, materials, and quantities. Perfect for any occasion, they’re a great way to get your brand on the move.",
@@ -1349,76 +1421,6 @@
     "material": [
       "Glossy White Vinyl",
       "Clear Film"
-    ]
-  },
-  {
-    "id": 38,
-    "title": "Mesh  Banners",
-    "descr": "Description:  Our digitally printed construction mesh fence banners are designed to withstand the elements, making them perfect for outdoor advertising and signage. Crafted from strong 8 oz. vinyl mesh material, these banners allow wind to pass through, ensuring they remain intact and vibrant even in windy conditions.",
-    "descr_short": "Durable - Wind-Resistant - Customizable",
-    "img": [
-      "images/produkts/product_38.1.png",
-      "images/produkts/product_38.2.png",
-      "images/produkts/product_38.3.png",
-      "images/produkts/product_38.4.png",
-      "images/produkts/product_38.5.png"
-    ],
-    "reviews": "15",
-    "size": [
-      "Custom"
-    ],
-    "printed-sides": [
-      "Single Sided"
-    ],
-    "edge-finish": [
-      {
-        "title": "Sewn Hem",
-        "img": "images/accessories/edge-4.png"
-      },
-      {
-        "title": "Reinforced Edges",
-        "img": "images/accessories/edge-5.png"
-      },
-      {
-        "title": "None (Flush Cut)",
-        "img": "images/accessories/edge-6.png"
-      }
-    ],
-    "grommets-2": [
-      {
-        "title": "Every 2-3 ft",
-        "img": "images/accessories/grommets-1.png"
-      },
-      {
-        "title": "Every 12-18 in",
-        "img": "images/accessories/grommets-2.png"
-      },
-      {
-        "title": "4 Corners",
-        "img": "images/accessories/grommets-3.png"
-      },
-      {
-        "title": "Top Corners",
-        "img": "images/accessories/grommets-4.png"
-      },
-      {
-        "title": "None",
-        "img": "images/accessories/grommets-5.png"
-      }
-    ],
-    "accessories": [
-      {
-        "title": "Hanging Clips",
-        "img": "images/accessories/accessories-1.png"
-      },
-      {
-        "title": "Suction Cups",
-        "img": "images/accessories/accessories-2.png"
-      },
-      {
-        "title": "Suction Cups",
-        "img": "images/accessories/accessories-3.png"
-      }
     ]
   },
   {
