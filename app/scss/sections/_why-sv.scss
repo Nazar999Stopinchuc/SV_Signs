@@ -54,6 +54,7 @@
     @include adaptiv-value ('font-size', 30, 18, 1);
     @include adaptiv-value ('margin-bottom', 12, 10, 1);
     color: $why-sv;
+    @extend %montserrat-500;
   }
 
   &__text {

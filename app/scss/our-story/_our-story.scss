@@ -3,7 +3,7 @@
     padding: 88px 0;
 
     @include mq ('phone') {
-        padding: 20px 0;
+      padding: 20px 0;
     }
 
     text-align: center;
@@ -12,8 +12,8 @@
   }
 
   &__title {
-    @include adaptiv-value ('font-size', 60, 22, 1);
-    @include adaptiv-value ('max-width', 980, 380, 1);
+    @include adaptiv-value ('font-size', 35, 18, 1);
+    @include adaptiv-value ('max-width', 590, 380, 1);
     color: $our-story-title;
     margin: 0 auto;
   }
@@ -41,7 +41,7 @@
   }
 
   &__content {
-    max-width: 735px;
+    max-width: 810px;
 
     @include mq ('desktop') {
       max-width: 100%;
@@ -49,23 +49,27 @@
   }
 
   &__subtitle {
-    @include adaptiv-value ('font-size', 40, 18, 1);
+    @include adaptiv-value ('font-size', 30, 18, 1);
     @include adaptiv-value ('margin-bottom', 30, 15, 1);
     color: $footer-bottom;
+    @extend %montserrat-500;
   }
 
   &__text {
-    @include adaptiv-value ('font-size', 32, 14, 1);
+    @extend %montserrat-500;
+    @include adaptiv-value ('font-size', 25, 14, 1);
 
     & span {
       @extend %montserrat-700;
     }
 
-    @extend %montserrat-500;
-
     &:not(:last-child) {
       @include adaptiv-value ('margin-bottom', 35, 15, 1);
     }
+  }
+
+  &__img-wrap {
+    max-width: 550px;
   }
 
 }

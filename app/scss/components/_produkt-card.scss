@@ -64,7 +64,7 @@
     border-radius: 6px;
     @include adaptiv-value ('height', 300, 100, 1);
     @include adaptiv-value ('margin-bottom', 40, 15, 1);
-    @include adaptiv-value ('padding', 10, 5, 1);
+    @include adaptiv-value ('padding', 20, 5, 1);
     overflow: hidden;
   }
 

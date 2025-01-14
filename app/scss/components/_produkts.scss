@@ -3,7 +3,7 @@
 
   &__title {
     @include adaptiv-value ('font-size', 37, 22, 1);
-    @include adaptiv-value ('margin-bottom', 28, 15, 1);
+    margin-bottom: 5px;
     color: $text-color-product;
     @extend %montserrat-500;
   }

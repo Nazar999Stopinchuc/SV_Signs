@@ -239,7 +239,7 @@
     min-height: 650px;
     background-color: $menu-bg;
     color: $bg-menu-btn;
-    padding: 30px 20px 20px 50px;
+    padding: 30px 20px 20px 67px;
     transform-origin: 0 0;
     transform: rotateX(-90deg);
     visibility: hidden;
@@ -251,7 +251,6 @@
     display: inline-block;
     position: relative;
     height: 100%;
-    max-width: 255px;
 
     & .header-bottom__list {
       position: absolute;
@@ -270,9 +269,9 @@
     justify-content: space-between;
     align-items: center;
     gap: 5px;
-    padding: 10px;
+    padding: 10px 20px;
     min-height: 50px;
-    min-width: 200px;
+    min-width: 260px;
     color: $footer-bottom;
     @extend %montserrat-700;
     transition: background-color .3s;
