@@ -38,13 +38,13 @@
     &--tel {
       @include adaptiv-value ('font-size', 36, 16, 1);
       color: $footer-bottom;
-      @extend %montserrat-700;
+      @extend %montserrat-600;
     }
 
     &--quote {
       display: block;
       padding: 10px 20px;
-      @include adaptiv-value ('font-size', 27, 14, 1);
+      @include adaptiv-value ('font-size', 25, 14, 1);
       @extend %montserrat-700;
       color: $body-background-color;
       background-color: $footer-bottom;
@@ -91,7 +91,7 @@
     width: 35px;
     fill: none;
     stroke: $footer-bottom;
-    stroke-width: 3px;
+    stroke-width: 2px;
     transition: stroke .3s;
   }
 

@@ -1,12 +1,17 @@
 .footer {
   background-color: $footer-bg;
 
+  @include mq ('desktop') {
+    @include adaptiv-value ('padding-bottom', 50, 30, 1);
+  }
+
 
   &__link {
+    @include adaptiv-value ('font-size', 22, 14, 1);
 
     &--tel {
-      @include adaptiv-value ('font-size', 40, 16, 1);
       @extend %montserrat-700;
+      @include adaptiv-value ('font-size', 25, 16, 1);
     }
   }
 
@@ -14,8 +19,8 @@
     position: absolute;
     top: 50%;
     left: 0;
-    height: 45px;
-    width: 45px;
+    height: 35px;
+    width: 35px;
     fill: $body-background-color;
     transform: translate(0, -50%);
   }
@@ -30,8 +35,8 @@
 
     @include mq ('desktop-2') {
       grid-template-columns: repeat(2, 1fr);
-
     }
+
     @include mq ('tablet') {
       grid-template-columns: repeat(1, 1fr);
       padding: 20px 0;
@@ -48,34 +53,26 @@
     position: relative;
     @include adaptiv-value ('font-size', 25, 14, 1);
     @extend %montserrat-500;
-    padding: 15px 13px 15px 55px;
+    padding: 15px 13px 15px 45px;
     white-space: nowrap;
-
-    &:not(:last-child) {
-      margin-bottom: 23px;
-
-      @include mq ('desktop-2') {
-        margin-bottom: 0;
-      }
-    }
   }
 
   &__info-title {
     @extend %montserrat-700;
-    @include adaptiv-value ('font-size', 32, 16, 1);
+    @include adaptiv-value ('font-size', 25, 16, 1);
+    @include adaptiv-value ('margin-bottom', 20, 5, 1);
     color: $body-background-color;
     white-space: nowrap;
-    margin-bottom: 5px;
   }
 
   &__info-item {
     &:not(:last-child) {
-      margin-bottom: 30px;
+      @include adaptiv-value ('margin-bottom', 45, 20, 1);
     }
   }
 
   &__info-text {
-    @include adaptiv-value ('font-size', 26, 14, 1);
+    @include adaptiv-value ('font-size', 21, 16, 1);
     color: $body-background-color;
   }
 
@@ -129,17 +126,17 @@
 
   &__title {
     @extend %montserrat-700;
-    @include adaptiv-value ('font-size', 32, 16, 1);
+    @include adaptiv-value ('font-size', 25, 16, 1);
+    @include adaptiv-value ('margin-bottom', 20, 5, 1);
     color: $body-background-color;
     white-space: nowrap;
-    margin-bottom: 5px;
   }
 
   &__text {
     color: $body-background-color;
     @include adaptiv-value ('font-size', 22, 14, 1);
+    @include adaptiv-value ('margin-bottom', 20, 5, 1);
     @extend %montserrat-500;
-    margin-bottom: 12px;
   }
 
   &__form {

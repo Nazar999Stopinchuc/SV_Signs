@@ -1,5 +1,5 @@
 .first-screen {
-  margin-bottom: 15px;
+  @include adaptiv-value ('margin-bottom', 57, 15, 1);
 
   &__wrap {
     background-repeat: no-repeat;
@@ -110,8 +110,7 @@
 
   &__item {
     flex-grow: 1;
-    min-height: 112px;
-    @include adaptiv-value ('min-height', 112, 70, 1);
+    @include adaptiv-value ('min-height', 102, 75, 1);
     background-color: $accent-btn-color;
     transition: background-color .3s, opacity .3s;
 
@@ -150,20 +149,21 @@
     height: 100%;
     width: 100%;
     padding-bottom: 10px;
-    @include adaptiv-value ('font-size', 20, 14, 1);
+    @include adaptiv-value ('font-size', 16, 12, 1);
     color: $body-background-color;
     text-transform: uppercase;
-    @extend %montserrat-700;
+    @extend %montserrat-500;
   }
 
   &__svg {
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 50%;
     transform: translate(-50%, 0);
     fill: $body-background-color;
-    @include adaptiv-value ('height', 80, 40, 1);
-    @include adaptiv-value ('width', 80, 40, 1);
+    @include adaptiv-value ('height', 57, 40, 1);
+    @include adaptiv-value ('width', 57, 40, 1);
+
   }
 
 }
