@@ -152,7 +152,6 @@
     @include adaptiv-value ('font-size', 16, 12, 1);
     color: $body-background-color;
     text-transform: uppercase;
-    @extend %montserrat-500;
   }
 
   &__svg {
