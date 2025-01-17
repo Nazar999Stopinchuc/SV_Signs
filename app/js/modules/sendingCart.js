@@ -9,7 +9,7 @@ function sentCart() {
   const BOT_TOKEN = '8186735774:AAEcNdUps9fUThrJs8vejy94cMztGQ59lFA';
   const CHAT_ID = '@SvSigns';
   const TELEGRAM_API_URL = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
-  const TELEGRAM_API_URL_PHOTO = `https://api.telegram.org/bot${BOT_TOKEN}/sendPhoto`;
+  const TELEGRAM_API_URL_DOCUMENT = `https://api.telegram.org/bot${BOT_TOKEN}/sendDocument`;
   const cartData = getLocalStorage('products');
 
   function formatObject(obj) {
@@ -64,32 +64,37 @@ function sentCart() {
         const fileFormData = new FormData(form);
         fileFormData.append('chat_id', CHAT_ID);
 
-        let combinedCaptions = `Product: ${form.dataset.name}\n`;
-
         const fileInputs = form.querySelectorAll('input[type="file"]');
 
         for (const fileInput of fileInputs) {
           if (fileInput.files.length > 0) {
-            if (fileInput.accept.includes('image')) {
-              fileFormData.append('photo', fileInput.files[0]);
+            const file = fileInput.files[0];
 
-              const textArea = form.querySelector('textarea');
-              if (textArea && textArea.value) {
-                combinedCaptions += `\nComment on the product: ${textArea.value}\n`;
-              }
+            // Проверка на PDF
+            if (file.type !== 'application/pdf' && !file.name.toLowerCase().endsWith('.pdf')) {
+              result.style.display = 'block';
+              result.innerHTML = 'Only PDF files are allowed.';
+              result.style.color = '#FD364E';
+              result.style.borderColor = '#FD364E';
+              return;
+            }
 
-              // Добавляем caption
-              fileFormData.append('caption', combinedCaptions);
+            // Отправляем PDF файл
+            fileFormData.append('document', file);
 
-              // Отправляем фотографию
-              const fileResponse = await fetch(TELEGRAM_API_URL_PHOTO, {
-                method: 'POST',
-                body: fileFormData,
-              });
+            // Добавляем комментарий к файлу, если есть
+            const textArea = form.querySelector('textarea');
+            if (textArea && textArea.value) {
+              fileFormData.append('caption', `Comment: ${textArea.value}`);
+            }
 
-              if (!fileResponse.ok) {
-                throw new Error('Failed to send the photo.');
-              }
+            const fileResponse = await fetch(TELEGRAM_API_URL_DOCUMENT, {
+              method: 'POST',
+              body: fileFormData,
+            });
+
+            if (!fileResponse.ok) {
+              throw new Error('Failed to send the PDF.');
             }
           }
         }
@@ -106,6 +111,7 @@ function sentCart() {
     }
     nextStep('3');
   });
-};
+}
+
 
 export default sentCart;

@@ -6,6 +6,10 @@
     background-size: cover;
     background-position: bottom right;
     margin-bottom: 6px;
+
+    @include mq ('tablet') {
+        background-position: bottom left;
+      }
   }
 
   &__inner {

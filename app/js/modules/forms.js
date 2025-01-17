@@ -8,20 +8,36 @@ const forms = () => {
   const BOT_TOKEN = '8186735774:AAEcNdUps9fUThrJs8vejy94cMztGQ59lFA';
   const CHAT_ID = '@SvSigns';
   const TELEGRAM_API_URL = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
-  const TELEGRAM_API_URL_PHOTO = `https://api.telegram.org/bot${BOT_TOKEN}/sendPhoto`;
+  const TELEGRAM_API_URL_DOCUMENT = `https://api.telegram.org/bot${BOT_TOKEN}/sendDocument`;
+
+  const fileInput = document.querySelector('#file-input'); // Поле для загрузки файла
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const formData = new FormData(form);
-    const fileInput = document.querySelector('#file-input'); // Ищем поле для загрузки файла
 
+    // Проверка совпадения email
     if (mail.value !== confirmEmail.value) {
       result.style.display = 'block';
       result.innerHTML = 'The email does not match, check the entered data';
       result.style.color = '#FD364E';
       result.style.borderColor = '#FD364E';
       return;
+    }
+
+    // Проверка на загрузку только PDF
+    if (fileInput.files.length > 0) {
+      const file = fileInput.files[0];
+      const fileName = file.name.toLowerCase();
+
+      if (file.type !== 'application/pdf' && !fileName.endsWith('.pdf')) {
+        result.style.display = 'block';
+        result.innerHTML = 'Only PDF files are allowed.';
+        result.style.color = '#FD364E';
+        result.style.borderColor = '#FD364E';
+        return;
+      }
     }
 
     // Формируем текст сообщения для Telegram
@@ -59,23 +75,22 @@ const forms = () => {
       if (fileInput.files.length > 0) {
         const fileFormData = new FormData();
         fileFormData.append('chat_id', CHAT_ID);
-        fileFormData.append('photo', fileInput.files[0]); // Отправляем первый файл как фото
+        fileFormData.append('document', fileInput.files[0]); // Отправляем первый файл как PDF-документ
 
-        const fileResponse = await fetch(TELEGRAM_API_URL_PHOTO, {
+        const fileResponse = await fetch(TELEGRAM_API_URL_DOCUMENT, {
           method: 'POST',
           body: fileFormData,
         });
 
         if (!fileResponse.ok) {
-          throw new Error('Failed to send the photo.');
+          throw new Error('Failed to send the document.');
         }
       }
 
       result.innerHTML = 'Your message has been sent successfully!';
       result.style.color = '#009B00';
       result.style.borderColor = '#009B00';
-    }
-     catch (error) {
+    } catch (error) {
       console.error(error);
       result.innerHTML = 'Something went wrong!';
       result.style.color = '#FD364E';
@@ -88,6 +103,8 @@ const forms = () => {
     }
   });
 };
+
+
 
 export default forms;
 
