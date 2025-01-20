@@ -88,9 +88,9 @@ function basketProcesses() {
                   <p class="form__label">File Upload <span>(Optional)</span></p>
                   <label class="form__label form__label--file" for="file-input" data-drop-label>
                     <span class="form__custom-button">Upload File</span>
-                    <span class="form__file-name" data-file-name>or Drag Files here (only .pdf)</span>
+                    <span class="form__file-name" data-file-name>or Drag Files here</span>
                     <input class="form__input form__input--file" type="file" id="file-input-${id}" name="file"
-                      accept="application/pdf" data-drop-input>
+                      accept="application/pdf, image/jpeg, image/png" data-drop-input>
                   </label>
 
                   <label class="form__label for="text">Other Details <span>(Optional)</span></label>

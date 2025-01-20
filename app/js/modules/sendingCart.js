@@ -1,6 +1,7 @@
 import { getLocalStorage } from "./utyls";
 import { nextStep } from "./utyls";
 
+
 function sentCart() {
   const form = document.querySelector('#form-cart');
   const result = document.querySelector('#cart-out');
@@ -10,6 +11,7 @@ function sentCart() {
   const CHAT_ID = '@SvSigns';
   const TELEGRAM_API_URL = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
   const TELEGRAM_API_URL_DOCUMENT = `https://api.telegram.org/bot${BOT_TOKEN}/sendDocument`;
+  const TELEGRAM_API_URL_PHOTO = `https://api.telegram.org/bot${BOT_TOKEN}/sendPhoto`;
   const cartData = getLocalStorage('products');
 
   function formatObject(obj) {
@@ -69,18 +71,24 @@ function sentCart() {
         for (const fileInput of fileInputs) {
           if (fileInput.files.length > 0) {
             const file = fileInput.files[0];
+            const fileType = file.type;
 
-            // Проверка на PDF
-            if (file.type !== 'application/pdf' && !file.name.toLowerCase().endsWith('.pdf')) {
+            // Проверка допустимых форматов
+            const allowedFileTypes = ['application/pdf', 'image/jpeg', 'image/png'];
+            if (!allowedFileTypes.includes(fileType)) {
               result.style.display = 'block';
-              result.innerHTML = 'Only PDF files are allowed.';
+              result.innerHTML = 'Only PDF, JPG, or PNG files are allowed.';
               result.style.color = '#FD364E';
               result.style.borderColor = '#FD364E';
               return;
             }
 
-            // Отправляем PDF файл
-            fileFormData.append('document', file);
+            // Добавляем файл в запрос
+            if (fileType === 'application/pdf') {
+              fileFormData.append('document', file);
+            } else {
+              fileFormData.append('photo', file);
+            }
 
             // Добавляем комментарий к файлу, если есть
             const textArea = form.querySelector('textarea');
@@ -88,13 +96,16 @@ function sentCart() {
               fileFormData.append('caption', `Comment: ${textArea.value}`);
             }
 
-            const fileResponse = await fetch(TELEGRAM_API_URL_DOCUMENT, {
-              method: 'POST',
-              body: fileFormData,
-            });
+            const fileResponse = await fetch(
+              fileType === 'application/pdf' ? TELEGRAM_API_URL_DOCUMENT : TELEGRAM_API_URL_PHOTO,
+              {
+                method: 'POST',
+                body: fileFormData,
+              }
+            );
 
             if (!fileResponse.ok) {
-              throw new Error('Failed to send the PDF.');
+              throw new Error(`Failed to send the ${fileType === 'application/pdf' ? 'document' : 'photo'}.`);
             }
           }
         }
@@ -112,6 +123,7 @@ function sentCart() {
     nextStep('3');
   });
 }
+
 
 
 export default sentCart;

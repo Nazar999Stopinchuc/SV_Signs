@@ -9,6 +9,7 @@ const forms = () => {
   const CHAT_ID = '@SvSigns';
   const TELEGRAM_API_URL = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
   const TELEGRAM_API_URL_DOCUMENT = `https://api.telegram.org/bot${BOT_TOKEN}/sendDocument`;
+  const TELEGRAM_API_URL_PHOTO = `https://api.telegram.org/bot${BOT_TOKEN}/sendPhoto`;
 
   const fileInput = document.querySelector('#file-input'); // Поле для загрузки файла
 
@@ -26,14 +27,20 @@ const forms = () => {
       return;
     }
 
-    // Проверка на загрузку только PDF
+    // Проверка формата загружаемого файла
     if (fileInput.files.length > 0) {
       const file = fileInput.files[0];
       const fileName = file.name.toLowerCase();
 
-      if (file.type !== 'application/pdf' && !fileName.endsWith('.pdf')) {
+      const allowedFileTypes = [
+        'application/pdf',
+        'image/jpeg',
+        'image/png',
+      ];
+
+      if (!allowedFileTypes.includes(file.type)) {
         result.style.display = 'block';
-        result.innerHTML = 'Only PDF files are allowed.';
+        result.innerHTML = 'Only PDF, JPG, or PNG files are allowed.';
         result.style.color = '#FD364E';
         result.style.borderColor = '#FD364E';
         return;
@@ -73,17 +80,32 @@ const forms = () => {
 
       // Если есть файл, отправляем его
       if (fileInput.files.length > 0) {
+        const file = fileInput.files[0];
         const fileFormData = new FormData();
         fileFormData.append('chat_id', CHAT_ID);
-        fileFormData.append('document', fileInput.files[0]); // Отправляем первый файл как PDF-документ
 
-        const fileResponse = await fetch(TELEGRAM_API_URL_DOCUMENT, {
-          method: 'POST',
-          body: fileFormData,
-        });
+        if (file.type === 'application/pdf') {
+          fileFormData.append('document', file); // Отправляем как документ
 
-        if (!fileResponse.ok) {
-          throw new Error('Failed to send the document.');
+          const fileResponse = await fetch(TELEGRAM_API_URL_DOCUMENT, {
+            method: 'POST',
+            body: fileFormData,
+          });
+
+          if (!fileResponse.ok) {
+            throw new Error('Failed to send the document.');
+          }
+        } else if (['image/jpeg', 'image/png'].includes(file.type)) {
+          fileFormData.append('photo', file); // Отправляем как фото
+
+          const photoResponse = await fetch(TELEGRAM_API_URL_PHOTO, {
+            method: 'POST',
+            body: fileFormData,
+          });
+
+          if (!photoResponse.ok) {
+            throw new Error('Failed to send the photo.');
+          }
         }
       }
 
